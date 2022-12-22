@@ -41,14 +41,17 @@
 body{
   margin: 0;
 }
+
+/* For navigation tool */
 .nav{
-  background-color:beige;
+  background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  height: 3rem;
 }
 
 .style-title{
@@ -72,9 +75,10 @@ body{
 }
 
 .nav li:hover{
-  background-color:#282c34;
+  background-color: beige;
+  color: black;
 }
 
 .nav li:active{
-  background-color: aqua;
+  background-color: green;
 }
