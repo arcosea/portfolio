@@ -1,0 +1,44 @@
+/* Header and Container*/
+#header{
+    color:black;
+    float: left;
+    display: inline;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+#container{
+    background-color: beige;
+    flex-direction: column;
+    display:flex;
+    
+}
+
+/* Profile image*/
+#person{
+    display:flex; 
+    flex-direction:row;
+    align-items: center;
+}
+
+#profile{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 15rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+/* Intro paragraph */
+#info{
+    font-weight:500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 3rem;
+    line-height: 2rem;
+    float: bottom;
+}
+
+

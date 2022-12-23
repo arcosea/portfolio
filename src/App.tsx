@@ -5,6 +5,7 @@ import {Route, Routes, NavLink} from "react-router-dom";
 import {About} from "./pages/About";
 import {Home} from "./pages/Home";
 import {Projects} from "./pages/Projects";
+import { EducationWork } from './pages/EducationWork';
 import Navbar from './NavBar';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={< Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/projects" element={<Projects />}/>
+        <Route path="/education" element={<EducationWork />} />
       </Routes>
     </div>
     </>

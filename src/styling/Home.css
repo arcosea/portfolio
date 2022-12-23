@@ -1,30 +1,9 @@
-/* Header and Container*/
+
+/* Header */
 h1{
-    margin-top: 0;
-    padding-top: 3rem;
+    color:black;
+    display: inline;
 }
-
-#container{
-    background-color: beige;
-}
-
-/* Profile image*/
-#profile{
-    height: 20rem;
-    width: 20rem;
-    border-radius: 15rem;
-    margin-top: 2rem;
-}
-
-/* Intro paragraph */
-#info{
-    font-weight:500;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    margin: 3rem;
-}
-
 
 /* Learn more*/
 #learn{
@@ -50,14 +29,18 @@ h1{
     color: beige;
 }
 
-/* Contact info */
+/* Contact form info */
 #contact_container {
     background-color: black;
-    height: 50rem;
+    height: 40rem;
+    display: grid;
+    height: 3rem;
 }
 
-h2{
-    float: left;
-    color:white;
-    display:inline;
+form{
+    display:flex;
 }
+
+
+
+

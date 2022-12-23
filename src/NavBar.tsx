@@ -13,6 +13,9 @@ export default function Navbar(){
                     <Link to="/about" className="site-title"> About Me</Link>
                 </li>
                 <li>
+                    <Link to="/education" className="site-title"> Experience</Link>
+                </li>
+                <li>
                     <Link to="/projects" className="site-title"> Projects</Link>
                 </li>
             </ul>
