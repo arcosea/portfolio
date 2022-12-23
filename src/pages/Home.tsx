@@ -43,16 +43,6 @@ export function Home(){
                     Learn about some of the amazing projects I've worked on: <Link to="/projects" className="site-title" id="link"> Projects</Link>
                 </p>
             </div>
-            <div id ="contact_container">
-                {/* <h2> Contact Me</h2>
-                <form>
-                    <label className="user-type" htmlFor="name"> Name: </label>
-                    <input id="name" onChange={handleNameChange} value={name}></input>
-
-                    <button onClick={handleSubmit} >Submit</button>
-
-                </form> */}
-            </div>
 
 
 

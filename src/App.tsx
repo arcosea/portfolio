@@ -21,6 +21,9 @@ function App() {
         <Route path="/education" element={<EducationWork />} />
       </Routes>
     </div>
+    <div className="footer">
+      <p> footer</p>
+    </div>
     </>
   );
 

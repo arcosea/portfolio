@@ -82,3 +82,10 @@ body{
 .nav li:active{
   background-color: green;
 }
+
+/* Footer */
+.footer{
+  flex: 1;
+  float: bottom;
+  min-height: 20vh;
+}

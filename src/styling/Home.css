@@ -1,8 +1,14 @@
 
-/* Header */
+/* Header & container */
 h1{
     color:black;
     display: inline;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;;
 }
 
 /* Learn more*/
@@ -29,17 +35,7 @@ h1{
     color: beige;
 }
 
-/* Contact form info */
-#contact_container {
-    background-color: black;
-    height: 40rem;
-    display: grid;
-    height: 3rem;
-}
 
-form{
-    display:flex;
-}
 
 
 

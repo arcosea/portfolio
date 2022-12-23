@@ -27,7 +27,9 @@ export function Projects(){
       window.addEventListener("resize", (event) => {
         renderer.setSize(window.innerWidth, 1500);
       })
-      document.querySelector("body")?.appendChild(renderer.domElement)
+      
+      // Add renderer to only this page
+      document.querySelector(".projects")?.appendChild(renderer.domElement)
 
       // Create geoemtry for stars & vertices for
       starGeo = new THREE.BufferGeometry();
@@ -70,5 +72,12 @@ export function Projects(){
     init();
   }, []);
 
-    return <h1> Projects</h1>
+    return (
+      <div className='projects' >
+        <h1> Projects</h1>
+      </div>
+
+
+
+    ); 
 }

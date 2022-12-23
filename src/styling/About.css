@@ -12,6 +12,7 @@
     background-color: beige;
     flex-direction: column;
     display:flex;
+    min-height: 100vh;
     
 }
 
