@@ -49,7 +49,14 @@ export function About(){
                 <p>
                     Here are a few slide shows
                 </p>
-                
+                <ImageSlider effectDelay={500} autoPlayDelay={2000}>
+                    <Slide>
+                        <img alt="img2" src="profile.png" />
+                    </Slide>
+                    <Slide>
+                        <img alt="img2" src="star.png" />
+                    </Slide>
+                </ImageSlider>
             </section>
         
         
