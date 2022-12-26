@@ -5,10 +5,11 @@ h1{
     display: inline;
 }
 
-.container{
+.home{
     min-height: 100vh;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    background-color: beige;
 }
 
 /* Learn more*/

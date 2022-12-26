@@ -1,11 +1,12 @@
 /* Header and Container*/
 #header{
     color:black;
-    float: left;
+    text-align: center;
     display: inline;
     margin-top: 2rem;
     margin-left: 2rem;
     margin-bottom: 4rem;
+    
 }
 
 #container{
@@ -42,4 +43,13 @@
     float: bottom;
 }
 
+
+
+
+/* Sliders */
+
+.sc-iBYQkv{
+    width: 10px;
+    height: 10px;
+}
 
