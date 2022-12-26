@@ -47,9 +47,32 @@
 
 
 /* Sliders */
-
-.sc-iBYQkv{
-    width: 10px;
-    height: 10px;
+#slideshow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#slide{
+    width: 40rem;
+    height: 25rem;
+    border: 5px solid  black;
+}
+
+.slider{
+    color: black;
+    border-radius: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid white;
+}
+
+#next{
+    background: linear-gradient(to right, black, transparent);
+}
+
+#previous{
+    background: linear-gradient(to left, black, transparent);
+}
+
 

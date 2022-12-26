@@ -4,8 +4,35 @@ import React, { useEffect, useState, useRef } from 'react';
 import ImageSlider, { Slide } from "react-auto-image-slider";
 
 export function About(){
+    // Method for storing images & keeping track of which images to display
+    // To small: "running/prenats.png", "running/vball.png", "running/10k.png"
+    let imageURL = ["running/xc-plu-invite.png", "running/xc-spu.png", "running/prelute.png", "running/lc-invite.png"];
+    let [imageIndex, setImageIndex] = useState(0);
+    let [imageLink, setImageLink] = useState("running/xc-plu-invite.png");
     
+    // Go back to previous slide
+    const previousSlide = (e: any) => {
+        if (imageIndex == 0){
+            setImageIndex(imageURL.length - 1);
+            setImageLink(imageURL[imageIndex]);
+        } else{
+            setImageIndex(imageIndex - 1);
+            setImageLink(imageURL[imageIndex]);
+        }
+    }
 
+    // Go to next Slide
+    const nextSlide = (e: any) => {
+        console.log(imageIndex);
+        if (imageIndex == imageURL.length - 1){
+        
+            setImageIndex(0);
+            setImageLink(imageURL[imageIndex]);
+        } else{
+            setImageIndex(imageIndex + 1);
+            setImageLink(imageURL[imageIndex]);
+        }
+    }
 
     return (
         <div id="container">
@@ -49,17 +76,17 @@ export function About(){
                 <p>
                     Here are a few slide shows
                 </p>
-                <ImageSlider effectDelay={500} autoPlayDelay={2000}>
-                    <Slide>
-                        <img alt="img2" src="profile.png" />
-                    </Slide>
-                    <Slide>
-                        <img alt="img2" src="star.png" />
-                    </Slide>
-                </ImageSlider>
+                <div id="slideshow" >
+                    <button className="slider" id="previous" onClick={previousSlide}> 	&larr; </button>
+                    <img id="slide" alt="default" src={imageLink}/>
+                    <button className="slider" id="next" onClick={nextSlide}> &rarr; </button>
+                </div>
+                
+                
+                
             </section>
-        
-        
+            
+            
         
         </div>
     );
