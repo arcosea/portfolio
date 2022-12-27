@@ -9,10 +9,13 @@ export function About(){
     let imageURL = ["running/xc-plu-invite.png", "running/xc-spu.png", "running/prelute.png", "running/lc-invite.png"];
     let [imageIndex, setImageIndex] = useState(0);
     let [imageLink, setImageLink] = useState("running/xc-plu-invite.png");
-    
-    // Go back to previous slide
+    let slideInterval: any;
+    let intervalTime = 5000; // In ms
+    let autoScroll = true;
+
+    // Go to previous slide
     const previousSlide = (e: any) => {
-        if (imageIndex == 0){
+        if (imageIndex === 0){
             setImageIndex(imageURL.length - 1);
             setImageLink(imageURL[imageIndex]);
         } else{
@@ -23,9 +26,7 @@ export function About(){
 
     // Go to next Slide
     const nextSlide = (e: any) => {
-        console.log(imageIndex);
-        if (imageIndex == imageURL.length - 1){
-        
+        if (imageIndex === imageURL.length - 1){
             setImageIndex(0);
             setImageLink(imageURL[imageIndex]);
         } else{
@@ -33,6 +34,20 @@ export function About(){
             setImageLink(imageURL[imageIndex]);
         }
     }
+
+    // Automatically goes to next slide after some time
+   function auto() {
+        slideInterval = setInterval(nextSlide, intervalTime);
+   }
+
+   // Automatically moves to next slide
+   useEffect( () => {
+        if(autoScroll){
+            auto();
+        }
+        // Clean up function to clear up bug
+        return () => clearInterval(slideInterval);
+   }, [imageIndex]);
 
     return (
         <div id="container">
@@ -69,6 +84,11 @@ export function About(){
                     a 16:35 5Km back in 2019. While, my collegiate running career comes to an end this Spring of 2023, I have since then ran a 
                     15:43 5Km in Track and 26:17 8Km personal bests. I have also done an unofficial half marathon in 1:18:05.
                 </p>
+                <div id="slideshow" >
+                    <button className="slider" id="previous" onClick={previousSlide}> 	&larr; </button>
+                    <img id="slide" alt="default" src={imageLink}/>
+                    <button className="slider" id="next" onClick={nextSlide}> &rarr; </button>
+                </div>
             </section>
 
             <section>
@@ -76,11 +96,6 @@ export function About(){
                 <p>
                     Here are a few slide shows
                 </p>
-                <div id="slideshow" >
-                    <button className="slider" id="previous" onClick={previousSlide}> 	&larr; </button>
-                    <img id="slide" alt="default" src={imageLink}/>
-                    <button className="slider" id="next" onClick={nextSlide}> &rarr; </button>
-                </div>
                 
                 
                 
