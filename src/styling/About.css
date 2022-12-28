@@ -3,10 +3,6 @@
     color:black;
     text-align: center;
     display: inline;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 4rem;
-    
 }
 
 #container{
@@ -33,7 +29,7 @@
 }
 
 /* Intro paragraph */
-#info{
+#intro{
     font-weight:500;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 5rem;
@@ -44,13 +40,36 @@
 }
 
 
+/*   subtitles to sections   */
+section{
+    border-top: 1px solid black;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.sub-header{
+    text-decoration: underline;
+}
+
+.sub-title{
+    font-weight: bold;
+}
+
+#show-title{
+   margin-left: 45%;
+}
 
 
-/* Sliders */
+/* Slide show */
+#ss-container{
+    flex-direction: row;
+}
+
 #slideshow{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 #slide{
@@ -74,5 +93,7 @@
 #previous{
     background: linear-gradient(to left, black, transparent);
 }
+
+
 
 
