@@ -116,75 +116,71 @@ export function About(){
                 <img src="/profile.png" id="profile" alt="profile picture of Erick Arcos"></img>
             </div>
 
-    
-            <section>
-                <h3 className="sub-header"> Family & Background </h3>
-                <p>
-                    Family & Friends and the time I spend with them is something I value dearly. I am the eldest of a total of four boys. I am the first in my family to have graduated
-                    High school and attended University! My parents and I were born in Mexico. However, unlike them, I was brought to the United States at a young age
-                    and did not have the pressure to work from an early age to help provide essentials. I had the opportunity and support to be able to attend higher education. 
-                </p>
-            </section>
-            
-            <section>
-                <h3 className="sub-header"> Sports & Activities </h3>
-                <span className="sub-title"> 
-                    Soccer
-                </span>
-                <p>
-                    Whether it was street soccer or club, I had always enjoyed playing Soccer. While I had played street soccer in the early stages of my life, I didn't play officially for a team
-                    till 6th grade. After a poor first and second year soccer experience in High School, I eventually decided to stop playing soccer & focus mainly on Track and Cross Country.
-                </p>
-                <span className="sub-title"> 
-                    Track
-                </span>
-                <p>
-                    Aside from Soccer, I also really enjoyed Running. I ran track for first time in 8th grade where I ran a 5:24 mile. I continued doing track in High School starting my junior year, 
-                    I ended High School with a 4:45 1600 meter . I continued running Track at Pacific Lutheran University where I ran 16:35 in the 5 Km (over 90 seconds faster than in High School) my freshman year.
-                    I have since then ran a 15:43 5Km and 4:16 1500meters.
-                </p>
-                <span className="sub-title"> 
-                    Cross Country
-                </span>
-                <p>
-                    After doing Track in High School, I was persuaded to do Cross Country and loved it a lot more than Track. I finished High school with a not so well time of 18:09 5 Km.
-                    I attended Pacific Lutheran University where I continued running Track and Cross Country. Although I did not compete for Cross Country my freshman year, and lost a year due 
-                    the 2020 pandemic, I have run a best of 26:17 8km. I have also done an unofficial half marathon in 1:18:05.
-                </p>
-                <div id="slideshow" >
-                    <button className="slider" id="previous" onClick={previousRunSlide}> 	&larr; </button>
-                    <img id="slide" alt="default" src={imageLink}/>
-                    <button className="slider" id="next" onClick={nextRunSlide}> &rarr; </button>
-                </div>
-
-                <span className="sub-title">
-                    Other Activities
-                </span>
-                <p>
-                    Aside from running and soccer, other activies I really enjoy include volleyball, badminton and hiking. I have also recently gotten into Rock Climbing & will
-                    try to incorporate it more in the future.
-                </p>
-            </section>
-
-            <section>
-                <h3 className="sub-header"> Favorite Shows & Movies </h3>
-
-                
-                    <span className="sub-title" id="show-title"> {currentTitle}</span>
-                    <div id="slideshow" >
-                        <button className="slider" id="previous" onClick={previousShowSlide}> 	&larr; </button>
-                        <img id="slide" alt="default" src={showLink}/>
-                        <button className="slider" id="next" onClick={nextShowSlide}> &rarr; </button>
+            <div>
+                <section>
+                    <h3 className="sub-header"> Family & Background </h3>
+                    <p>
+                        Family & Friends and the time I spend with them is something I value dearly. I am the eldest of a total of four boys. I am the first in my family to have graduated
+                        High school and attended University! My parents and I were born in Mexico. However, unlike them, I was brought to the United States at a young age
+                        and did not have the pressure to work from an early age to help provide essentials. I had the opportunity and support to be able to attend higher education. 
+                    </p>
+                </section>
+            </div>
+            <div id="activities">
+                <section >
+                    <h3 className="sub-header"> Sports & Activities </h3>
+                    <span className="sub-title"> 
+                        Soccer
+                    </span>
+                    <p>
+                        Whether it was street soccer or club, I had always enjoyed playing Soccer. While I had played street soccer in the early stages of my life, I didn't play officially for a team
+                        till 6th grade. After a poor first and second year soccer experience in High School, I eventually decided to stop playing soccer & focus mainly on Track and Cross Country.
+                    </p>
+                    <span className="sub-title"> 
+                        Track
+                    </span>
+                    <p>
+                        Aside from Soccer, I also really enjoyed Running. I ran track for first time in 8th grade where I ran a 5:24 mile. I continued doing track in High School starting my junior year, 
+                        I ended High School with a 4:45 1600 meter . I continued running Track at Pacific Lutheran University where I ran 16:35 in the 5 Km (over 90 seconds faster than in High School) my freshman year.
+                        I have since then ran a 15:43 5Km and 4:16 1500meters.
+                    </p>
+                    <span className="sub-title"> 
+                        Cross Country
+                    </span>
+                    <p>
+                        After doing Track in High School, I was persuaded to do Cross Country and loved it a lot more than Track. I finished High school with a not so well time of 18:09 5 Km.
+                        I attended Pacific Lutheran University where I continued running Track and Cross Country. Although I did not compete for Cross Country my freshman year, and lost a year due 
+                        the 2020 pandemic, I have run a best of 26:17 8km. I have also done an unofficial half marathon in 1:18:05.
+                    </p>
+                    <div className="slideshow" >
+                        <button className="slider" id="previous-run" onClick={previousRunSlide}> 	&larr; </button>
+                        <img className="slide" id="run-slides" alt="default" src={imageLink}/>
+                        <button className="slider" id="next-run" onClick={nextRunSlide}> &rarr; </button>
                     </div>
-                
-                
 
-
-                
-                
-                
-            </section>
+                    <span className="sub-title">
+                        Other Activities
+                    </span>
+                    <p>
+                        Aside from running and soccer, other activies I really enjoy include volleyball, badminton and hiking. I have also recently gotten into Rock Climbing & will
+                        try to incorporate it more in the future.
+                    </p>
+                </section>
+            </div>
             
+            <div>
+                <section>
+                    <h3 className="sub-header"> Favorite Shows & Movies </h3>
+
+                    
+                        <span className="sub-title" id="show-title"> {currentTitle}</span>
+                        <div className="slideshow" >
+                            <button className="slider" id="previous" onClick={previousShowSlide}> 	&larr; </button>
+                            <img className="slide" alt="default" src={showLink}/>
+                            <button className="slider" id="next" onClick={nextShowSlide}> &rarr; </button>
+                        </div>   
+                </section>
+            </div>
             
         
         </div>

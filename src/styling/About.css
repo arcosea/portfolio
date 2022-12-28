@@ -13,6 +13,12 @@
     
 }
 
+
+#activities{
+    color: beige;
+    background-color: black;
+}
+
 /* Profile image*/
 #person{
     display:flex; 
@@ -43,7 +49,7 @@
 /*   subtitles to sections   */
 section{
     border-top: 1px solid black;
-    margin: 3rem 3rem 0 3rem;
+    margin: 3rem 3rem 4rem 3rem;
 }
 
 .sub-header{
@@ -60,11 +66,7 @@ section{
 
 
 /* Slide show */
-#ss-container{
-    flex-direction: row;
-}
-
-#slideshow{
+.slideshow{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,10 +74,16 @@ section{
     margin-top: 3rem;
 }
 
-#slide{
+.slide{
     width: 40rem;
     height: 25rem;
     border: 5px solid  black;
+}
+
+#run-slides{
+    width: 40rem;
+    height: 25rem;
+    border: 5px solid  beige;
 }
 
 .slider{
@@ -83,15 +91,28 @@ section{
     border-radius: 1rem;
     width: 3rem;
     height: 3rem;
-    border: 2px solid white;
+    border: 2px solid beige;
 }
+
 
 #next{
     background: linear-gradient(to right, black, transparent);
 }
 
+#next-run{
+    background: linear-gradient(to right, black, beige);
+    color: white;
+    border: 2px solid black;
+}
+
 #previous{
     background: linear-gradient(to left, black, transparent);
+}
+
+#previous-run{
+    background: linear-gradient(to left, black, beige);
+    color: white;
+    border: 2px solid black;
 }
 
 
