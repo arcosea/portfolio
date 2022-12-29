@@ -1,0 +1,57 @@
+/*  Header for Work Experience & Education*/
+.container{
+    width: 50%;
+    text-align: center;
+}
+
+.section-header{
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    letter-spacing: 0.1em
+}
+
+
+/*  Container for each component (Job/education) */
+.comp-container{
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 3rem;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+/* Timeline  & Header for each componen */
+.component-name{
+    text-decoration: underline;
+    letter-spacing: 0.1em
+}
+
+.timeline{
+    font-weight: bold;
+}
+
+/* Description paragraphs*/
+.description{
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+/*  Customize SWE Job */
+#swe-job{
+    background-color: rgb(209, 200, 200);
+}
+
+
+/*  Customize TA Job */
+#ta-job{
+    background-color: rgb(179, 179, 237);
+}
+
+/*  Customize Tutor Job */
+#tutor-job{
+    background-color: rgb(22, 21, 21);
+    color: beige;
+} 

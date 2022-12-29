@@ -1,7 +1,6 @@
 import "../styling/About.css";
 import {Link} from "react-router-dom";
 import React, { useEffect, useState, useRef } from 'react';
-import ImageSlider, { Slide } from "react-auto-image-slider";
 
 export function About(){
     /**********         Running Slide Show              *************/
@@ -117,7 +116,7 @@ export function About(){
             </div>
 
             <div>
-                <section>
+                <section className="section">
                     <h3 className="sub-header"> Family & Background </h3>
                     <p>
                         Family & Friends and the time I spend with them is something I value dearly. I am the eldest of a total of four boys. I am the first in my family to have graduated
@@ -127,7 +126,7 @@ export function About(){
                 </section>
             </div>
             <div id="activities">
-                <section >
+                <section className="section">
                     <h3 className="sub-header"> Sports & Activities </h3>
                     <span className="sub-title"> 
                         Soccer
@@ -169,7 +168,7 @@ export function About(){
             </div>
             
             <div>
-                <section>
+                <section className="section">
                     <h3 className="sub-header"> Favorite Shows & Movies </h3>
 
                     

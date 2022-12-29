@@ -47,7 +47,7 @@
 
 
 /*   subtitles to sections   */
-section{
+.section{
     border-top: 1px solid black;
     margin: 3rem 3rem 4rem 3rem;
 }
