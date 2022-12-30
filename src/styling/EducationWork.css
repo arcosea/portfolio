@@ -10,6 +10,16 @@
     letter-spacing: 0.1em
 }
 
+#work-section{
+    border-bottom: 2px solid black;
+    padding: 1rem 0 1rem 0;
+}
+
+#ed-section{
+    border-bottom: 2px solid black;
+    padding: 1rem 0 1rem 0;
+}
+
 
 /*  Container for each component (Job/education) */
 .comp-container{
@@ -22,7 +32,10 @@
 }
 
 
-/* Timeline  & Header for each componen */
+
+
+
+/* Timeline  & Header for each component */
 .component-name{
     text-decoration: underline;
     letter-spacing: 0.1em
@@ -55,3 +68,23 @@
     background-color: rgb(22, 21, 21);
     color: beige;
 } 
+
+
+/****** Education Content ******/ 
+.degree-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.course-container{
+    text-align: left;
+    margin: 1rem;
+}
+
+.courses{
+    display: grid;
+    letter-spacing: 0.1em;
+}
+
+
+

@@ -8,7 +8,7 @@ export function EducationWork(){
     return (
         <div id="container">
             <h2 className="section-header"> Work Experience </h2>
-            <section >
+            <section className="section" id="work-section">
                 {/* SWE Job */}
                 <div className="comp-container" id="swe-job">
                     <h3 className="component-name"> Software Engineering Intern</h3>
@@ -82,6 +82,64 @@ export function EducationWork(){
                         Certifications Gained: Washington Flagging Permit, CPR 
                     </p>
                 </div>
+            </section>
+
+            {/************ Section for Education *************/}
+            <h2 className="section-header"> Education </h2>
+            <section className="section" id="ed-section">
+                {/***  Physics BS  ******/}
+                <div className="comp-container" id="phys-ed">
+                    <h3 className="component-name" id="degree-name"> Bachelors of Science in Applied Physics</h3>
+                    <h4 className="component-name"> Pacific Lutheran University</h4>
+                    <div className="degree-info">
+                        <span className="timeline"> September. 2018 - Present, <strong> Graduation</strong>: May 2023</span>
+                        <span className="minor"> Minor in Mathematics</span>
+                        <span className="gpa"> Cumulative GPA: 3.91 </span>
+                        
+                    </div>
+                    {/* Physics Classes */}
+                    <div className="course-container"> 
+                        <span className="courses-for"> <strong> Engineering-Physics Classes Taken </strong></span>
+                        <p className="courses">
+                            Intro to Engineering,
+                            General Physics I: Mechanics,  General Physics II: Electromagnetism,
+                            Elementary Modern Physics: Relativity,  Waves & Fluids,
+                            Engineering Statics,  Electromagnetic Theory,
+                            Electromagnetic Waves & Physical Optics,   Engineering Materials Science,
+                            Electrical Circuits,  Differential Equations & Laplace Transforms,
+                            Fourier Analysis & Boundary Value, Quantum Mechanics, Capstone Project.
+                        </p>
+                    </div>
+        
+                    {/* Math Classes */}
+                    <div className="course-container"> 
+                        <span className="courses-for"> <strong> Mathematics Classes </strong></span>
+                        <p className="courses">
+                            Intro to Statistics, Discrete Math, Calculus II: Integrals,  Multivariable Calculus,
+                            Linear Algebra. 
+                        </p>
+                    </div>
+                </div>
+
+                {/****** Computer Science BA *****/}
+                <div className="comp-container" id="phys-ed">
+                    <h3 className="component-name" id="degree-name"> Bachelors of Arts in Computer Science</h3>
+                    <h4 className="component-name"> Pacific Lutheran University</h4>
+                    <div className="degree-info">
+                        <span className="timeline"> August. 2018 - Present, <strong> Graduation</strong>: May 2023</span>
+                        <span className="gpa"> Cumulative GPA: 3.91 </span>       
+                    </div>
+                    {/* CS Classes */}
+                    <div className="course-container"> 
+                        <span className="courses-for"> <strong> Computer Science Classes Taken </strong></span>
+                        <p className="courses">
+                            Intro to Computer Science, Data Structures, Databases & Web Programming, 
+                            Design & Analysis of Algorithms, Objects & Design Patterns, Robotic Agents,
+                            Capstone Project.
+                        </p>
+                    </div>
+                </div>
+        
             </section>
 
 
