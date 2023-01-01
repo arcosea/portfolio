@@ -6,7 +6,7 @@ export function About(){
     /**********         Running Slide Show              *************/
     // Running slideshow & method for storing images & keeping track of which to display
     // To small: "running/prenats.png", "running/vball.png", "running/10k.png"
-    let imageURL = ["running/xc-plu-invite.png", "running/xc-spu.png", "running/prelute.png", "running/lc-invite.png"];
+    let imageURL = ["running/xc-plu-invite.png", "running/xc-spu.png", "running/team.png", "running/10k.png", "running/prelute.png", "running/lc-invite.png"];
     let [imageIndex, setImageIndex] = useState(0);
     let [imageLink, setImageLink] = useState("running/xc-plu-invite.png");
     let slideInterval: any;
@@ -103,7 +103,8 @@ export function About(){
     return (
         <div id="container">
             <h2 id="header"> About Me</h2>
-
+            
+            {/** BIO  */}
             <div id="person">
                 <p id = "intro">
                     Hey Everyone! My Name is <strong>Erick Arcos</strong>, a student-athlete at <em>Pacific Lutheran University</em>. 
@@ -115,6 +116,7 @@ export function About(){
                 <img src="/profile.png" id="profile" alt="profile picture of Erick Arcos"></img>
             </div>
 
+            {/** Family Background */}
             <div>
                 <section className="section">
                     <h3 className="sub-header"> Family & Background </h3>
@@ -125,6 +127,8 @@ export function About(){
                     </p>
                 </section>
             </div>
+            
+            {/** Sports & Activities */}
             <div id="activities">
                 <section className="section">
                     <h3 className="sub-header"> Sports & Activities </h3>
@@ -167,6 +171,8 @@ export function About(){
                 </section>
             </div>
             
+
+            {/** Fav shows/movies */}
             <div>
                 <section className="section">
                     <h3 className="sub-header"> Favorite Shows & Movies </h3>
