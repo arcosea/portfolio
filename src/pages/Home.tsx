@@ -29,7 +29,7 @@ export function Home(){
         const { value } = e.target
         setMessage(value)
     }
-
+    const canvasRef = useRef();
     // Welcome page
     useEffect(() => {
         let scene: THREE.Scene;
@@ -49,13 +49,16 @@ export function Home(){
             // Setup renderer
             renderer = new THREE.WebGLRenderer();
             renderer.setSize(window.innerWidth, window.innerHeight);
-
             window.addEventListener("resize", (event) => {
                 renderer.setSize(window.innerWidth, window.innerHeight);
             })
             
             // Add renderer to only this page
             document.querySelector(".home")?.appendChild(renderer.domElement)
+
+            // Give canvas an id
+            document.querySelector("canvas")!.id = "spa";
+            
         
             // Add 
             const geometry = new THREE.BoxGeometry( 20, 20, 20 );
@@ -63,7 +66,7 @@ export function Home(){
             cube = new THREE.Mesh( geometry, material );
             scene.add( cube );
 
-
+            // Animate
             animate();
         }
         // Rendering loop

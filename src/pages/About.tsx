@@ -108,7 +108,7 @@ export function About(){
                 <p id = "intro">
                     Hey Everyone! My Name is <strong>Erick Arcos</strong>, a student-athlete at <em>Pacific Lutheran University</em>. 
                     I am studying <strong>Applied Physics (BS)</strong> and <strong>Computer Science (BA)</strong> with a Minor in Mathematics. 
-                    I will be graduating in <strong> May of 2023</strong> Some of my career interests include: Robotics, Space exploration, Astronomy, 
+                    I will be graduating in <strong> May of 2023. </strong> Some of my career interests include: Robotics, Space exploration, Astronomy, 
                     Aerospace Engineering, Embedded Systems, Artificial Intelligence, Machine learning, Software Development and so much more! 
                     All of these are subjects fascinating and I am someone that can adapt well to new learning environments.
                 </p>

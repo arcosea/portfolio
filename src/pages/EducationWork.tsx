@@ -12,19 +12,19 @@ export function EducationWork(){
                 {/* SWE Job */}
                 <div className="comp-container-left" id="swe-job">
                     <h3 className="component-name"> Software Engineering Intern</h3>
-                    <img src="logos/co.png" alt="company logo"></img>
+                    <img src="logos/naimor.png" alt="company logo" id="naimor-img"></img>
                     <span className="left-arrow"></span>
-                    <h4 className="company"> Fabrication Company </h4>
+                    <h4 className="company"> NaiMor, Inc </h4>
                     <span className="timeline"> August. 2022 - Present</span>
                     <p className="description">
-                        Currently contracted by a<strong> fabrication company </strong> to create user interface that displays one of the products that the company sells and embed it into their Shopify store
+                        Currently contracted by a <em> metal fabrication company </em> to create user interface that displays one of the products that the company sells and embed it into their Shopify store
                         so that clients can purchase this product. The user interface allows clients to customize the product based on
                         different <strong> styles, materials, shape, color, preferred dimensions and other features </strong>. Using this information, the website then assembles and renders
                         the product using <em> Javascripts 3D Library (3JS) </em>. The user interface also displays the pricing of the current assembly of the product
                         and updates dynamically whenever a change is made. This project is done in collaborate with another intern under the guidance of a mentor.
                     </p>
                     <p className="note">
-                        Cannot disclose company name & product but will provide <strong><em>link</em></strong> to website once its complete.
+                        Will provide <strong><em>link</em></strong> to website once its complete.
                     </p>
                     
                 </div>
@@ -115,6 +115,14 @@ export function EducationWork(){
                             Linear Algebra. 
                         </p>
                     </div>
+
+                    {/* Skills Gained */}
+                    <div className="course-container"> 
+                        <span className="courses-for"> <strong> Skills Gained </strong></span>
+                        <p className="courses">
+                            fill
+                        </p>
+                    </div>
                 </div>
 
                 {/****** Computer Science BA *****/}
@@ -125,6 +133,7 @@ export function EducationWork(){
                         <span className="timeline"> August. 2018 - Present, <strong> Graduation</strong>: May 2023</span>
                         <span className="gpa"> Cumulative GPA: 3.91 </span>       
                     </div>
+
                     {/* CS Classes */}
                     <div className="course-container"> 
                         <span className="courses-for"> <strong> Computer Science Classes Taken </strong></span>
@@ -132,6 +141,13 @@ export function EducationWork(){
                             Intro to Computer Science, Data Structures, Databases & Web Programming, 
                             Design & Analysis of Algorithms, Objects & Design Patterns, Robotic Agents,
                             Capstone Project.
+                        </p>
+                    </div>
+                    {/* Skills Gained */}
+                    <div className="course-container"> 
+                        <span className="courses-for"> <strong> Skills Gained </strong></span>
+                        <p className="courses">
+                            fill
                         </p>
                     </div>
                 </div>

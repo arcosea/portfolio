@@ -16,8 +16,6 @@
     position: relative;
     max-width: 100%;
     margin: 1rem auto;
-    animation: movedown 1s linear forwards;
-    opacity: 0;
 }
 
 #ed-section{
@@ -44,6 +42,7 @@
     border: 0.1rem solid black;
     border-radius: 10px;
     position:relative;
+    z-index: 5;
 }
 
 .comp-container-right{
@@ -54,24 +53,31 @@
     border: 0.1rem solid black;
     border-radius: 10px;
     position: relative;
+    z-index: 5;
 }
 
 /** Image logos & arrows*/
 .comp-container-left img{
     position: absolute;
-    width: 10%;
+    width: 20%;
     border-radius: 50%;
     padding-top: 0;
-    left: 107.5%;
+    left: 102.5%;
     z-index: 1;
+    margin-top: -1.25rem;
+}
+
+#naimor-img{
+    margin-top: 0rem;
 }
 
 .comp-container-right img{
     position: absolute;
-    width: 10%;
+    width: 20%;
     border-radius: 50%;
-    right: 107.5%;
+    right: 102.5%;
     z-index: 1;
+    margin-top: -1.25rem;
 }
 
 .left-arrow{
@@ -82,8 +88,10 @@
     z-index: 5;
     border-top: 1rem solid transparent;
     border-bottom: 1rem solid transparent;
-    border-left: 1rem solid black;
+    border-left: 1rem solid rgb(102, 94, 94);
     right: -1rem;
+    
+    
 }
 
 .right-arrow{
@@ -121,19 +129,29 @@
 /*  Customize SWE Job */
 #swe-job{
     background-color: rgb(209, 200, 200);
-}
-
-
-/*  Customize TA Job */
-#ta-job{
-    background-color: rgb(179, 179, 237);
+    animation: movedown 1s linear forwards;
 }
 
 /*  Customize Tutor Job */
 #tutor-job{
     background-color: rgb(22, 21, 21);
     color: beige;
+    animation: movedown 3s linear forwards;
 } 
+
+/*  Customize TA Job */
+#ta-job{
+    background-color: rgb(179, 179, 237);
+    animation: movedown 5s linear forwards;
+}
+
+
+
+/*  Apprentice Job */
+#app-job{
+    background-color: rgb(136, 152, 81);
+    animation: movedown 7s linear forwards;
+}
 
 
 /****** Education Content ******/ 
@@ -152,6 +170,9 @@
     letter-spacing: 0.1em;
 }
 
+#phys-ed{
+}
+
 
 /** Line animation */
 #work-section-timeline::after{
@@ -159,11 +180,11 @@
     position: absolute;
     width: 4px;
     height: 100%;
-    background: white;
+    background: rgb(118, 118, 96);
     top: 0;
     left: 50%;
     z-index: 0;
-    animation: moveline 5s linear forwards;
+    animation: moveline 8s linear forwards;
 }
 
 @keyframes moveline{    
@@ -177,7 +198,7 @@
 
 @keyframes movedown{
     0%{
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-30px);
     }
     100%{
@@ -186,15 +207,15 @@
     }
 }
 
-#work-section-timeline:nth-child(2){
+/* #work-section-timeline:nth-child(2){
     animation-delay: 1s;  
 }
 #work-section-timeline:nth-child(3){
-    animation-delay: 2s;  
-}
-#work-section-timeline:nth-child(4){
     animation-delay: 3s;  
 }
+#work-section-timeline:nth-child(4){
+    animation-delay: 5s;  
+} */
 
 
 
