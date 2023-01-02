@@ -1,34 +1,11 @@
 import "../styling/Home.css";
 import {Link} from "react-router-dom";
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import * as THREE from "three";
-import TextGeometry, { BMFont, BMFontJsonParser, TextGeometryOption, TextAlign } from 'three-text-geometry';
-import { TTFLoader } from 'three/examples/jsm/loaders/TTFLoader';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
-import { createScanner, isWhiteSpaceLike } from "typescript";
-import { BooleanKeyframeTrack } from "three";
+import {Text} from 'troika-three-text';
 
 
 export function Home(){
-    const [name, setName] = useState("");
-    const [message, setMessage] = useState("");
-
-    // Handles email submission
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-    }
-
-    // Changes name to current input
-    const handleNameChange = (e: any) => {
-        const { value } = e.target
-        setName(value)
-    }
-
-    // Changes message to current input
-    const handleMessageChange = (e: any) => {
-        const { value } = e.target
-        setMessage(value)
-    }
     const canvasRef = useRef();
     // Welcome page
     useEffect(() => {
@@ -54,10 +31,11 @@ export function Home(){
             })
             
             // Add renderer to only this page
-            document.querySelector(".home")?.appendChild(renderer.domElement)
+            document.querySelector(".home")?.append(renderer.domElement)
 
             // Give canvas an id
             document.querySelector("canvas")!.id = "spa";
+            
             
         
             // Add 
@@ -65,6 +43,19 @@ export function Home(){
             const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
             cube = new THREE.Mesh( geometry, material );
             scene.add( cube );
+
+            // Create:
+            const myText = new Text()
+            scene.add(myText)
+
+            // Set properties to configure:
+            myText.text = 'Hello world!';
+            myText.fontSize = 10;
+            myText.position.z = 20;
+            myText.color = 0x9966FF;
+
+            // Update the rendering:
+            myText.sync()
 
             // Animate
             animate();
