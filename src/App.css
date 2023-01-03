@@ -47,16 +47,26 @@ body{
   background-color: black;
   color: white;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
   padding: 0 2rem;
   height: 5rem;
+  border-bottom: 2px solid white;
 }
 
-.style-title{
-  font-size: 2rem;
+.site-title{
+  font-size: 1rem;
+  transition: transform 0.3s ease;
 }
+
+.site-title:hover{
+  transform: translateY(-0.5rem);
+}
+
 
 .nav ul{
   padding: 0;
@@ -89,6 +99,8 @@ body{
   float: bottom;
   min-height: 20vh;
   background-color: black;
+  margin-top: 0rem;
+  padding-top: 2rem;
 }
 
 .footer p{

@@ -1,16 +1,36 @@
 import "../styling/EducationWork.css";
+import { useEffect, useState, useRef } from 'react';
 
 
 
 export function EducationWork(){
+    /*
+    *  Constantly create animation
+    */
+    useEffect( () => {
+        // Callback function to see if elements are visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("show");
+                } else{
+                    entry.target.classList.remove("show");
+                }
+            })
+        });
 
-
+        // Display each element that was originally hidden
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach( (elem) =>{
+            observer.observe(elem);
+        })
+    }, []);
     return (
-        <div id="container">
-            <h2 className="section-header"> Work Experience </h2>
+        <div className="container">
+            <h2 className="section-header hidden"> Work Experience </h2>
             <section className="section" id="work-section-timeline">
                 {/* SWE Job */}
-                <div className="comp-container-left" id="swe-job">
+                <div className="comp-container-left hidden" id="swe-job">
                     <h3 className="component-name"> Software Engineering Intern</h3>
                     <img src="logos/naimor.png" alt="company logo" id="naimor-img"></img>
                     <span className="left-arrow"></span>
@@ -30,7 +50,7 @@ export function EducationWork(){
                 </div>
 
                 {/* Tutor Job */}
-                <div className="comp-container-right" id="tutor-job">
+                <div className="comp-container-right hidden" id="tutor-job">
                     <h3 className="component-name"> Math Tutor</h3>
                     <img src="logos/plu2.png" alt="company logo"></img>
                     <span className="right-arrow"></span>
@@ -44,7 +64,7 @@ export function EducationWork(){
                 </div>
 
                 {/* TA Job */}
-                <div className="comp-container-left" id="ta-job">
+                <div className="comp-container-left hidden" id="ta-job">
                     <h3 className="component-name"> Data Structures Teacher Assistant</h3>
                     <img src="logos/plu.png" alt="company logo"></img>
                     <span className="left-arrow"></span>
@@ -59,7 +79,7 @@ export function EducationWork(){
                 </div>
 
                 {/* Apprentice Job */}
-                <div className="comp-container-right" id="app-job">
+                <div className="comp-container-right hidden" id="app-job">
                     <h3 className="component-name"> Apprentice</h3>
                     <img src="logos/utiligi.png" alt="company logo"></img>
                     <span className="right-arrow"></span>

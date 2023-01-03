@@ -1,13 +1,17 @@
 /*  Header for Work Experience & Education*/
 .container{
-    width: 50%;
+    width: 100%;
     text-align: center;
+    background-color: black;
 }
 
 .section-header{
+    background-color: black;
     text-align: center;
-    margin: 3rem 0 3rem 0;
-    letter-spacing: 0.1em
+    padding-top: 3rem;
+    margin: 0rem 0 3rem 0;
+    letter-spacing: 0.1em;
+    color: white;
 }
 
 #work-section-timeline{
@@ -20,7 +24,8 @@
 
 #ed-section{
     border-bottom: 2px solid black;
-    padding: 1rem 0 1rem 0;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 
@@ -30,30 +35,37 @@
     margin-left: 15%;
     margin-bottom: 3rem;
     width: 70%;
-    border: 0.1rem solid black;
+    border: 0.1rem solid white;
     border-radius: 10px;
+    color: white;
 }
 
 .comp-container-left{
+    display: grid;
     text-align: center;
     margin-left: 5%;
     margin-bottom: 3rem;
     width: 40%;
-    border: 0.1rem solid black;
+    border: 0.1rem solid white;
     border-radius: 10px;
     position:relative;
     z-index: 5;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
 }
 
 .comp-container-right{
+    display: grid;
     text-align: center;
     margin-left: 55%;
     margin-bottom: 3rem;
     width: 40%;
-    border: 0.1rem solid black;
+    border: 0.1rem solid white;
     border-radius: 10px;
     position: relative;
     z-index: 5;
+    margin-bottom: 10rem;
+
 }
 
 /** Image logos & arrows*/
@@ -64,12 +76,9 @@
     padding-top: 0;
     left: 102.5%;
     z-index: 1;
-    margin-top: -1.25rem;
+    margin-top: 1.25rem;
 }
 
-#naimor-img{
-    margin-top: 0rem;
-}
 
 .comp-container-right img{
     position: absolute;
@@ -90,8 +99,6 @@
     border-bottom: 1rem solid transparent;
     border-left: 1rem solid rgb(102, 94, 94);
     right: -1rem;
-    
-    
 }
 
 .right-arrow{
@@ -101,7 +108,7 @@
     z-index: 5;
     border-top: 1rem solid transparent;
     border-bottom: 1rem solid transparent;
-    border-right: 1rem solid black;
+    border-right: 1rem solid gold;
     float: left;
     left: -1rem;
 }
@@ -129,28 +136,23 @@
 /*  Customize SWE Job */
 #swe-job{
     background-color: rgb(209, 200, 200);
-    animation: movedown 1s linear forwards;
 }
 
 /*  Customize Tutor Job */
 #tutor-job{
-    background-color: rgb(22, 21, 21);
-    color: beige;
-    animation: movedown 3s linear forwards;
+    background-color: rgb(186, 160, 160);
+    color: rgb(117, 117, 84);
 } 
 
 /*  Customize TA Job */
 #ta-job{
     background-color: rgb(179, 179, 237);
-    animation: movedown 5s linear forwards;
 }
-
 
 
 /*  Apprentice Job */
 #app-job{
-    background-color: rgb(136, 152, 81);
-    animation: movedown 7s linear forwards;
+    background-color: rgb(94, 134, 169);
 }
 
 
@@ -171,10 +173,26 @@
 }
 
 #phys-ed{
+
+}
+
+/*** Animations */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    
 }
 
 
-/** Line animation */
+/* * Line animation
 #work-section-timeline::after{
     content: '';
     position: absolute;
@@ -205,16 +223,6 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* #work-section-timeline:nth-child(2){
-    animation-delay: 1s;  
-}
-#work-section-timeline:nth-child(3){
-    animation-delay: 3s;  
-}
-#work-section-timeline:nth-child(4){
-    animation-delay: 5s;  
 } */
 
 
