@@ -88,4 +88,10 @@ body{
   flex: 1;
   float: bottom;
   min-height: 20vh;
+  background-color: black;
+}
+
+.footer p{
+  color: white;
+  margin-top: 0rem;
 }

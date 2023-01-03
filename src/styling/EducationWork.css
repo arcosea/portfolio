@@ -184,7 +184,7 @@
     top: 0;
     left: 50%;
     z-index: 0;
-    animation: moveline 8s linear forwards;
+    animation: moveline 7s linear forwards;
 }
 
 @keyframes moveline{    

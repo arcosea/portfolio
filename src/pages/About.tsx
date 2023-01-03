@@ -121,9 +121,8 @@ export function About(){
                 <section className="section">
                     <h3 className="sub-header"> Family & Background </h3>
                     <p>
-                        Family & Friends and the time I spend with them is something I value dearly. I am the eldest of a total of four boys. I am the first in my family to have graduated
-                        High school and attended University! My parents and I were born in Mexico. However, unlike them, I was brought to the United States at a young age
-                        and did not have the pressure to work from an early age to help provide essentials. I had the opportunity and support to be able to attend higher education. 
+                        Family & Friends and the time I spend with them is something I value dearly. I am the eldest of a total of four boys. My parents and I were born in Mexico but my brothers were born in the 
+                        United States. I am the first in my family to have graduated High School and attended University! 
                     </p>
                 </section>
             </div>
@@ -166,7 +165,7 @@ export function About(){
                     </span>
                     <p>
                         Aside from running and soccer, other activies I really enjoy include volleyball, badminton and hiking. I have also recently gotten into Rock Climbing & will
-                        try to incorporate it more in the future.
+                        try to incorporate it more in the future. I also like playing strategy type of games such as Chess.
                     </p>
                 </section>
             </div>
