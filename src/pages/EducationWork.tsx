@@ -27,21 +27,22 @@ export function EducationWork(){
     }, []);
     return (
         <div className="container">
-            <h2 className="section-header hidden"> Work Experience </h2>
+            <div className="section-header">
+                <h2 className="header-name hidden"> Work Experience </h2>
+            </div>
             <section className="section" id="work-section-timeline">
                 {/* SWE Job */}
                 <div className="comp-container-left hidden" id="swe-job">
                     <h3 className="component-name"> Software Engineering Intern</h3>
                     <img src="logos/naimor.png" alt="company logo" id="naimor-img"></img>
                     <span className="left-arrow"></span>
-                    <h4 className="company"> NaiMor, Inc </h4>
+                    <h4 className="company-left"> NaiMor, Inc </h4>
                     <span className="timeline"> August. 2022 - Present</span>
                     <p className="description">
-                        Currently contracted by a <em> metal fabrication company </em> to create user interface that displays one of the products that the company sells and embed it into their Shopify store
-                        so that clients can purchase this product. The user interface allows clients to customize the product based on
-                        different <strong> styles, materials, shape, color, preferred dimensions and other features </strong>. Using this information, the website then assembles and renders
-                        the product using <em> Javascripts 3D Library (3JS) </em>. The user interface also displays the pricing of the current assembly of the product
-                        and updates dynamically whenever a change is made. This project is done in collaborate with another intern under the guidance of a mentor.
+                        Contracted to create a UI to embed into <strong> Shopify </strong> that allows clients to customize a product based on different <strong> 
+                        styles, materials, shape, color, preferred dimensions and other features </strong>. The website assembles and renders
+                        the product using <em> Javascripts 3D Library (3JS) </em> & associates a <strong> price </strong> for the current assembly. 
+                        This project is done in collaborate with another intern under the guidance of a mentor.
                     </p>
                     <p className="note">
                         Will provide <strong><em>link</em></strong> to website once its complete.
@@ -54,7 +55,7 @@ export function EducationWork(){
                     <h3 className="component-name"> Math Tutor</h3>
                     <img src="logos/plu2.png" alt="company logo"></img>
                     <span className="right-arrow"></span>
-                    <h4 className="company"> Pacific Lutheran University </h4>
+                    <h4 className="company-right"> Pacific Lutheran University </h4>
                     <span className="timeline"> August 2022 - Present</span>
                     <p className="description">
                         I am responsible for providing academic assistance to other students through drop-in hours or scheduled one to one appointments for a total
@@ -68,7 +69,7 @@ export function EducationWork(){
                     <h3 className="component-name"> Data Structures Teacher Assistant</h3>
                     <img src="logos/plu.png" alt="company logo"></img>
                     <span className="left-arrow"></span>
-                    <h4 className="company"> Pacific Lutheran University </h4>
+                    <h4 className="company-left"> Pacific Lutheran University </h4>
                     <span className="timeline"> February 2022 - May 2022</span>
                     <p className="description">
                         I was responsible for checking students pre-lab responses & answering any technical or conceptual lab related questions students may have had.
@@ -83,17 +84,14 @@ export function EducationWork(){
                     <h3 className="component-name"> Apprentice</h3>
                     <img src="logos/utiligi.png" alt="company logo"></img>
                     <span className="right-arrow"></span>
-                    <h4 className="company"> Utiligi Telecommunications </h4>
+                    <h4 className="company-right"> Utiligi Telecommunications </h4>
                     <span className="timeline"> June - September 2020, 2021, 2022</span>
                     <p className="description">
                         I was responsible for assisting my coworkers in various types of jobs. Some of the types of jobs I participated in include:
                         <strong> Underground OSP Cabling, Horizontal Directional Drilling (HDD), Hydro Excavating, Trenching and Concrete/Asphalt Restoration, HDD Bore Profiling and Planning
                         , Duct Verification (Rod & Proof), Optic Fiber Installation and Traffic Control</strong>. 
                     </p> 
-                    <p className="description">
-                        Some of the skills gained through this experience include: reading plans, setting up traffic controls, flagging techniques, use and understanding of heavy equipment and tools, the use
-                        of a Hydraulic Excavator, documentation of work, methods of communication and safety protocol.
-                    </p> 
+        
                     <p className="note">
                         <strong>Certifications Gained: </strong>Washington Flagging Permit, CPR 
                     </p>
