@@ -7,6 +7,7 @@ import {Home} from "./pages/Home";
 import {Projects} from "./pages/Projects";
 import { EducationWork } from './pages/EducationWork';
 import Navbar from './NavBar';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -21,10 +22,8 @@ function App() {
         <Route path="/education" element={<EducationWork />} />
       </Routes>
     </div>
-    <div className="footer">
-      <p> footer</p>
-    </div>
-    </>
+    <Footer/>
+  </>
   );
 
 }

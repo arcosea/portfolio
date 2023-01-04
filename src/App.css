@@ -75,6 +75,7 @@ body{
   display: flex;
   gap: 1 rem;
 }
+
 .nav a{
   color: inherit;
   text-decoration: none;
@@ -95,15 +96,34 @@ body{
 
 /* Footer */
 .footer{
-  flex: 1;
-  float: bottom;
-  min-height: 20vh;
   background-color: black;
-  margin-top: 0rem;
-  padding-top: 2rem;
+  color: beige;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 15vh;
 }
 
-.footer p{
-  color: white;
-  margin-top: 0rem;
+.footer ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 1rem;
 }
+
+.left-footer{
+  text-align: left;
+}
+
+.footer li{
+  padding: 0.2em;
+}
+
+.right-footer{
+  text-align: right;
+}
+
+

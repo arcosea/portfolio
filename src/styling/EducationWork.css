@@ -193,7 +193,7 @@
 /*  Customize SWE Job */
 #swe-job{
     background-color: black;
-    border: 5px solid rgb(164, 164, 239);
+    border-bottom: 5px solid rgb(164, 164, 239);
     color: white;
 }
 #naimor{
@@ -215,7 +215,7 @@
 #tutor-job{
     background-color: black;
     color: beige;
-    border: 5px solid rgb(141, 183, 201);
+    border-left: 5px solid rgb(141, 183, 201);
 } 
 
 #plu{
@@ -232,7 +232,7 @@
 #ta-job{
     background-color: black;
     color: rgb(186, 186, 169);
-    border: 5px solid rgb(205, 121, 173);
+    border-right: 5px solid rgb(205, 121, 173);
 }
 
 #lab{
@@ -251,7 +251,7 @@
 #app-job{
     background-color: black;
     color:rgb(206, 199, 199);
-    border: 5px solid rgb(141, 198, 152);
+    border-top: 5px solid rgb(141, 198, 152);
 }
 
 #utiligi{

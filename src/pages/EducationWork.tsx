@@ -125,7 +125,7 @@ export function EducationWork(){
                 {/***  Physics BS  ******/}
                 <div className="comp-container" id="phys-ed">
                     <h3 className="component-name" id="degree-name"> Bachelors of Science in Applied Physics</h3>
-                    <h4 className="component-name"> Pacific Lutheran University</h4>
+                    <h4 className="component-name" id="plu"> Pacific Lutheran University</h4>
                     <div className="degree-info">
                         <span className="timeline"> September. 2018 - Present, <strong> Graduation</strong>: May 2023</span>
                         <span className="minor"> Minor in Mathematics</span>
