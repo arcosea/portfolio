@@ -28,6 +28,7 @@ export function EducationWork(){
 
     const NNGif = "/design/nn.gif";
     const mathGif = "/design/math.gif";
+    const excavatorGif = "/design/exc.gif";
     return (
         <div className="container">
             <div className="section-header">
@@ -65,7 +66,7 @@ export function EducationWork(){
                     </div>
                     <div className="comp-container-right hidden" id="tutor-job">
                         <h3 className="component-name"> Math Tutor</h3>
-                        <img src="logos/plu2.png" alt="company logo"></img>
+                        <img  src="logos/plu2.png" alt="company logo"></img>
                         <span className="right-arrow"></span>
                         <h4 className="company-right" id="plu"> Pacific Lutheran University </h4>
                         <span className="timeline"> August 2022 - Present</span>
@@ -79,7 +80,7 @@ export function EducationWork(){
                 <div className="inner-container">
                     <div className="comp-container-left hidden" id="ta-job">
                         <h3 className="component-name"> Data Structures Teacher Assistant</h3>
-                        <img src="logos/plu.png" alt="company logo"></img>
+                        <img  src="logos/plu.png" alt="company logo"></img>
                         <span className="left-arrow"></span>
                         <h4 className="company-left" id="plu"> Pacific Lutheran University </h4>
                         <span className="timeline"> February 2022 - May 2022</span>
@@ -89,18 +90,17 @@ export function EducationWork(){
                         </p>
                        
                     </div>
-                    <div className="visual">
-                        <img className='img-vis'src={NNGif}></img>
+                    <div className="visual hidden">
+                        <img id='nn-vis'src={NNGif}></img>
                     </div>
                 </div>
 
                 {/* Apprentice Job */}
                 <div className="inner-container">
-                    <div className="visual">
-                    </div>
                     <div className="comp-container-right hidden" id="app-job">
                         <h3 className="component-name"> Apprentice</h3>
-                        <img src="logos/utiligi.png" alt="company logo"></img>
+                        <img id="logo" src="logos/utiligi.png" alt="company logo"></img>
+                        <img id='exc-vis' src={excavatorGif}></img>
                         <span className="right-arrow"></span>
                         <h4 className="company-right" id="utiligi"> Utiligi Telecommunications </h4>
                         <span className="timeline"> June - September 2020, 2021, 2022</span>
@@ -111,7 +111,7 @@ export function EducationWork(){
                         </p> 
             
                         <p className="note">
-                            <strong id="certs">Certifications Gained: </strong>Washington Flagging Permit, CPR 
+                            <strong id="certs">Certifications: </strong>Washington Flagging Permit, CPR 
                         </p>
                     </div>
                 </div>
