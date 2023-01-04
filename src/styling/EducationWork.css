@@ -5,16 +5,24 @@
     background-color: black;
 }
 
+.section-header{
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+}
+
 .header-name{
     background-color: black;
     text-align: center;
-    padding-top: 15rem;
-    padding-bottom: 3rem;
-    margin: 0rem 0 3rem 0;
+    margin: 0rem;
     letter-spacing: 0.1em;
     color: beige;
     font-size: 3rem;
     min-height: 20rem;
+}
+
+.header-name:hover{
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
 }
 
 #work-section-timeline{
@@ -31,6 +39,31 @@
     margin: 0rem;
 }
 
+/** Inner components (job positions) & image*/
+.inner-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.visual{
+    margin: 0%;
+    padding: 0%;
+}
+
+.img-vis{
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    padding: 5% 0% 0% 0%;
+
+}
+
+#math-vis{
+    width: 50%;
+}
 
 /*  Container for each component (Job/education) & images & create left-right pattern */
 .comp-container{
@@ -113,6 +146,7 @@
     float: left;
     left: -1rem;
 }
+
 /* Timeline  & Header for each component */
 .component-name{
     text-decoration: underline;
@@ -142,28 +176,77 @@
 
 /*  Customize SWE Job */
 #swe-job{
-    background-color: beige;
-    border: 5px solid rgb(252, 157, 173);
+    background-color: black;
+    border: 5px solid rgb(164, 164, 239);
+    color: white;
+}
+#naimor{
+    color: rgb(113, 113, 202);
+    text-shadow: 0.1em 0.1em 0.1em white;
+    letter-spacing: 0.2em;
+}
+#shopify{
+    color: rgb(78, 159, 78);
+}
+#parameters{
+    color: rgb(165, 165, 83);
+}
+#threejs{
+    color:aqua;
 }
 
 /*  Customize Tutor Job */
 #tutor-job{
-    background-color: rgb(186, 160, 160);
-    color: rgb(60, 60, 43);
-    border: 5px solid rgb(210, 237, 249);
+    background-color: black;
+    color: beige;
+    border: 5px solid rgb(168, 191, 201);
 } 
+
+#plu{
+    text-shadow: 0.1em 0.1em 0.1em rgb(212, 255, 0);
+    color:rgb(212, 209, 209);
+    letter-spacing: 0.2em;
+}
+
+#ac-sys{
+    color: rgb(75, 163, 75);
+}
 
 /*  Customize TA Job */
 #ta-job{
-    background-color: rgb(179, 179, 237);
-    border: 5px solid rgb(56, 79, 91);
+    background-color: black;
+    color: rgb(186, 186, 169);
+    border: 5px solid rgb(205, 121, 173);
 }
 
+#lab{
+    color:rgb(78, 159, 78);
+}
+
+#num-lab{
+    color: rgb(206, 131, 131)
+}
+
+#cfeed{
+    color:rgb(114, 114, 180);
+}
 
 /*  Apprentice Job */
 #app-job{
-    background-color: rgb(94, 134, 169);
+    background-color: black;
+    color:rgb(206, 199, 199);
     border: 5px solid rgb(187, 200, 201);
+}
+
+#utiligi{
+    text-shadow: 0.1em 0.1em 0.1em orange;
+}
+
+#work-type{
+    color: rgb(217, 160, 160);
+}
+#certs{
+    color: rgb(234, 186, 96);
 }
 
 
@@ -202,20 +285,7 @@
 }
 
 
-/* * Line animation
-#work-section-timeline::after{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 100%;
-    background: rgb(118, 118, 96);
-    top: 0;
-    left: 50%;
-    z-index: 0;
-    animation: moveline 7s linear forwards;
-}
 
-*/
 
 
 
