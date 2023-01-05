@@ -105,6 +105,7 @@ body{
   display: flex;
   justify-content: space-between;
   min-height: 18vh;
+  border-top: solid 2px white;
 }
 
 .footer ul{

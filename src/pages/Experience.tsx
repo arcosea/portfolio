@@ -1,7 +1,14 @@
-import "../styling/EducationWork.css";
+import "../styling/Experience.css";
 import { useEffect, useState, useRef } from 'react';
 import {Link} from "react-router-dom"
 import {Route, Routes, NavLink} from "react-router-dom";
+import { AiOutlineLaptop} from "react-icons/ai";
+import { Gi3DStairs, GiTeacher, GiStopSign} from "react-icons/gi";
+import { FcTreeStructure } from "react-icons/fc";
+import { MdConstruction, MdHealthAndSafety} from "react-icons/md";
+import { GrUserWorker } from "react-icons/gr";
+import {MdWork} from "react-icons/md";
+
 
 export function EducationWork(){
     /*
@@ -29,25 +36,22 @@ export function EducationWork(){
     // Gif Visuals 
     const NNGif = "/design/nn.gif";
     const mathGif = "/design/math.gif";
-    const excavatorGif = "/design/exc.gif";
-
-
     return (
         <div className="container">
             <div className="section-header">
-                <h2 className="header-name hidden"> Work Experience </h2>
+                <h2 className="header-name hidden"> <MdWork id="suitIcon"/> Work Experience <GrUserWorker id="workIcon"/> </h2>
             </div>
             <section className="section" id="work-section-timeline">
                 {/* SWE Job */}
                 <div className="inner-container">
                     <div className="comp-container-left hidden" id="swe-job">
-                        <h3 className="component-name"> Software Engineering Intern</h3>
+                        <h3 className="component-name"> <AiOutlineLaptop id="ltIcon"/> Software Engineering Intern</h3>
                         <img src="logos/naimor.png" alt="company logo" id="naimor-img"></img>
                         <span className="left-arrow"></span>
                         <h4 className="company-left" id="naimor"> NaiMor, Inc </h4>
                         <span className="timeline"> August. 2022 - Present</span>
                         <p className="description">
-                            Contracted to create a UI to embed into <strong id="shopify"> Shopify </strong > that allows clients to customize a product based on different <strong id="parameters"> 
+                            Contracted to create a UI to embed into <strong id="shopify"> Shopify </strong > that allows clients to customize Stairs based on different <strong id="parameters"> 
                             styles, materials, shape, color, preferred dimensions and other features. </strong> 
                         </p>
                         <p className="description">
@@ -56,8 +60,8 @@ export function EducationWork(){
                             This project is done in collaborate with another intern under the guidance of a mentor.
                         </p>
                         <p className="note">
-                            <strong><em>Link to Website: </em></strong>  
-                            <a target="_blank" href="https://sigafonl.github.io/Stairmaster/"> Stairmaster</a>
+                            <strong><em id="link">Link to Website: </em></strong>  
+                            <a target="_blank" id="naimor_link" href="https://sigafonl.github.io/Stairmaster/"> <Gi3DStairs /> Stairmaster</a>
                         </p>  
                     </div>
                     <div className="visual">
@@ -69,7 +73,7 @@ export function EducationWork(){
                     <div className="visual">
                     </div>
                     <div className="comp-container-right hidden" id="tutor-job">
-                        <h3 className="component-name"> Math Tutor</h3>
+                        <h3 className="component-name"> <GiTeacher id="teachIcon"/> Math Tutor</h3>
                         <img  src="logos/plu2.png" alt="company logo"></img>
                         <span className="right-arrow"></span>
                         <h4 className="company-right" id="plu"> Pacific Lutheran University </h4>
@@ -83,7 +87,7 @@ export function EducationWork(){
                 {/* TA Job */}
                 <div className="inner-container">
                     <div className="comp-container-left hidden" id="ta-job">
-                        <h3 className="component-name"> Data Structures Teacher Assistant</h3>
+                        <h3 className="component-name"> <FcTreeStructure /> Data Structures Teacher Assistant</h3>
                         <img  src="logos/plu.png" alt="company logo"></img>
                         <span className="left-arrow"></span>
                         <h4 className="company-left" id="plu"> Pacific Lutheran University </h4>
@@ -102,9 +106,8 @@ export function EducationWork(){
                 {/* Apprentice Job */}
                 <div className="inner-container">
                     <div className="comp-container-right hidden" id="app-job">
-                        <h3 className="component-name"> Apprentice</h3>
+                        <h3 className="component-name"> <MdConstruction id="toolsIcon" /> Apprentice</h3>
                         <img id="logo" src="logos/utiligi.png" alt="company logo"></img>
-                        <img id='exc-vis' src={excavatorGif}></img>
                         <span className="right-arrow"></span>
                         <h4 className="company-right" id="utiligi"> Utiligi Telecommunications </h4>
                         <span className="timeline"> June - September 2020, 2021, 2022</span>
@@ -115,7 +118,7 @@ export function EducationWork(){
                         </p> 
             
                         <p className="note">
-                            <strong id="certs">Certifications: </strong>Washington Flagging Permit, CPR 
+                            <strong id="certs">Certifications: </strong>Washington Flagging Permit <GiStopSign id="stopIcon" /> , CPR <MdHealthAndSafety id="safetyIcon" />
                         </p>
                     </div>
                 </div>

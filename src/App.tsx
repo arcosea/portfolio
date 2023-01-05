@@ -5,7 +5,8 @@ import {Route, Routes, NavLink} from "react-router-dom";
 import {About} from "./pages/About";
 import {Home} from "./pages/Home";
 import {Projects} from "./pages/Projects";
-import { EducationWork } from './pages/EducationWork';
+import { EducationWork } from './pages/Experience';
+import { Education } from './pages/Education';
 import Navbar from './NavBar';
 import Footer from './Footer';
 
@@ -19,7 +20,8 @@ function App() {
         <Route path="/" element={< Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/projects" element={<Projects />}/>
-        <Route path="/education" element={<EducationWork />} />
+        <Route path="/experience" element={<EducationWork />} />
+        <Route path="/education" element={<Education />} />
       </Routes>
     </div>
     <Footer/>
