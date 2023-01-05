@@ -28,11 +28,18 @@ export function Education(){
     }, []);
 
     return (
-        <div className="container">
+        <div className="edu-container">
             <div className="section-header">
                 <h2 className="header-name hidden"> <GiMaterialsScience/> Education  <GiBlackBook/> </h2>
             </div>
-        
+            <div className="phys-edu">
+                <h3 className="deg-name"> Applied Physics (BS) </h3>
+                <div className="degree-info">
+                        <span className="timeline"> <strong> Graduation</strong>: May 2023</span>
+                        <span className="minor"> Minor in Mathematics</span>
+                        <span className="gpa"> Cumulative GPA: 3.91 </span>
+                </div>
+            </div>
         
         
         
