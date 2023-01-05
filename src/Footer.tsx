@@ -1,5 +1,7 @@
 import {Link} from "react-router-dom";
+import { FaLinkedin, FaPhoneAlt, FaEnvelope, FaGithub } from 'react-icons/fa';
 
+// Class 
 export default function Footer(){
     return (
         <nav className="footer">
@@ -13,21 +15,24 @@ export default function Footer(){
                 </li>
 
                 <li>
-                    Personal Portfolio
+                    About Me
                 </li>
             </ul>
 
             <ul className="right-footer">
                 <li>
-                    arcosea@plu.edu
+                   <FaEnvelope className="icon"/> arcosea@plu.edu
                 </li>
 
                 <li>
-                    253 282 6040
+                    <FaPhoneAlt className="icon"/> 253 282 6040
                 </li>
 
                 <li>
-                    linkedin.com/in/erick-arcos2023/
+                    <FaLinkedin className="icon"/> LinkedIn 
+                </li>
+                <li>
+                    <FaGithub className="icon"/> GitHub
                 </li>
             </ul>
         </nav>

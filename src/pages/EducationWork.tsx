@@ -1,7 +1,7 @@
 import "../styling/EducationWork.css";
 import { useEffect, useState, useRef } from 'react';
-
-
+import {Link} from "react-router-dom"
+import {Route, Routes, NavLink} from "react-router-dom";
 
 export function EducationWork(){
     /*
@@ -26,9 +26,12 @@ export function EducationWork(){
         })
     }, []);
 
+    // Gif Visuals 
     const NNGif = "/design/nn.gif";
     const mathGif = "/design/math.gif";
     const excavatorGif = "/design/exc.gif";
+
+
     return (
         <div className="container">
             <div className="section-header">
@@ -53,7 +56,8 @@ export function EducationWork(){
                             This project is done in collaborate with another intern under the guidance of a mentor.
                         </p>
                         <p className="note">
-                            Will provide <strong><em>link</em></strong> to website once its complete.
+                            <strong><em>Link to Website: </em></strong>  
+                            <a target="_blank" href="https://sigafonl.github.io/Stairmaster/"> Stairmaster</a>
                         </p>  
                     </div>
                     <div className="visual">

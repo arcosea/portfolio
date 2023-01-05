@@ -104,7 +104,7 @@ body{
   height: 5rem;
   display: flex;
   justify-content: space-between;
-  min-height: 15vh;
+  min-height: 18vh;
 }
 
 .footer ul{
@@ -123,7 +123,11 @@ body{
 }
 
 .right-footer{
-  text-align: right;
+  align-items: left;
 }
 
 
+/** Icon */
+.icon{
+  width: 2em;
+}
