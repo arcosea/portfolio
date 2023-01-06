@@ -30,16 +30,28 @@ export function Education(){
     return (
         <div className="edu-container">
             <div className="section-header">
-                <h2 className="header-name hidden"> <GiMaterialsScience/> Education  <GiBlackBook/> </h2>
+                <h2 className="header-name hidden"> <GiMaterialsScience className="spinIcon" id="particleIcon"/> Education  <GiBlackBook className="spinIcon" id="bookIcon"/> </h2>
             </div>
-            <div className="phys-edu">
-                <h3 className="deg-name"> Applied Physics (BS) </h3>
-                <div className="degree-info">
+
+            <section className="ed-section">
+                {/***  Physics BS  ******/}
+                <div className="comp-container" id="phys-ed">
+                    <h3 className="component-name" id="degree-name"> Bachelors of Science in Applied Physics</h3>
+                    <h4 className="component-name" id="plu-name"> Pacific Lutheran University</h4>
+                    <div className="degree-info">
                         <span className="timeline"> <strong> Graduation</strong>: May 2023</span>
                         <span className="minor"> Minor in Mathematics</span>
-                        <span className="gpa"> Cumulative GPA: 3.91 </span>
+                        <span className="gpa"> <strong> Cumulative GPA: </strong> 3.91 </span>
+                    </div>
                 </div>
+            </section>
+            <div>
+
+
             </div>
+
+
+
         
         
         

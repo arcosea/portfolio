@@ -20,8 +20,9 @@
     min-height: 50vh;
 }
 
-/*** Degree info */
-.deg-name{
+/*** BS Info section */
+.ed-section{
+    border-bottom: 2px solid black;
     padding: 0rem;
     margin: 0rem;
 }
@@ -31,7 +32,22 @@
     flex-direction: column;
 }
 
-.degree-info span{ 
-    margin: 0.5rem 0rem 0rem 1rem;
-    font-size: large;
+.degree-info span{
+    padding: 0.5rem;
+}
+
+/** Icons */
+.spinIcon{
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+        color: rgb(104, 184, 104);
+    }
+    to{
+        transform: rotate(360deg);
+        color: rgb(84, 84, 220);
+    }
 }

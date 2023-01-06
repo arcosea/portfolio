@@ -76,7 +76,7 @@ export function EducationWork(){
                         <h3 className="component-name"> <GiTeacher id="teachIcon"/> Math Tutor</h3>
                         <img  src="logos/plu2.png" alt="company logo"></img>
                         <span className="right-arrow"></span>
-                        <h4 className="company-right" id="plu"> Pacific Lutheran University </h4>
+                        <h4 className="company-right" id="plu-name"> Pacific Lutheran University </h4>
                         <span className="timeline"> August 2022 - Present</span>
                         <p className="description">
                             Responsible for providing <strong id="ac-sys"> academic assistance </strong> to other students through drop-in hours or scheduled one to one appointments.
@@ -90,7 +90,7 @@ export function EducationWork(){
                         <h3 className="component-name"> <FcTreeStructure /> Data Structures Teacher Assistant</h3>
                         <img  src="logos/plu.png" alt="company logo"></img>
                         <span className="left-arrow"></span>
-                        <h4 className="company-left" id="plu"> Pacific Lutheran University </h4>
+                        <h4 className="company-left" id="plu-name"> Pacific Lutheran University </h4>
                         <span className="timeline"> February 2022 - May 2022</span>
                         <p className="description">
                             I was responsible for checking students pre-lab responses & answering any <em id="lab"> technical or conceptual lab related questions </em>students may have had.

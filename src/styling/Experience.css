@@ -61,15 +61,6 @@
 }
 
 
-/* #exc-vis{
-    position: absolute;
-    width: 100%;
-    border-radius: 0%;
-    right: 160%;
-    z-index: 1;
-    margin-top: 50%;
-} */
-
 /*  Container for each component (Job/education) & images & create left-right pattern */
 .comp-container{
     text-align: center;
@@ -99,10 +90,10 @@
     display: grid;
     text-align: center;
     margin-left: 55%;
-    margin-right: 15%;
+    margin-right: 10%;
     margin-bottom: 3rem;
-    width: 40%;
-    left: 10%;
+    width: 50%;
+    left: 0%;
     border-radius: 10px;
     position: relative;
     z-index: 5;
@@ -229,8 +220,8 @@
     border-left: 5px solid rgb(141, 183, 201);
 } 
 
-#plu{
-    text-shadow: 0.1em 0.1em 0.1em rgb(212, 255, 0);
+#plu-name{
+    text-shadow: 0.1em 0.1em 0.1em white;
     color:rgb(212, 209, 209);
     letter-spacing: 0.2em;
 }
@@ -281,6 +272,7 @@
 .degree-info{
     display: flex;
     flex-direction: column;
+    margin: 2rem;
 }
 
 .course-container{
@@ -293,9 +285,6 @@
     letter-spacing: 0.1em;
 }
 
-#phys-ed{
-
-}
 
 /*** Animations */
 .hidden{

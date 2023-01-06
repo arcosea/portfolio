@@ -29,12 +29,15 @@ export function Projects(){
       })
       
       // Add renderer to only this page
-      document.querySelector(".projects")?.appendChild(renderer.domElement)
+      document.querySelector(".projects")?.append(renderer.domElement)
+
+      // Give canvas an id
+      document.querySelector("canvas")!.id = "spa";
 
       // Create geoemtry for stars & vertices for
       starGeo = new THREE.BufferGeometry();
       let starPoints = []
-      let numStars = 50000;
+      let numStars = 5000;
 
       // Create random vertices for stars
       for (let i = 0; i < numStars; i++) {
