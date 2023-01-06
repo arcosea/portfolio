@@ -182,6 +182,8 @@
     font-size:large;
 }
 
+
+
 /*  Customize SWE Job */
 #swe-job{
     background-color: black;
@@ -202,15 +204,27 @@
 #threejs{
     color:aqua;
 }
+.note-link{
+    animation: jump 0.5s ease-in forwards infinite;
+} 
 
 #naimor_link{
-    text-decoration: none;
+    position:relative;
+    text-decoration: underline;
     color:bisque;
 }
 
 #link{
     color:white;
-    text-decoration: underline;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-0.5rem);
+    }
 }
 
 /*  Customize Tutor Job */

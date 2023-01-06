@@ -1,1 +1,23 @@
 
+/**** Header & Container */
+.projects{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    position: relative;
+    text-align: center;
+}
+#proj-header{
+    color: white;
+    z-index: 5;
+}
+
+/*** 3JS Canvas */
+#spaceCanvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 0;
+  }

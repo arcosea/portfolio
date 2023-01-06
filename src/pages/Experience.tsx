@@ -59,8 +59,8 @@ export function EducationWork(){
                             the product using <em id="threejs"> Javascripts 3D Library (3JS) </em> & associates a <strong> price </strong> for the current assembly. 
                             This project is done in collaborate with another intern under the guidance of a mentor.
                         </p>
-                        <p className="note">
-                            <strong><em id="link">Link to Website: </em></strong>  
+                        <p className="note-link">
+                            <strong><em id="link"> Website Link: </em></strong>  
                             <a target="_blank" id="naimor_link" href="https://sigafonl.github.io/Stairmaster/"> <Gi3DStairs /> Stairmaster</a>
                         </p>  
                     </div>
