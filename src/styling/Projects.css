@@ -6,11 +6,70 @@
     flex-direction: column;
     background-color: beige;
     position: relative;
-    text-align: center;
 }
-#proj-header{
+
+#proj-site-header{
     color: white;
     z-index: 5;
+    margin-top: 3rem;
+    min-height: 50vh;
+    text-align: center;
+}
+
+/** Container for each project*/
+.proj-container{
+    border: 2px solid rgb(221, 138, 240);
+    z-index: 5;
+    width: 70%;
+    margin-left: 15%;
+    min-height: 15vh;
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+    /* transform: matrix(1, 0, 0, 1, 0, 0) */
+}
+
+.proj-title{
+    color: beige;
+    left: 0;
+    font-size: 1.75rem;
+    margin: 1rem;
+}
+
+.proj-desc{
+    color: beige;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.proj-note{
+    color: rgb(221, 138, 240);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+
+/** Reveal Animation */
+.hide{
+    background-color: rgb(221, 138, 240);
+    color: rgb(221, 138, 240);
+}
+
+.show{
+    animation: unreveal 2s ease;
+}
+
+@keyframes unreveal{
+    0%{
+        width: 100%;
+        background-color: rgb(221, 138, 240);
+        color: rgb(221, 138, 240);
+    }
+    33%{
+        width: 66%;
+        background-color: rgb(221, 138, 240);
+        color: rgb(221, 138, 240);
+    }
+
 }
 
 /*** 3JS Canvas */
@@ -20,4 +79,6 @@
     left: 0;
     opacity: 1;
     z-index: 0;
-  }
+    min-height: 100%;
+}
+
