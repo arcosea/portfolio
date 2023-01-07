@@ -16,17 +16,23 @@
     text-align: center;
 }
 
-#proj-type-header{
-    color: white;
+.proj-type-header{
     z-index: 5;
     margin-left: 10%;
     font-size: larger;
     padding-bottom: 3rem;
 }
 
+#swe-type{
+    color:#c22085;
+}
+
+#ep-type{
+    color:rgb(98, 20, 162);
+}
+
 /** Container for each project*/
 .proj-container{
-    border: 2px solid #c22085;
     z-index: 5;
     width: 70%;
     margin-left: 15%;
@@ -36,8 +42,26 @@
     position: relative;  
 }
 
+#odd-proj{
+    border: 2px solid #c22085;
+}
+
+#even-proj{
+    border: 2px solid rgb(120, 20, 162)
+}
+
+#last-proj{
+    margin-bottom: 3rem;
+    border: 2px solid rgb(120, 20, 162)
+}
+
+.proj-gap{
+    min-height: 20vh;
+}
+
+/** Content inside container */
 .proj-title{
-    color: beige;
+    color: bisque;
     left: 0;
     font-size: 1.75rem;
     margin: 1rem;

@@ -35,15 +35,19 @@ export function Projects(){
         })
     }, []);
 
-    let projectsOpen = "< Projects >"
+    let sweOpen = "< SoftwareProjects >";
+    let sweClose = "< SoftwareProjects />";
+
+    let epOpen = "< EngineeringPhysicsProjects >";
+    let epClose = "< EngineeringPhysicsProjects />";
     return (
       <div className='projects' >
         <SpaceCanvas/>
-        <h1 id="proj-site-header"> {projectsOpen}</h1>
+        <h1 id="proj-site-header"> Projects </h1>
 
-        <h2 id="proj-type-header"> Software Projects </h2>
+        <h2 className="proj-type-header" id="swe-type"> {sweOpen} </h2>
         {/** Stair master */}
-        <div className="proj-container">
+        <div className="proj-container" id="odd-proj">
             <span className='proj-title'> <Gi3DStairs/> StairMaster</span>
             <p className='proj-desc'> A responsive website for <em id="naimor-inc"> NaiMor, Inc </em> that allows customers to style stairs for purchase based on design shape, material, color, size and other features. </p>
             <span className='proj-note'>
@@ -54,7 +58,7 @@ export function Projects(){
             </span>
         </div>
         {/** Star Wars  */}
-        <div className="proj-container">
+        <div className="proj-container" id="even-proj">
             <span className='proj-title'> <FaJedi/> Star Wars Image Generator </span>
             <p className='proj-desc'>
                 Collaborated with a group to create a Website that allows users search a Star Wars database from 5 unique categories & generates an image
@@ -69,7 +73,7 @@ export function Projects(){
         </div>
 
         {/** Lego Finder */}
-        <div className="proj-container">
+        <div className="proj-container" id="odd-proj">
             <span className='proj-title'> <TbLego/> LegoFinder</span>
             <p className='proj-desc'> A Object Detection web application using a custom 1000+ image dataset that allows users to detect between 5 of the top 20 most common 
                     Lego pieces in any image taken with 70% accuracy or higher. </p>
@@ -82,7 +86,7 @@ export function Projects(){
         </div>
 
         {/** Star Wars */}
-        <div className="proj-container">
+        <div className="proj-container" id="last-proj">
             <span className='proj-title'> <BsStars/> Star Battle Puzzle</span>
             <p className='proj-desc'> Collaborated with a group to design & implement a UI for a sudoku-like puzzle that users can play. </p>
             <span className='proj-note'>
@@ -92,6 +96,21 @@ export function Projects(){
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
             </span>
         </div>
+
+        {/* End swe projects & start eng/phys projects */}
+        <h2 className="proj-type-header" id="swe-type">  {sweClose} </h2>
+        <div className="proj-gap"></div>
+        <h2 className="proj-type-header" id="ep-type">  {epOpen} </h2>
+
+        {/* LaserDrive  */}
+
+
+        {/** SmartCar */}
+
+
+        {/** Arduino Controller  */}
+
+        <h2 className="proj-type-header" id="ep-type">  {epClose} </h2>
 
 
       </div>
