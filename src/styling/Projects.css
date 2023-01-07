@@ -11,21 +11,21 @@
 #proj-site-header{
     color: white;
     z-index: 5;
-    margin-top: 3rem;
-    min-height: 50vh;
+    margin-top: 20rem;
+    min-height: 20rem;
     text-align: center;
 }
 
 /** Container for each project*/
 .proj-container{
-    border: 2px solid rgb(221, 138, 240);
+    border: 2px solid #c22085;
     z-index: 5;
     width: 70%;
     margin-left: 15%;
     min-height: 15vh;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     padding-bottom: 1rem;
-    /* transform: matrix(1, 0, 0, 1, 0, 0) */
+    position: relative;  
 }
 
 .proj-title{
@@ -36,42 +36,99 @@
 }
 
 .proj-desc{
-    color: beige;
+    color: whitesmoke;
     font-size: 1.5rem;
     margin: 1rem;
 }
 
 .proj-note{
-    color: rgb(221, 138, 240);
+    color: #c22085;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.hidden-note{
+    color: #c22085;
     font-size: 1.5rem;
     margin: 1rem;
 }
 
 
-/** Reveal Animation */
-.hide{
-    background-color: rgb(221, 138, 240);
-    color: rgb(221, 138, 240);
+/** Animation of swipe */
+.reveal::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    width: 0%;
+    bottom: 0;
+    z-index: 5;
+    background-color: #c22085;
+    animation: swipe-reveal 1s ease-out 0.5s forwards;
 }
 
-.show{
-    animation: unreveal 2s ease;
-}
-
-@keyframes unreveal{
+@keyframes swipe-reveal {
     0%{
+        width: 0%;
+        right: 100%;
+        left: 0%;
+    }
+    50%{
+        left: 0%;
         width: 100%;
-        background-color: rgb(221, 138, 240);
-        color: rgb(221, 138, 240);
+        right: 0%;
+        background-color: rgb(120, 20, 162);
+        
     }
-    33%{
-        width: 66%;
-        background-color: rgb(221, 138, 240);
-        color: rgb(221, 138, 240);
+    100%{
+        width: 0%;
+        left: 100%;
     }
-
 }
 
+/** Custom colors for names */
+/* #naimor-inc{
+    color: rgb(100, 100, 212);
+} */
+
+/*** Tech stack message */
+[data-msg]{
+    position: relative;
+}
+
+/* , [data-msg]:hover::before */
+[data-msg]:focus::before, [data-msg]:hover::before{
+    content: attr(data-msg);
+    position: absolute;
+    width: 50%;
+    min-width: 200px;
+    padding: 1rem;
+    background-color: transparent;
+    left: 50%;
+    top: -1rem;
+    transform: translate(-50%, 100%);
+    color: red;
+}
+
+
+/** icons */
+#tech-stack-icon{
+    color:white;
+}
+
+span.tooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #FFFFFF transparent transparent;
+    top: 11px;
+    left: -24px;
+}
 /*** 3JS Canvas */
 #spaceCanvas{
     position: absolute;
