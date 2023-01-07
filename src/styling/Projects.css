@@ -16,6 +16,14 @@
     text-align: center;
 }
 
+#proj-type-header{
+    color: white;
+    z-index: 5;
+    margin-left: 10%;
+    font-size: larger;
+    padding-bottom: 3rem;
+}
+
 /** Container for each project*/
 .proj-container{
     border: 2px solid #c22085;
@@ -89,9 +97,9 @@
 }
 
 /** Custom colors for names */
-/* #naimor-inc{
+#naimor-inc{
     color: rgb(100, 100, 212);
-} */
+}
 
 /*** Tech stack message */
 [data-msg]{
@@ -102,14 +110,15 @@
 [data-msg]:focus::before, [data-msg]:hover::before{
     content: attr(data-msg);
     position: absolute;
-    width: 50%;
-    min-width: 200px;
+    width: 400%;
+    min-width: 100%;
     padding: 1rem;
     background-color: transparent;
     left: 50%;
     top: -1rem;
     transform: translate(-50%, 100%);
-    color: red;
+    color: bisque;
+    font-size:large;
 }
 
 

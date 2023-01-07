@@ -61,7 +61,6 @@ export function SpaceCanvas(){
     }
     // Rendering loop
     function animate() {
-      //space.translateY(0.01);
       space.rotateX(0.0025);
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
