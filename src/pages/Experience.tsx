@@ -10,7 +10,7 @@ import { GrUserWorker } from "react-icons/gr";
 import {MdWork} from "react-icons/md";
 
 
-export function EducationWork(){
+export function Experience(){
     /*
     *  Constantly create animation
     */

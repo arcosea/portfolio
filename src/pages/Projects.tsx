@@ -12,6 +12,11 @@ import {BsStars, BsController} from "react-icons/bs";
 import {FaJedi, FaCarSide} from "react-icons/fa";
 import {SiProbot} from "react-icons/si";
 import {GiSpinningBlades, GiSoundWaves, GiCannonBall} from "react-icons/gi";
+import { Experience } from './Experience';
+import { Link, Route, Routes } from 'react-router-dom';
+import { StarWarsProject } from './StarWarsProject';
+import { render } from 'react-dom';
+import { Home } from './Home';
 
 /**
  * Class that displays all projects
@@ -117,11 +122,12 @@ export function Projects(){
                 based on the top result.
             </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" href="https://lego-finder-7ed0f.web.app/"> <AiOutlineCaretRight/> View Website</a>
+                <Link to="/projects/starwars"> View Demo </Link>
             </span>
             <span className='hidden-note' data-msg="React, Typescript, Python, Docker, OpenAI, HTML/CSS, PostgresSQL, pgAdmin, Github">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
             </span>
+        
         </div>
 
         {/** Lego Finder */}
