@@ -1,9 +1,9 @@
 
 /* Header & container */
-h1{
+/* h1{
     color:black;
     display: inline;
-}
+} */
 
 .home{
     min-height: 100vh;
@@ -11,42 +11,18 @@ h1{
     flex-direction: column;
     background-color: beige;
     position: relative;
-    z-index: 20;
     text-align: center;
 }
 
-/* Learn more*/
-#learn{
-    margin: 1rem;
-    padding-bottom: 1rem;
+
+
+/* 3js Canvas */
+#welcomeCanvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
 }
-
-#learn p{
-    font-weight: bolder;
-}
-
-
-/* Links */
-
-#link{
-    text-decoration: none;
-    color: blue;
-}
-
-
-#link:hover{
-    background-color: black;
-    color: beige;
-}
-
-
-/** Canvas for 3js **/
-canvas {
-  position: absolute;
-  opacity: 0.1;
-}
-
-
 
 
 
