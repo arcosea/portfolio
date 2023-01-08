@@ -51,17 +51,34 @@
 }
 
 #even-s{
-    border: 2px solid rgb(120, 20, 162)
+    border: 2px solid rgb(120, 20, 162);
 }
 
 #last-proj{
     margin-bottom: 3rem;
-    border: 2px solid rgb(120, 20, 162)
+    border: 2px solid rgb(120, 20, 162);
 }
 
+#ld-proj{
+    border: 2px solid rgb(120, 20, 162);
+}
+
+#sc-proj{
+    border: 2px solid rgb(46, 113, 237);
+}
+
+#lc-proj{
+    border: 2px solid rgb(81, 153, 236);
+}
+
+#mi-proj{
+    border: 2px solid rgb(30, 231, 30);
+}
 .proj-gap{
     min-height: 20vh;
 }
+
+
 
 /** Content inside container */
 .proj-title{
@@ -197,10 +214,146 @@
 }
 
 
-/** icons */
+/** icons  and animations */
 #tech-stack-icon{
     color:white;
 }
+
+#scIcon{
+    color: rgb(46, 113, 237);
+    background-color:rgb(245, 245, 87);
+}
+ 
+#swIcon{
+    animation: flipColor linear 1s infinite;
+}
+@keyframes flipColor{
+    0%{
+       color: rgb(108, 221, 223);
+       transform:rotateY(0deg);
+    }
+    50%{
+        color: rgb(245, 245, 87);
+        transform:rotateY(180deg);
+    }
+    100%{
+        color: rgb(108, 221, 223);
+        transform:rotateY(0deg);
+     }
+}
+
+#sbIcon{
+    animation: altColor linear 2s infinite;
+}
+@keyframes altColor{
+    0%{
+       color: whitesmoke;
+    }
+    33%{
+        color: rgb(245, 245, 87);
+    }
+    66%{
+        color: rgb(108, 221, 223);
+    }
+    100%{
+        color: whitesmoke;
+     }
+}
+
+#ldIcon{
+    animation: drive 1s ease-in infinite;
+}
+@keyframes drive{
+    0%{
+        opacity:0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+     }
+}
+
+#cIcon{
+    animation: bounce 1s linear infinite;
+}
+@keyframes bounce{
+    0%{
+        transform: rotate(45deg);
+
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+
+
+#lcIcon{
+    animation: bladeSpin 1s linear infinite;
+}
+@keyframes bladeSpin{
+    0%{
+        transform: rotate(0deg);
+        color: rgb(81, 153, 236);
+    }
+    50%{
+        transform: rotate(180deg);
+        color: white;
+    }
+    100%{
+        transform: rotate(360deg);
+        color: rgb(81, 153, 236);
+    }
+}
+
+
+/* Project titles colors */
+#legoProj{
+    color: rgb(223, 223, 108);
+}
+
+#swProj{
+    color: rgb(108, 221, 223);
+}
+
+#sbProj{
+    color: rgb(224, 185, 106);
+}
+
+#ldProj{
+    color: rgb(226, 81, 81);
+}
+
+#scProj{
+    color: rgb(46, 113, 237);
+}
+
+#cProj{
+    color: rgb(44, 214, 44);
+}
+
+#lcProj{
+    color: rgb(81, 153, 236);
+}
+
+#miProj{
+    color: rgb(30, 231, 30);
+}
+
+#ncProj{
+    color: rgb(232, 159, 50);
+}
+
 
 span.tooltip:after {
     content: "";

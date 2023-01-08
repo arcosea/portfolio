@@ -11,7 +11,7 @@ import {RiStackFill} from "react-icons/ri";
 import {BsStars, BsController} from "react-icons/bs";
 import {FaJedi, FaCarSide} from "react-icons/fa";
 import {SiProbot} from "react-icons/si";
-import {GiSpinningBlades, GiSoundWaves} from "react-icons/gi";
+import {GiSpinningBlades, GiSoundWaves, GiCannonBall} from "react-icons/gi";
 
 /**
  * Class that displays all projects
@@ -105,11 +105,12 @@ export function Projects(){
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
             </span>
         </div>
+
         {/** Star Wars  */}
         <div className="proj-s-container" id="even-s">
-            <span className='proj-title'> <FaJedi/> Star Wars Image Generator </span>
+            <span className='proj-title' id="swProj"> <FaJedi id="swIcon"/> Star Wars Image Generator </span>
             <p className='proj-desc'>
-                Collaborated with a group to create a Website that allows users search a Star Wars database from 5 unique categories & generates an image
+                Collaborated with a group to create a Website that allows users search a Star Wars PostGres database from 5 unique categories & generates an image
                 based on the top result.
             </p>
             <span className='proj-note'>
@@ -122,8 +123,8 @@ export function Projects(){
 
         {/** Lego Finder */}
         <div className="proj-s-container" id="odd-s">
-            <span className='proj-title'> <TbLego/> LegoFinder</span>
-            <p className='proj-desc'> A Object Detection web application using a custom 1000+ image dataset that allows users to detect between 5 of the top 20 most common 
+            <span className='proj-title' id='legoProj'> <TbLego/> LegoFinder</span>
+            <p className='proj-desc'> An Object Detection web application using a custom 1000+ image dataset that allows users to detect between 5 of the top 20 most common 
                     Lego pieces in any image taken with 70% accuracy or higher. </p>
             <span className='proj-note'>
                 <a target="_blank" id="view-website" href="https://lego-finder-7ed0f.web.app/"> <AiOutlineCaretRight/> View Website</a>
@@ -135,7 +136,7 @@ export function Projects(){
 
         {/** Star Wars */}
         <div className="proj-s-container" id="last-proj">
-            <span className='proj-title'> <BsStars/> Star Battle Puzzle</span>
+            <span className='proj-title' id="sbProj"> <BsStars id="sbIcon" /> Star Battle Puzzle</span>
             <p className='proj-desc'> Collaborated with a group to design & implement a UI for a sudoku-like puzzle that users can play. </p>
             <span className='proj-note'>
                 <a target="_blank" id="view-website" href=""> <AiOutlineCaretRight/> View Website</a>
@@ -151,8 +152,8 @@ export function Projects(){
         <h2 className="proj-type-header" id="e-type">  {eOpen} </h2>
 
         {/* LaserDrive  */}
-        <div className="proj-container stash" >
-            <span className='proj-title'> <FaCarSide/> LaserDrive </span>
+        <div className="proj-container stash" id="ld-proj">
+            <span className='proj-title' id="ldProj"> <FaCarSide id="ldIcon" /> LaserDrive </span>
             <p className='proj-desc'> Collaborating with a group to build an Autonomous F1Tenth RC Car. </p>
             <span className='proj-note'>
                 <a target="_blank" id="view-website" href=""> <AiOutlineCaretRight/> View Website</a>
@@ -163,8 +164,8 @@ export function Projects(){
         </div>
 
         {/** SmartCar */}
-        <div className="proj-container stash" >
-            <span className='proj-title'> <SiProbot/> Arduino SmartCar </span>
+        <div className="proj-container stash" id="sc-proj">
+            <span className='proj-title' id="scProj"> <SiProbot id="scIcon"/> SmartCar </span>
             <p className='proj-desc'> Infrared remote (IR) controlled car with obstacle detection, avoidance and a follower modes
             aside from simple driving commands. Also attached OLED Screen that displays temperature, humidity and time. </p>
             <span className='proj-note'>
@@ -177,7 +178,7 @@ export function Projects(){
 
         {/** Arduino Controller  */}
         <div className="proj-container stash" id="last-proj">
-            <span className='proj-title'> <BsController/> Arduino Controller </span>
+            <span className='proj-title' id="cProj"> <BsController id="cIcon"/> RF Controller </span>
             <p className='proj-desc'> Built a custom RF transmitter & receiver control DC motors, servo sensor and an LED using joysticks & potentiometer. 
                                         Also decoded an IR controller & repurposed it to change colors of an LED strip.
             </p>
@@ -195,8 +196,8 @@ export function Projects(){
         <h2 className="proj-type-header" id="p-type">  {pOpen} </h2>
 
         {/** Lift Propulsion  */}
-        <div className="proj-container blur" >
-            <span className='proj-title'> <GiSpinningBlades/> Lift Propeller Coefficient </span>
+        <div className="proj-container blur" id="lc-proj">
+            <span className='proj-title' id="lcProj"> <GiSpinningBlades id="lcIcon"/> Lift Propeller Coefficient </span>
             <p className='proj-desc'> An experimental study & analysis on the lift generated from rotating a 2-bladed propeller.
             </p>
             <span className='proj-note'>
@@ -208,8 +209,8 @@ export function Projects(){
         </div>
 
         {/** Michelson Interferometer */}
-        <div className="proj-container blur" >
-            <span className='proj-title'> <GiSoundWaves/> Michelson interferometer Experiment. </span>
+        <div className="proj-container blur" id="mi-proj">
+            <span className='proj-title' id="miProj"> <GiSoundWaves id="miIcon"/> Michelson interferometer Experiment. </span>
             <p className='proj-desc'> Observed changes in destructive interference patterns created by
                     interferometer and determined the wavelength of an HeNe laser to be
                     within 3.8% of expected value. Also determined the index of refraction for
@@ -225,7 +226,7 @@ export function Projects(){
 
         {/** Nuclear Scattering */}
         <div className="proj-container blur" id="last-proj">
-            <span className='proj-title'> <GiSoundWaves/> Nuclear Scattering Simulation. </span>
+            <span className='proj-title' id="ncProj"> <GiCannonBall id="ncIcon"/> Nuclear Scattering Simulation. </span>
             <p className='proj-desc'> Performed an analogous experiment where ball bearings were fired at a cylindrical target &
                     scattering angles were observed. Determined its radius to be within 4.3% of
                     actual value. Gained experience with uncertainty analysis & writing a
