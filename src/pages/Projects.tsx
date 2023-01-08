@@ -86,11 +86,14 @@ export function Projects(){
     let miPDF = "../papers/MichelsonInterferometer.pdf";
     let ncPDF = "../papers/NuclearScattering.pdf"
 
+    // page title
+    let title = "< Projects >";
+
     // HTML project
     return (
       <div className='projects' >
         <SpaceCanvas/>
-        <h1 id="proj-site-header"> Projects </h1>
+        <h1 id="proj-site-header"> {title} </h1>
 
         <h2 className="proj-type-header" id="swe-type"> {sweOpen} </h2>
         {/** Stair master */}
