@@ -42,7 +42,7 @@
     margin-left: 15%;
     min-height: 15vh;
     margin-bottom: 10rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     position: relative;  
 }
 
@@ -88,6 +88,7 @@
     margin: 1rem;
 }
 
+
 .proj-desc{
     color: whitesmoke;
     font-size: 1.5rem;
@@ -104,6 +105,11 @@
     color: #c22085;
     font-size: 1.5rem;
     margin: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.hidden-note:hover{
+    transform: translateY(-0.5rem);
 }
 
 
@@ -215,10 +221,6 @@
 
 
 /** icons  and animations */
-#tech-stack-icon{
-    color:white;
-}
-
 #scIcon{
     color: rgb(46, 113, 237);
     background-color:rgb(245, 245, 87);
