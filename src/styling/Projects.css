@@ -27,8 +27,12 @@
     color:#c22085;
 }
 
-#ep-type{
+#e-type{
     color:rgb(98, 20, 162);
+}
+
+#p-type{
+    color:rgb(19, 61, 145);
 }
 
 /** Container for each project*/
@@ -94,16 +98,16 @@
     top: 0;
     left: 0;
     right: 100%;
-    width: 0%;
+    width: 100%;
     bottom: 0;
     z-index: 5;
     background-color: #c22085;
-    animation: swipe-reveal 1s ease-out 0.5s forwards;
+    animation: swipe-reveal 0.5s ease-out forwards;
 }
 
 @keyframes swipe-reveal {
     0%{
-        width: 0%;
+        width: 100%;
         right: 100%;
         left: 0%;
     }
