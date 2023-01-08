@@ -32,10 +32,42 @@ export function Projects(){
             })
         });
 
+        const observer2 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("slide");
+                } else{
+                    entry.target.classList.remove("slide");
+                }
+            })
+        });
+
+        const observer3 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("unblur");
+                } else{
+                    entry.target.classList.remove("unblur");
+                }
+            })
+        });
+
         // Display each element that was originally hidden
-        const hiddenElements = document.querySelectorAll(".proj-container");
-        hiddenElements.forEach( (elem) =>{
+        const revealElements = document.querySelectorAll(".proj-s-container");
+        revealElements.forEach( (elem) =>{
             observer.observe(elem);
+        });
+
+        // Slide each item with this class
+        const slideElements = document.querySelectorAll(".stash");
+        slideElements.forEach( (elem) =>{
+            observer2.observe(elem);
+        });
+
+        // Unblur each item with this class
+        const blurElements = document.querySelectorAll(".blur");
+        blurElements.forEach( (elem) =>{
+            observer3.observe(elem);
         });
 
 
@@ -62,7 +94,8 @@ export function Projects(){
 
         <h2 className="proj-type-header" id="swe-type"> {sweOpen} </h2>
         {/** Stair master */}
-        <div className="proj-container" id="odd-proj">
+
+        <div className="proj-s-container" id="odd-s">
             <span className='proj-title'> <Gi3DStairs/> StairMaster</span>
             <p className='proj-desc'> A responsive website for <em id="naimor-inc"> NaiMor, Inc </em> that allows customers to style stairs for purchase based on design shape, material, color, size and other features. </p>
             <span className='proj-note'>
@@ -73,7 +106,7 @@ export function Projects(){
             </span>
         </div>
         {/** Star Wars  */}
-        <div className="proj-container" id="even-proj">
+        <div className="proj-s-container" id="even-s">
             <span className='proj-title'> <FaJedi/> Star Wars Image Generator </span>
             <p className='proj-desc'>
                 Collaborated with a group to create a Website that allows users search a Star Wars database from 5 unique categories & generates an image
@@ -88,7 +121,7 @@ export function Projects(){
         </div>
 
         {/** Lego Finder */}
-        <div className="proj-container" id="odd-proj">
+        <div className="proj-s-container" id="odd-s">
             <span className='proj-title'> <TbLego/> LegoFinder</span>
             <p className='proj-desc'> A Object Detection web application using a custom 1000+ image dataset that allows users to detect between 5 of the top 20 most common 
                     Lego pieces in any image taken with 70% accuracy or higher. </p>
@@ -101,7 +134,7 @@ export function Projects(){
         </div>
 
         {/** Star Wars */}
-        <div className="proj-container" id="last-proj">
+        <div className="proj-s-container" id="last-proj">
             <span className='proj-title'> <BsStars/> Star Battle Puzzle</span>
             <p className='proj-desc'> Collaborated with a group to design & implement a UI for a sudoku-like puzzle that users can play. </p>
             <span className='proj-note'>
@@ -118,7 +151,7 @@ export function Projects(){
         <h2 className="proj-type-header" id="e-type">  {eOpen} </h2>
 
         {/* LaserDrive  */}
-        <div className="proj-container" id="even-proj">
+        <div className="proj-container stash" >
             <span className='proj-title'> <FaCarSide/> LaserDrive </span>
             <p className='proj-desc'> Collaborating with a group to build an Autonomous F1Tenth RC Car. </p>
             <span className='proj-note'>
@@ -130,7 +163,7 @@ export function Projects(){
         </div>
 
         {/** SmartCar */}
-        <div className="proj-container" id="odd-proj">
+        <div className="proj-container stash" >
             <span className='proj-title'> <SiProbot/> Arduino SmartCar </span>
             <p className='proj-desc'> Infrared remote (IR) controlled car with obstacle detection, avoidance and a follower modes
             aside from simple driving commands. Also attached OLED Screen that displays temperature, humidity and time. </p>
@@ -143,9 +176,9 @@ export function Projects(){
         </div>
 
         {/** Arduino Controller  */}
-        <div className="proj-container" id="last-proj">
+        <div className="proj-container stash" id="last-proj">
             <span className='proj-title'> <BsController/> Arduino Controller </span>
-            <p className='proj-desc'> Built a custom RF transmitter & receiver with nRF24L01 modules to control DC motors using joysticks. 
+            <p className='proj-desc'> Built a custom RF transmitter & receiver control DC motors, servo sensor and an LED using joysticks & potentiometer. 
                                         Also decoded an IR controller & repurposed it to change colors of an LED strip.
             </p>
             <span className='proj-note'>
@@ -162,7 +195,7 @@ export function Projects(){
         <h2 className="proj-type-header" id="p-type">  {pOpen} </h2>
 
         {/** Lift Propulsion  */}
-        <div className="proj-container" >
+        <div className="proj-container blur" >
             <span className='proj-title'> <GiSpinningBlades/> Lift Propeller Coefficient </span>
             <p className='proj-desc'> An experimental study & analysis on the lift generated from rotating a 2-bladed propeller.
             </p>
@@ -175,7 +208,7 @@ export function Projects(){
         </div>
 
         {/** Michelson Interferometer */}
-        <div className="proj-container" >
+        <div className="proj-container blur" >
             <span className='proj-title'> <GiSoundWaves/> Michelson interferometer Experiment. </span>
             <p className='proj-desc'> Observed changes in destructive interference patterns created by
                     interferometer and determined the wavelength of an HeNe laser to be
@@ -191,7 +224,7 @@ export function Projects(){
         </div>
 
         {/** Nuclear Scattering */}
-        <div className="proj-container" id="last-proj">
+        <div className="proj-container blur" id="last-proj">
             <span className='proj-title'> <GiSoundWaves/> Nuclear Scattering Simulation. </span>
             <p className='proj-desc'> Performed an analogous experiment where ball bearings were fired at a cylindrical target &
                     scattering angles were observed. Determined its radius to be within 4.3% of
