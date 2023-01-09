@@ -143,7 +143,7 @@ export function Projects(){
         {/** Star Battle */}
         <div className="proj-s-container" id="last-proj">
             <span className='proj-title' id="sbProj"> <BsStars id="sbIcon" /> Star Battle Puzzle</span>
-            <p className='proj-desc'> Collaborated with a group to design & implement a UI for a sudoku-like puzzle that users can play. </p>
+            <p className='proj-desc'> Collaborated with a group to design & implement a friendly Graphic User Interface for a sudoku-like puzzle that users can play. </p>
             <span className='proj-note'>
                 <Link to="/projects/starbattle" id="view-website">  <AiOutlineCaretRight/> View Demo </Link>
             </span>
@@ -172,8 +172,8 @@ export function Projects(){
         {/** SmartCar */}
         <div className="proj-container stash" id="sc-proj">
             <span className='proj-title' id="scProj"> <SiProbot id="scIcon"/> SmartCar </span>
-            <p className='proj-desc'> Infrared remote (IR) controlled car with obstacle detection, avoidance and a follower modes
-            aside from simple driving commands. Also attached OLED Screen that displays temperature, humidity and time. </p>
+            <p className='proj-desc'> Infrared remote (IR) controlled car with obstacle avoidance, motion detection, follower and line tracking
+            modes, aside from simple driving commands. Also attached an OLED screen that displays temperature, humidity and time. </p>
             <span className='proj-note'>
                 <Link to="/projects/smartcar" id="view-website">  <AiOutlineCaretRight/> View Demo </Link>
             </span>
@@ -189,7 +189,7 @@ export function Projects(){
                                         Also decoded an IR controller & repurposed it to change colors of an LED strip.
             </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" href=""> <AiOutlineCaretRight/> View Website</a>
+                <Link to="/projects/controller" id="view-website">  <AiOutlineCaretRight/> View Demo </Link>
             </span>
             <span className='hidden-note' data-msg="C/C++, Arduino Nano, Electronic modules (BLDC Motors, nRF24L01) ">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack

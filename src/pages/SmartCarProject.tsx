@@ -3,6 +3,7 @@ import "../styling/Projects.css"
 import { RiStackFill } from "react-icons/ri";
 import { SiArduino, SiProbot } from "react-icons/si";
 import { GiSoundWaves } from "react-icons/gi";
+import { BsGithub } from "react-icons/bs";
 
 export function SmartCarProject(){
     // video 
@@ -71,6 +72,13 @@ export function SmartCarProject(){
             </p>
             <span className='hidden-note ind-proj-ts' data-msg="C/C++, Arduino Uno, Arduino Nano Electronic modules (Ultrasonic Sensor, DC Motors, PIR motion sensor, IR controller, LEDs, Buzzer, DHT sensor) ">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
+            </span>
+            <span className="view-code">
+                <a target="_blank" id="view-code" href="https://github.com/arcosea/SmartCar"> <BsGithub/> View SmartCar Code</a> 
+            </span>
+
+            <span className="view-code">
+                <a target="_blank" id="view-code" href="https://github.com/arcosea/SmartCarAdditions"> <BsGithub/> View Additions Code</a> 
             </span>
             <div className="proj-gap"></div>
         </div>
