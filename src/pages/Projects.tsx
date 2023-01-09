@@ -12,11 +12,8 @@ import {BsStars, BsController} from "react-icons/bs";
 import {FaJedi, FaCarSide} from "react-icons/fa";
 import {SiProbot} from "react-icons/si";
 import {GiSpinningBlades, GiSoundWaves, GiCannonBall} from "react-icons/gi";
-import { Experience } from './Experience';
 import { Link, Route, Routes } from 'react-router-dom';
-import { StarWarsProject } from './StarWarsProject';
-import { render } from 'react-dom';
-import { Home } from './Home';
+
 
 /**
  * Class that displays all projects
@@ -122,7 +119,7 @@ export function Projects(){
                 based on the top result.
             </p>
             <span className='proj-note'>
-                <Link to="/projects/starwars"> View Demo </Link>
+                <Link to="/projects/starwars" id="view-website">  <AiOutlineCaretRight/> View Demo </Link>
             </span>
             <span className='hidden-note' data-msg="React, Typescript, Python, Docker, OpenAI, HTML/CSS, PostgresSQL, pgAdmin, Github">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
@@ -143,12 +140,12 @@ export function Projects(){
             </span>
         </div>
 
-        {/** Star Wars */}
+        {/** Star Battle */}
         <div className="proj-s-container" id="last-proj">
             <span className='proj-title' id="sbProj"> <BsStars id="sbIcon" /> Star Battle Puzzle</span>
             <p className='proj-desc'> Collaborated with a group to design & implement a UI for a sudoku-like puzzle that users can play. </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" href=""> <AiOutlineCaretRight/> View Website</a>
+                <Link to="/projects/starbattle" id="view-website">  <AiOutlineCaretRight/> View Demo </Link>
             </span>
             <span className='hidden-note' data-msg="Java, Java Swing GUI, HTTP Server/Client, Agile Development, Github">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
