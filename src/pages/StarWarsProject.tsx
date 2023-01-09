@@ -1,10 +1,11 @@
 import { FaJedi } from "react-icons/fa";
-import "../styling/StarWarsProject.css"
+import "../styling/IndividualProject.css"
 import {BsGithub} from "react-icons/bs";
+import { RiStackFill } from "react-icons/ri";
 
 export function StarWarsProject(){
     // video 
-    let video = "../videos/starwarsvid.mov";
+    let video = "../videos/starwar.mov";
 
     return(
         <div className="container-SW">
@@ -20,6 +21,9 @@ export function StarWarsProject(){
                 If category is either Vehicles & Starships, then it just displays the name, model, manufacturer, number of passengers, and class of Vehicle and Starship.
             </p>
 
+            <span className='hidden-note ind-proj-ts' data-msg="React, Typescript, Python, Docker, OpenAI, HTML/CSS, PostgresSQL, pgAdmin, Github">
+                <RiStackFill className='tech-stack-icon'/> Tech Stack
+            </span>
             <span className="view-code">
                 <a target="_blank" id="view-code" href="https://github.com/arcosea/StarWarsApp"> <BsGithub/> View Code</a> 
             </span>

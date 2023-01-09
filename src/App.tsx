@@ -8,8 +8,11 @@ import {Projects} from "./pages/Projects";
 import { Experience } from './pages/Experience';
 import { Education } from './pages/Education';
 import { StarWarsProject } from './pages/StarWarsProject';
+import { StarBattleProject } from './pages/StarBattleProject';
 import Navbar from './NavBar';
 import Footer from './Footer';
+import { SmartCarProject } from './pages/SmartCarProject';
+import { ControllerProject } from './pages/ControllerProject';
 
 function App() {
   return (
@@ -20,10 +23,11 @@ function App() {
       <Routes>
         <Route path="/" element={< Home />}/>
         <Route path="/about" element={<About />}/>
-        <Route path="/projects" >
-          <Route index element={<Projects />} />
-          <Route path=":starwars" element={< StarWarsProject/>} />
-        </Route>
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/starwars" element={<StarWarsProject />} />
+        <Route path="/projects/starbattle" element={<StarBattleProject />} />
+        <Route path="/projects/smartcar" element={<SmartCarProject />} />
+        <Route path="/projects/controller" element={<ControllerProject />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/education" element={<Education />} />
 
