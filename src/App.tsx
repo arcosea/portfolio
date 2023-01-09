@@ -11,6 +11,7 @@ import { StarWarsProject } from './pages/StarWarsProject';
 import { StarBattleProject } from './pages/StarBattleProject';
 import Navbar from './NavBar';
 import Footer from './Footer';
+import { SmartCarProject } from './pages/SmartCarProject';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/starwars" element={<StarWarsProject />} />
         <Route path="/projects/starbattle" element={<StarBattleProject />} />
+        <Route path="/projects/smartcar" element={<SmartCarProject />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/education" element={<Education />} />
 

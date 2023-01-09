@@ -175,7 +175,7 @@ export function Projects(){
             <p className='proj-desc'> Infrared remote (IR) controlled car with obstacle detection, avoidance and a follower modes
             aside from simple driving commands. Also attached OLED Screen that displays temperature, humidity and time. </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" href=""> <AiOutlineCaretRight/> View Website</a>
+                <Link to="/projects/smartcar" id="view-website">  <AiOutlineCaretRight/> View Demo </Link>
             </span>
             <span className='hidden-note' data-msg="C/C++, Arduino Uno, Electronic modules (Ultrasonic Sensor, DC Motors, PIR motion sensor, IR controller) ">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack

@@ -29,11 +29,11 @@ video{
 
 /** Description & rules*/
 .ind-proj-desc{
-    color: beige;
+    color: rgb(241, 241, 233);
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 3rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
     line-height: 2em;
     font-weight:bolder;
     font-size:large;
@@ -50,6 +50,16 @@ video{
 .ind-proj-ts{
     text-align: center;
 }
+
+.ind-proj-sect-header{
+    margin: 3rem 0rem 0rem 0rem;
+    margin-left: 15%;
+    font-weight: bolder;
+    font-size:large;
+    text-decoration: underline;
+    color:bisque;
+}
+
 /** Viewing Code button*/
 .view-code{
     text-align: center;
@@ -65,4 +75,49 @@ video{
 #view-code{
     color: white;
     text-decoration: none;
+}
+
+
+/** Smart Car*/
+#gLED{
+    color: green;
+}
+#bLED{
+    color: blue;
+}
+#rLED{
+    color:red;
+}
+
+#arduino{
+    color: rgb(56, 56, 200);
+}
+#sound{
+    color: rgb(56, 56, 200);
+}
+#dist{
+    color: rgb(233, 93, 93);
+}
+
+#deg{
+    color: rgb(27, 177, 27);
+}
+
+#rgb{
+    animation: rgb linear 2s infinite;
+}
+
+@keyframes rgb{
+    0%{
+        color:red;
+    }
+    33%{
+        color: green;
+    }
+    66%{
+        color:blue;
+    }
+    100%{
+        color: red;
+    }
 }
