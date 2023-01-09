@@ -14,6 +14,17 @@
     margin-top: 20rem;
     min-height: 20rem;
     text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 3rem;
+}
+
+.header-name:hover{
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
+}
+#proj-site-header:hover{
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
 }
 
 .proj-type-header{
