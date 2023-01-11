@@ -12,6 +12,7 @@
     margin-top: 0rem;
     padding: 5rem 0rem 5rem 0rem;
     font-size: 5vh;
+    text-decoration: underline;
     animation: colorswitch 6s linear infinite;
 }
 
@@ -23,9 +24,8 @@
 }
 
 .form-name{
-    color:beige;
+    color: rgb(159, 116, 123);
     font-size: larger;
-    text-decoration: underline;
 }
 
 .form-input{
@@ -33,6 +33,8 @@
     color:beige;
     height: 5vh;
     border-bottom: 2px solid purple;
+    letter-spacing: 0.05rem;
+    font-size: large;
 }
 
 .submit{
@@ -54,8 +56,10 @@
     flex-direction: column;
 }
 
-.email-sent{
-    color: beige;
+#text-area{
+    min-height: 20vh;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.05rem;
 }
 
 /** Animations */

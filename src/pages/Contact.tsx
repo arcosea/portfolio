@@ -27,9 +27,6 @@ export function Contact(){
         e.target.reset();
     };
 
-
-    
-
     return (
         <div className="cont-container">
             <h2 className="cont-header"> Contact Me</h2>
@@ -44,7 +41,7 @@ export function Contact(){
                 </div>
                 <div className="ind-form-cont">
                     <label className="form-name"> <MdMessage/> Message: </label>
-                    <textarea className="form-input" name="message" />
+                    <textarea className="form-input" id="text-area" name="message" />
                 </div>
                 <div className="ind-form-cont">
                     <input className="submit" type="submit" value="Submit"/>
