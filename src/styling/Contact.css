@@ -1,0 +1,11 @@
+/*Container background  & header*/
+.cont-container{
+    background-color: black;
+    display: flex;
+}
+
+.cont_header{
+    display:flex;
+    align-items: center;
+    color: bisque;
+}

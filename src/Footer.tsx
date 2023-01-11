@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import { FaLinkedin, FaPhoneAlt, FaEnvelope, FaGithub } from 'react-icons/fa';
 import { MdPermContactCalendar } from "react-icons/md";
+import { BsPersonBadge } from "react-icons/bs";
 
 // Class 
 export default function Footer(){
@@ -21,8 +22,10 @@ export default function Footer(){
             </ul>
             <ul className="middle-footer">
                 <li>
-                <Link to="/contact" className="site-title"> <MdPermContactCalendar/> Contact Me </Link>
-                    
+                    <Link to="/contact" className="site-title"> <MdPermContactCalendar/> Contact Me </Link>   
+                </li>
+                <li>
+                    <a target="_blank" id="view-website" href="https://www.linkedin.com/in/erick-arcos2023/"> <FaLinkedin className="icon"/> LinkedIn </a>            
                 </li>
                 <li>
                     <a target="_blank" id="view-website" href="https://github.com/arcosea"> <FaGithub className="icon"/> GitHub</a>  
@@ -32,6 +35,10 @@ export default function Footer(){
 
             <ul className="right-footer">
                 <li>
+                    <Link to="/about" className="site-title"> <BsPersonBadge/> About Me </Link>   
+                </li>
+    
+                <li>
                    <FaEnvelope className="icon"/> arcosea@plu.edu
                 </li>
 
@@ -39,9 +46,6 @@ export default function Footer(){
                     <FaPhoneAlt className="icon"/> 253 282 6040
                 </li>
 
-                <li>
-                    <a target="_blank" id="view-website" href="https://www.linkedin.com/in/erick-arcos2023/"> <FaLinkedin className="icon"/> LinkedIn </a>            
-                </li>
 
             </ul>
         </nav>
