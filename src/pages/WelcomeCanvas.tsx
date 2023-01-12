@@ -66,7 +66,5 @@ export function WelcomeCanvas(){
         <div className="welcome-container">
             <canvas id="welcomeCanvas"></canvas>
         </div>
-
-
     );
 }

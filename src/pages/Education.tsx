@@ -1,6 +1,8 @@
 import "../styling/Education.css";
 import { useEffect, useState, useRef } from 'react';
 import { GiMaterialsScience, GiBlackBook, GiBookAura} from "react-icons/gi";
+import { SpaceCanvas } from "./SpaceCanvas";
+import { ShapeCanvas } from "./ShapeCanvas";
 
 
 export function Education(){
@@ -32,7 +34,7 @@ export function Education(){
             <div className="section-header">
                 <h2 className="header-name hidden"> <GiMaterialsScience className="spinIcon" id="particleIcon"/> Education  <GiBlackBook className="spinIcon" id="bookIcon"/> </h2>
             </div>
-
+            <ShapeCanvas/>
             <section className="ed-section">
                 {/***  Physics BS  ******/}
                 <div className="comp-container" id="phys-ed">
