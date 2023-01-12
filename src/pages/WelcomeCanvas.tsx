@@ -31,7 +31,7 @@ export function WelcomeCanvas(){
         
             // Add Shape
             const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
-            const material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe:true});
+            const material = new THREE.MeshBasicMaterial( { color: 'rgb(0, 0, 0)', wireframe:true});
             torusKnot = new THREE.Mesh( geometry, material );
             scene.add( torusKnot );
 

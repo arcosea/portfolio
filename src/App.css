@@ -127,6 +127,10 @@ body{
   align-items: left;
 }
 
+.link{
+  color: beige;
+}
+
 
 /** Icon */
 .icon{

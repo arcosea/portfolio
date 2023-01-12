@@ -1,7 +1,10 @@
 import {Link} from "react-router-dom";
 import { FaLinkedin, FaPhoneAlt, FaEnvelope, FaGithub } from 'react-icons/fa';
 import { MdPermContactCalendar } from "react-icons/md";
-import { BsPersonBadge } from "react-icons/bs";
+import { BsPersonBadge, BsPersonFill } from "react-icons/bs";
+import { GrCertificate } from "react-icons/gr";
+import { TbFileCertificate } from "react-icons/tb";
+
 
 // Class 
 export default function Footer(){
@@ -9,41 +12,37 @@ export default function Footer(){
         <nav className="footer">
             <ul className="left-footer">
                 <li>
-                    Erick Arcos
+                    <BsPersonFill className="icon"/>  Erick Arcos
                 </li>
 
-                <li>
-                    Pacific Lutheran University
-                </li>
-
-                <li>
-                    About Me
-                </li>
-            </ul>
-            <ul className="middle-footer">
-                <li>
-                    <Link to="/contact" className="site-title"> <MdPermContactCalendar/> Contact Me </Link>   
-                </li>
-                <li>
-                    <a target="_blank" id="view-website" href="https://www.linkedin.com/in/erick-arcos2023/"> <FaLinkedin className="icon"/> LinkedIn </a>            
-                </li>
-                <li>
-                    <a target="_blank" id="view-website" href="https://github.com/arcosea"> <FaGithub className="icon"/> GitHub</a>  
-                </li>
-
-            </ul>
-
-            <ul className="right-footer">
-                <li>
-                    <Link to="/about" className="site-title"> <BsPersonBadge/> About Me </Link>   
-                </li>
-    
                 <li>
                    <FaEnvelope className="icon"/> arcosea@plu.edu
                 </li>
 
                 <li>
                     <FaPhoneAlt className="icon"/> 253 282 6040
+                </li>
+            </ul>
+            <ul className="middle-footer">
+                <li>
+                    <Link to="/contact" className="site-title link"> <MdPermContactCalendar/> Contact Me </Link>   
+                </li>
+                <li>
+                    <a target="_blank" className="view-website link" href="https://www.linkedin.com/in/erick-arcos2023/"> <FaLinkedin className="icon"/> LinkedIn </a>            
+                </li>
+                <li>
+                    <a target="_blank" className="view-website link" href="https://github.com/arcosea"> <FaGithub className="icon"/> GitHub</a>  
+                </li>
+
+            </ul>
+
+            <ul className="right-footer">
+                <li>
+                    <Link to="/about" className="site-title link"> <BsPersonBadge/> About Me </Link>   
+                </li>
+
+                <li>
+                    <Link to="/education" className="site-title link"> <TbFileCertificate/> Education </Link>  
                 </li>
 
 

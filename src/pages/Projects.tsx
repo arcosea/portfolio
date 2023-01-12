@@ -13,6 +13,7 @@ import {FaJedi, FaCarSide} from "react-icons/fa";
 import {SiProbot} from "react-icons/si";
 import {GiSpinningBlades, GiSoundWaves, GiCannonBall} from "react-icons/gi";
 import { Link, Route, Routes } from 'react-router-dom';
+import { MdWeb } from 'react-icons/md';
 
 
 /**
@@ -98,8 +99,8 @@ export function Projects(){
         <h1 id="proj-site-header"> {title} </h1>
 
         <h2 className="proj-type-header" id="swe-type"> {sweOpen} </h2>
-        {/** Stair master */}
 
+        {/** Stair master */}
         <div className="proj-s-container" id="odd-s">
             <span className='proj-title'> <Gi3DStairs/> StairMaster</span>
             <p className='proj-desc'> A responsive website for <em id="naimor-inc"> NaiMor, Inc </em> that allows customers to style stairs for purchase based on design shape, material, color, size and other features. </p>
@@ -111,11 +112,23 @@ export function Projects(){
             </span>
         </div>
 
+        {/** Portfolio */}
+        <div className="proj-s-container" id="odd-s">
+            <span className='proj-title'> <MdWeb/> Portfolio</span>
+            <p className='proj-desc'> A responsive website for that showcases my work experience, education, projects & hobbies. </p>
+            <span className='proj-note'>
+                <Link to="/" id="view-website">  <AiOutlineCaretRight/> View Website </Link>  
+            </span>
+            <span className='hidden-note' data-msg="React, Typscript, 3JS, emailJS, HTML/CSS, Node.JS, Github">
+                <RiStackFill className='tech-stack-icon'/> Tech Stack
+            </span>
+        </div>
+
         {/** Star Wars  */}
         <div className="proj-s-container" id="even-s">
             <span className='proj-title' id="swProj"> <FaJedi id="swIcon"/> Star Wars Image Generator </span>
             <p className='proj-desc'>
-                Collaborated with a group to create a Website that allows users search a Star Wars PostGres database from 5 unique categories & generates an image
+                Collaborated with a group to create a Website that allows users search a Star Wars Postgres database from 5 unique categories & generates an image
                 based on the top result.
             </p>
             <span className='proj-note'>
@@ -135,7 +148,7 @@ export function Projects(){
             <span className='proj-note'>
                 <a target="_blank" id="view-website" href="https://lego-finder-7ed0f.web.app/"> <AiOutlineCaretRight/> View Website</a>
             </span>
-            <span className='hidden-note' data-msg="React, Typescript, Python, Google Cloud Platform, Firebase, Detecto, Github">
+            <span className='hidden-note' data-msg="React, Typescript, Python, PyTorch, Google Cloud Platform, Firebase, Detecto, Github">
                 <RiStackFill className='tech-stack-icon'/> Tech Stack
             </span>
         </div>
@@ -207,7 +220,7 @@ export function Projects(){
             <p className='proj-desc'> An experimental study & analysis on the lift generated from rotating a 2-bladed propeller.
             </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" onClick={ () => window.open(plcPDF)}> <AiOutlineCaretRight/> View PDF</a>
+                <a target="_blank" id="view-website" onClick={ () => window.open(plcPDF)}> <AiOutlineCaretRight/> View Report (PDF)</a>
             </span>
             <span className='hidden-note' data-msg="Michelson Interferometer, Excel, Solver, Laser, Camera">
                 <RiStackFill className='tech-stack-icon'/> Tools
@@ -223,9 +236,9 @@ export function Projects(){
                     air.
             </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" onClick={ () => window.open(miPDF)}> <AiOutlineCaretRight/> View PDF</a>
+                <a target="_blank" id="view-website" onClick={ () => window.open(miPDF)}> <AiOutlineCaretRight/> View Report (PDF)</a>
             </span>
-            <span className='hidden-note' data-msg="Michelson Interferometer, Excel, Solver, Laser, Camera">
+            <span className='hidden-note' data-msg="Michelson Interferometer, Excel, Solver, Data recording, Laser, Camera">
                 <RiStackFill className='tech-stack-icon'/> Tools
             </span>
         </div>
@@ -235,13 +248,12 @@ export function Projects(){
             <span className='proj-title' id="ncProj"> <GiCannonBall id="ncIcon"/> Nuclear Scattering Simulation. </span>
             <p className='proj-desc'> Performed an analogous experiment where ball bearings were fired at a cylindrical target &
                     scattering angles were observed. Determined its radius to be within 4.3% of
-                    actual value. Gained experience with uncertainty analysis & writing a
-                    scientific report.
+                    actual value.
             </p>
             <span className='proj-note'>
-                <a target="_blank" id="view-website" onClick={ () => window.open(ncPDF)}> <AiOutlineCaretRight/> View PDF</a>
+                <a target="_blank" id="view-website" onClick={ () => window.open(ncPDF)}> <AiOutlineCaretRight/> View Report (PDF)</a>
             </span>
-            <span className='hidden-note' data-msg="Excel, Solver, Uncertainty Analysis">
+            <span className='hidden-note' data-msg="Excel, Solver, Ball Bearing pump, Data recording, Uncertainty Analysis">
                 <RiStackFill className='tech-stack-icon'/> Tools
             </span>
         </div>
