@@ -8,12 +8,8 @@ import { WelcomeCanvas } from "./WelcomeCanvas";
 export function Home(){
     return (
         <div className="home">
+            <h1> Welcome!</h1>
             <WelcomeCanvas/>
-            <h1 > Welcome to my Page!</h1>
-            
-
-
-
         </div>
     );
 }
