@@ -13,6 +13,7 @@ import Navbar from './NavBar';
 import Footer from './Footer';
 import { SmartCarProject } from './pages/SmartCarProject';
 import { ControllerProject } from './pages/ControllerProject';
+import { Contact } from './pages/Contact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/projects/controller" element={<ControllerProject />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/education" element={<Education />} />
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
     </div>

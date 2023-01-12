@@ -9,7 +9,7 @@ export function WelcomeCanvas(){
         let scene: THREE.Scene;
         let camera: THREE.PerspectiveCamera;
         let renderer: THREE.WebGLRenderer;
-        let cube = new THREE.Mesh();
+        let torusKnot = new THREE.Mesh();
 
         function init() {
             // Create scene object
@@ -30,10 +30,10 @@ export function WelcomeCanvas(){
             
         
             // Add Shape
-            const geometry = new THREE.BoxGeometry( 20, 20, 20 );
-            const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
-            cube = new THREE.Mesh( geometry, material );
-            scene.add( cube );
+            const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+            const material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe:true});
+            torusKnot = new THREE.Mesh( geometry, material );
+            scene.add( torusKnot );
 
             // Create:
             const myText = new Text()
@@ -53,8 +53,8 @@ export function WelcomeCanvas(){
         }
         // Rendering loop
         function animate() {
-            cube.rotateX(0.01);
-            cube.rotateY(0.01);
+            torusKnot.rotateX(0.01);
+            torusKnot.rotateY(0.01);
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         }

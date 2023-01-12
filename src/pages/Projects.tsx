@@ -76,12 +76,12 @@ export function Projects(){
     }, []);
 
     // Opening & closing text for each section
-    let sweOpen = "< SoftwareProjects >";
-    let sweClose = "< SoftwareProjects />";
-    let eOpen = "< EngineeringProjects >";
-    let eClose = "< EngineeringProjects />";
-    let pOpen = "< PhysicsProjects >";
-    let pClose = "< PhysicsProjects />";
+    let sweOpen = "[ Software Projects ] ";
+    let sweClose = "[ Software Projects ]";
+    let eOpen = "[ Engineering Projects ]";
+    let eClose = "[ Engineering Projects ]";
+    let pOpen = "[ Physics Projects ]";
+    let pClose = "[ Physics Projects ]";
 
     // links to pdfs
     let plcPDF = "../papers/PropellerLiftCoefficient.pdf"
