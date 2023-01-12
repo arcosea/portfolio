@@ -8,6 +8,7 @@ import { FcTreeStructure } from "react-icons/fc";
 import { MdConstruction, MdHealthAndSafety} from "react-icons/md";
 import { GrUserWorker } from "react-icons/gr";
 import {MdWork} from "react-icons/md";
+import { WelcomeCanvas } from "./WelcomeCanvas";
 
 
 export function Experience(){

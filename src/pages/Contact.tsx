@@ -11,9 +11,6 @@ const TEMPLATE_ID = 'template_x9asmo8';
 const USER_ID = 'N-Co5OaAcmUr9I2u-';
 
 export function Contact(){
-    // Keep track of whether email was sent
-    let [sent, setSent] = useState(false);
-
     // Function to send emails
     const sendEmail = (e: any) => {
         e.preventDefault();
