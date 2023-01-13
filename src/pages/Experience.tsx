@@ -8,6 +8,7 @@ import { FcTreeStructure } from "react-icons/fc";
 import { MdConstruction, MdHealthAndSafety} from "react-icons/md";
 import { GrUserWorker } from "react-icons/gr";
 import {MdWork} from "react-icons/md";
+import { SpaceCanvas } from "./SpaceCanvas";
 
 
 export function Experience(){
@@ -38,6 +39,7 @@ export function Experience(){
     const mathGif = "/design/math.gif";
     return (
         <div className="container">
+            <SpaceCanvas/>
             <div className="section-header">
                 <h2 className="header-name hidden"> <MdWork id="suitIcon"/> Work Experience <GrUserWorker id="workIcon"/> </h2>
             </div>

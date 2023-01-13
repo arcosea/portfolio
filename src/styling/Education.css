@@ -1,40 +1,16 @@
-
-/***** Containers */
-.edu-container{
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-.section-header{
-    /* padding-top: 20rem;
-    padding-bottom: 12rem; */
-    text-align: center;
-    min-height: 25vh;
-}
-
-.phys-edu{
-    margin-left: 10%;
-    background-color: black;
-    color:white;
-    min-height: 50vh;
-}
-
-/*** BS Info section */
-.ed-section{
-    border-bottom: 2px solid black;
-    padding: 0rem;
-    margin: 0rem;
-}
-
-.degree-info{
+/** Container */
+.education{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: beige;
+    position: relative;
+    text-align: center;
 }
 
-.degree-info span{
-    padding: 0.5rem;
-}
+
+
+
 
 /** Icons */
 .spinIcon{
@@ -50,4 +26,13 @@
         transform: rotate(360deg);
         color: rgb(84, 84, 220);
     }
+}
+
+
+/*** 3JS Canvas */
+#educationCanvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
 }

@@ -90,7 +90,7 @@ export function Projects(){
     let ncPDF = "../papers/NuclearScattering.pdf"
 
     // page title
-    let title = "< Projects >";
+    let title = "[ Projects ]";
 
     // HTML project
     return (
