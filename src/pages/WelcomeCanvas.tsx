@@ -16,11 +16,11 @@ export function WelcomeCanvas(){
         function init() {
             // Create scene object
             scene = new THREE.Scene();
-            scene.background = new THREE.Color("rgb(245, 245, 220)")
+            scene.background = new THREE.Color("rgb(0, 0, 0)")
 
             // Setup camera with facing upward
             camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight);
-            camera.position.z = 5;
+            camera.position.z = 10;
 
             // Setup renderer
             const canvas = document.getElementById('welcomeCanvas') as HTMLCanvasElement;
@@ -32,24 +32,10 @@ export function WelcomeCanvas(){
             
             // Add Shape
             const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
-            const material = new THREE.MeshBasicMaterial( { color: 'rgb(0, 0, 0)', wireframe:true});
+            const material = new THREE.MeshBasicMaterial( { color: 'rgb(120, 20, 162)', wireframe:true});
             torusKnot = new THREE.Mesh( geometry, material );
             scene.add( torusKnot );
 
-            // // Create:
-            // const myText = new Text()
-            // scene.add(myText)
-
-            // // Set properties to configure:
-            // myText.text = 'Hello world!';
-            // myText.fontSize = 10;
-            // myText.position.z = 20;
-            // myText.color = 0x9966FF;
-
-            // // Update the rendering:
-            // myText.sync()
-
-            // Create orbital controls
             // controls = new OrbitControls(camera, renderer.domElement);
 
             // Animate
