@@ -17,13 +17,25 @@
     z-index: 10;
     letter-spacing: 0.1rem;
     font-size: 3rem;
-    transition: letter-spacing, text-shadow 1s ease;
+    
 }
 
 #home-header:hover{
-    letter-spacing: 0.5rem;
-    text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
+    /* letter-spacing: 0.5rem;
+    text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%); */
+    animation: space-out 1s linear both;
 }
+
+@keyframes space-out{
+    0%{
+
+    }
+    100%{
+        letter-spacing: 0.5rem;
+        text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
+    }
+}
+
 
 /* 3js Canvas */
 #welcomeCanvas{

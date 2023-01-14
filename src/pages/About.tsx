@@ -1,12 +1,15 @@
 import "../styling/About.css";
 import {Link} from "react-router-dom";
 import React, { useEffect, useState, useRef } from 'react';
+import { GiMountainClimbing, GiRunningShoe, GiSoccerBall } from "react-icons/gi";
+import { FaChess, FaHiking, FaRunning, FaVolleyballBall } from "react-icons/fa";
+import { MdSportsTennis } from "react-icons/md";
 
 export function About(){
     /**********         Running Slide Show              *************/
     // Running slideshow & method for storing images & keeping track of which to display
     // To small: "running/prenats.png", "running/vball.png", "running/10k.png"
-    let imageURL = ["running/xc-plu-invite.png", "running/xc-spu.png", "running/team.png", "running/10k.png", "running/prelute.png", "running/lc-invite.png"];
+    let imageURL = ["running/xc-plu-invite.png", "running/xc-spu.png", "running/team.png", "running/10k.png", "running/inv.png", "running/lc-invite.png", "running/lc.png"];
     let [imageIndex, setImageIndex] = useState(0);
     let [imageLink, setImageLink] = useState("running/xc-plu-invite.png");
     let slideInterval: any;
@@ -121,8 +124,7 @@ export function About(){
                 <section className="section">
                     <h3 className="sub-header"> Family & Background </h3>
                     <p>
-                        Family & Friends and the time I spend with them is something I value dearly. I am the eldest of a total of four boys. My parents and I were born in Mexico but my brothers were born in the 
-                        United States. I am the first in my family to have graduated High School and attended University! 
+                        Family & Friends and the time I spend with them is something I value dearly. I have three younger brothers. I am the first in my family to have graduated High School and attended University! 
                     </p>
                 </section>
             </div>
@@ -132,27 +134,25 @@ export function About(){
                 <section className="section">
                     <h3 className="sub-header"> Sports & Activities </h3>
                     <span className="sub-title"> 
-                        Soccer
+                        <GiSoccerBall/> Soccer
                     </span>
                     <p>
-                        Whether it was street soccer or club, I had always enjoyed playing Soccer. While I had played street soccer in the early stages of my life, I didn't play officially for a team
-                        till 6th grade. After a poor first and second year soccer experience in High School, I eventually decided to stop playing soccer & focus mainly on Track and Cross Country.
+                        Whether it was through street soccer or for a team, I grew up always enjoying the sport. However, midway through high-school, I eventually switched to running.
                     </p>
                     <span className="sub-title"> 
-                        Track
+                        <FaRunning/> Track
                     </span>
                     <p>
-                        Aside from Soccer, I also really enjoyed Running. I ran track for first time in 8th grade where I ran a 5:24 mile. I continued doing track in High School starting my junior year, 
-                        I ended High School with a 4:45 1600 meter . I continued running Track at Pacific Lutheran University where I ran 16:35 in the 5 Km (over 90 seconds faster than in High School) my freshman year.
-                        I have since then ran a 15:43 5Km and 4:16 1500meters.
+                        I first ran track in 8th grade, stopped for two years & then continued again my last 2 years of High School & have continued since. Here are some of my memorable personal bests:
+                        A 4:16 min 1500m at PLU and a 15:43 5k at PLU.
                     </p>
                     <span className="sub-title"> 
-                        Cross Country
+                        <GiRunningShoe/> Cross Country
                     </span>
                     <p>
-                        After doing Track in High School, I was persuaded to do Cross Country and loved it a lot more than Track. I finished High school with a not so well time of 18:09 5 Km.
-                        I attended Pacific Lutheran University where I continued running Track and Cross Country. Although I did not compete for Cross Country my freshman year, and lost a year due 
-                        the 2020 pandemic, I have run a best of 26:17 8km. I have also done an unofficial half marathon in 1:18:05.
+                        Ever since doing Cross Country in High School, I have enjoyed it because of the team dynamic that a XC team has. At PLU I have gotten the opportunity to meet some of my best friends.
+                        Aside from that, I find the sport much more enjoyable than running laps in a track. Some of my best times from cross country include: A 26:17 min 8k and a 1:18:05 Half marathon leading 
+                        into one of my XC seasons. 
                     </p>
                     <div className="slideshow" >
                         <button className="slider" id="previous-run" onClick={previousRunSlide}> 	&larr; </button>
@@ -164,8 +164,7 @@ export function About(){
                         Other Activities
                     </span>
                     <p>
-                        Aside from running and soccer, other activies I really enjoy include volleyball, badminton and hiking. I have also recently gotten into Rock Climbing & will
-                        try to incorporate it more in the future. I also like playing strategy type of games such as Chess.
+                        Aside from running and soccer, other activies I really enjoy include <FaVolleyballBall/> volleyball, <MdSportsTennis/> badminton, <FaHiking/> hiking and most recently: <GiMountainClimbing/> Rock Climbing. I also enjoy playing strategy type of games such as  <FaChess/> Chess.
                     </p>
                 </section>
             </div>

@@ -59,7 +59,7 @@ export function Experience(){
                         <p className="description">
                             The website assembles and renders
                             the product using <em id="threejs"> Javascripts 3D Library (3JS) </em> & associates a <strong> price </strong> for the current assembly. 
-                            This project is done in collaborate with another intern under the guidance of a mentor.
+                            This project is done in collaboration with another intern under the guidance of a mentor.
                         </p>
                         <p className="note-link">
                             <strong><em id="link"> Website Link: </em></strong>  
