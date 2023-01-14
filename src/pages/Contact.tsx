@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import { BsPersonBadge } from "react-icons/bs";
 import { MdMessage, MdOutlineMarkEmailUnread, MdSend } from "react-icons/md";
 import { useState } from "react";
+import { ContactCanvas } from "./ContactCanvas";
 
 // Define ID
 const SERVICE_ID = 'service_rxcozvi';
@@ -14,19 +15,36 @@ export function Contact(){
     // Function to send emails
     const sendEmail = (e: any) => {
         e.preventDefault();
-
+        
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
         .then((result) => {
             console.log(result.text);
+
+            // Display message & remove after 5 seconds
+            let msg = document.querySelector(".submit-message");
+            msg?.classList.add("show-msg");
+            setTimeout(() => {
+                msg?.classList.remove("show-msg");
+            }, 10000);
+            
+           
         }, (error) => {
             console.log(error.text);
         });
+
         e.target.reset();
+
+        
     };
+    
 
     return (
         <div className="cont-container">
+            <ContactCanvas/>
             <h2 className="cont-header"> Contact Me</h2>
+            <p className="submit-message">
+                Your Message was Sent!
+            </p>
             <Form className="form-container" onSubmit={sendEmail}>
                 <div className="ind-form-cont">
                     <label className="form-name"> <BsPersonBadge/> Name: </label>

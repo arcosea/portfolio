@@ -16,7 +16,7 @@ export default function Footer(){
                 </li>
 
                 <li>
-                   <FaEnvelope className="icon"/> arcosea@plu.edu
+                   <FaEnvelope className="icon"/> arcosea0@gmail.com
                 </li>
 
                 <li>

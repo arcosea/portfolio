@@ -36,7 +36,7 @@ export function Experience(){
 
     // Gif Visuals 
     const NNGif = "/design/nn.gif";
-    const mathGif = "/design/math.gif";
+
     return (
         <div className="container">
             <SpaceCanvas/>
