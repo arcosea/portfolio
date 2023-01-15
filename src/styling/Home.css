@@ -11,20 +11,18 @@
 }
 
 #home-header{
-    /* margin: 0;
-    padding-top: 20rem; */
     color:aquamarine;
     z-index: 10;
     letter-spacing: 0.1rem;
     font-size: 3rem;
+    animation: space-out 0.5s linear backwards;
     
 }
 
 #home-header:hover{
-    /* letter-spacing: 0.5rem;
-    text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%); */
-    animation: space-out 1s linear both;
+    animation: space-out 1s linear forwards;
 }
+
 
 @keyframes space-out{
     0%{
