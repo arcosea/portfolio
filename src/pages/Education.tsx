@@ -16,13 +16,14 @@ export function Education(){
     return (
         <div className="education">
                 <section className="ed-section">
-                    <h3 className="sub-header"> Education </h3>
-                    <span>
+                    <h2 className="sub-header"> Education </h2>
+                    <h3>
+                        Pacific Lutheran University (2023)
+                    </h3>
+                    <h4>
                         Cumulative GPA: 3.91 
-                    </span>
-                    <span>
-                        Pacific Lutheran University
-                    </span>
+                    </h4>
+                    
                     <div className="course-container">
                         <ul className="courses-taken" id="phys-class">
                             <span>

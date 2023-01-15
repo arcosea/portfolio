@@ -1,14 +1,10 @@
 import "../styling/About.css";
 import {Link} from "react-router-dom";
 import React, { useEffect, useState, useRef } from 'react';
-import { GiArtificialIntelligence, GiCheckboxTree, GiEmptyMetalBucketHandle, GiFallDown, GiMagnet, GiMountainClimbing, GiRunningShoe, GiSoccerBall, GiSolarSystem, GiThreeFriends, GiTimeSynchronization, GiVintageRobot } from "react-icons/gi";
-import { FaChess, FaHiking, FaJava, FaObjectUngroup, FaReact, FaRobot, FaRocket, FaRunning, FaVolleyballBall, FaWaveSquare } from "react-icons/fa";
-import { MdEngineering, MdSportsTennis, MdTransform } from "react-icons/md";
-import { BsGrid1X2, BsWater } from "react-icons/bs";
-import { FcEngineering, FcTreeStructure } from "react-icons/fc";
-import { TbWaveSawTool } from "react-icons/tb";
-import { SiBattledotnet, SiMaterialdesignicons, SiMatrix, SiPostgresql } from "react-icons/si";
-import { AiOutlineFunction, AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { GiArtificialHive, GiArtificialIntelligence, GiMountainClimbing, GiRunningShoe, GiSoccerBall, GiSolarSystem, GiThreeFriends, GiTimeSynchronization, GiVintageRobot } from "react-icons/gi";
+import { FaChess, FaRobot, FaRocket, FaRunning, FaVolleyballBall, FaWaveSquare } from "react-icons/fa";
+import { MdEngineering, MdOutlineWeb, MdSportsTennis, MdTransform } from "react-icons/md";
+
 
 export function About(){
     /**********         Running Slide Show              *************/
@@ -218,7 +214,8 @@ export function About(){
             <div >
                 <section className="section">
                     <h3 className="sub-header"> Interests </h3>
-                    <ul>
+                    <div className="interests">
+                    <ul >
                         <li>
                            <FaRocket/>  Space Exploration
                         </li>
@@ -229,108 +226,26 @@ export function About(){
                             <FaRobot/> Robotics
                         </li>
                         <li>
-                            <GiArtificialIntelligence/> Artifical Intelligence
-                        </li>
-                        <li>
                             <GiTimeSynchronization/> General Relativity
                         </li>
                     </ul>
-                </section>
-            </div>
 
-            <div >
-                <section className="section">
-                    <h3 className="sub-header"> Education </h3>
-                    <h4>
-                        Cumulative Gpa: 3.91
-                    </h4>
-                    <div className="course-container">
-                        <ul className="courses-taken" id="phys-class">
-                            <span>
-                                <strong> Applied Physics (BS) </strong>
-                            </span>
-                            <li>
-                            <GiFallDown/>  General Mechanics & Electromagnetism (EM)
-                            </li>
-                            <li>
-                                <GiTimeSynchronization/> Modern Physics (Relativity)
-                            </li>
-                            <li>
-                                <BsWater/> Waves & Fluids
-                            </li>
-                            <li>
-                                <MdEngineering/> Engineering Statics
-                            </li>
-                            <li>
-                                <GiMagnet/> EM theory & EM Optics
-                            </li>
-                            <li>
-                                <GiEmptyMetalBucketHandle/> Material Science
-                            </li>
-                            <li>
-                                &#8466; Differential Equations & Laplace Transforms
-                            </li>
-                            <li>
-                                <TbWaveSawTool/> Fourier Analysis & BVP
-                            </li>
-                            <li>
-                                <FaReact/> Quantum Mechanics
-                            </li>
-                        </ul>
+                    <ul >
+                        <li>
+                           <MdOutlineWeb/>  Software Development
+                        </li>
+                        <li>
+                            <GiArtificialHive/> Artifical Intelligence
+                        </li>
+                        <li>
+                            <GiVintageRobot/> Machine Learning
+                        </li>
+                    </ul>
 
-
-                        <ul className="courses-taken" id="math-class">
-                            <span>
-                                <strong> Math Minor </strong>
-                            </span>
-                            <li>
-                                <AiOutlineFundProjectionScreen/> Statistics
-                            </li>
-                            <li>
-                                <FaWaveSquare/> Discrete Math
-                            </li>
-                            <li>
-                                <AiOutlineFunction/>  Integration Calculus
-                            </li>
-                            <li>
-                                &#8747; Multivariable Calculus
-                            </li>
-                            <li>
-                                <SiMatrix/> Linear Algebra
-                            </li>
-                        </ul>
-
-                        <ul className="courses-taken" id="cs-class">
-                            <span>
-                                <strong> Computer Science (BA)</strong>
-                            </span>
-                            <li>
-                                <FaJava/>  Intro to Programming
-                            </li>
-                            <li>
-                                <FcTreeStructure/> Data Structures
-                            </li>
-                            <li>
-                                <GiCheckboxTree/> Algorithms Design/Analysis
-                            </li>
-                            <li>
-                                <SiPostgresql/> Databases
-                            </li>
-                            <li>
-                                <BsGrid1X2/> Web Design
-                            </li>
-                            <li>
-                                <SiMaterialdesignicons/> Objects & Design
-                            </li>
-                            <li>
-                                <GiVintageRobot/> Robotic Agents
-                            </li>
-                        </ul>
                     </div>
                 </section>
             </div>
             
-        
         </div>
     );
 }

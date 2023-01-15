@@ -160,7 +160,23 @@
     border: 2px solid black;
 }
 
+/** Interests */
+.interests{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem; 
+    justify-content: center;
+    margin-left: 12.5%;
+    padding: 0;
 
+}
+
+.interests ul{
+    list-style:none;
+}
+.interests ul li{
+    padding:1rem;
+}
 
 /* Icons & animations*/
 #ball{

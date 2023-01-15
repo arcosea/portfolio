@@ -28,14 +28,13 @@
     list-style:none;
 }
 
-li{
+.courses-taken li, .skills-gained li{
     margin: 0;
     padding: 0.2rem;
     transition: font-size, font-weight, background-color 0.3s ease-in-out;
-
 }
 
-li:hover{
+.courses-taken li:hover, .skills-gained li:hover{
    font-size: large;
    font-weight: large;
    background-color: black;
