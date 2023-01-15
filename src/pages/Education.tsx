@@ -2,19 +2,20 @@
 import { useEffect, useState, useRef } from 'react';
 import { EducationCanvas } from "./EducationCanvas";
 import "../styling/Education.css";
-import { AiOutlineFundProjectionScreen, AiOutlineFunction } from 'react-icons/ai';
-import { BsWater, BsGrid1X2 } from 'react-icons/bs';
-import { FaReact, FaWaveSquare, FaJava } from 'react-icons/fa';
-import { FcTreeStructure } from 'react-icons/fc';
-import { GiFallDown, GiTimeSynchronization, GiMagnet, GiEmptyMetalBucketHandle, GiCheckboxTree, GiVintageRobot, GiHelicopter } from 'react-icons/gi';
-import { MdEngineering } from 'react-icons/md';
-import { SiMatrix, SiPostgresql, SiMaterialdesignicons, SiElectron } from 'react-icons/si';
-import { TbWaveSawTool } from 'react-icons/tb';
+import { AiOutlineFundProjectionScreen, AiOutlineFunction, AiFillExperiment, AiFillHtml5 } from 'react-icons/ai';
+import { BsWater, BsGrid1X2, BsClipboardData, BsPatchQuestionFill, BsGithub } from 'react-icons/bs';
+import { FaReact, FaWaveSquare, FaJava, FaDocker, FaPython } from 'react-icons/fa';
+import { FcDataSheet, FcEngineering, FcTreeStructure } from 'react-icons/fc';
+import { GiFallDown, GiTimeSynchronization, GiMagnet, GiEmptyMetalBucketHandle, GiCheckboxTree, GiVintageRobot, GiHelicopter, GiUncertainty, GiWorld, GiCircuitry, GiLabCoat, GiLaserBurst, GiSolderingIron, GiThink, GiSprint } from 'react-icons/gi';
+import { MdDesignServices, MdEngineering, MdPattern, MdSyncProblem } from 'react-icons/md';
+import { SiMatrix, SiPostgresql, SiMaterialdesignicons, SiElectron, SiAutodesk, SiReacttable, SiArduino, SiLatex, SiRstudio, SiWolframmathematica, SiJavascript, SiFlask, SiTypescript } from 'react-icons/si';
+import { TbLetterC, TbMath, TbWaveSawTool } from 'react-icons/tb';
+import { GrObjectGroup } from 'react-icons/gr';
 
 export function Education(){
     return (
         <div className="education">
-                <section className="section">
+                <section className="ed-section">
                     <h3 className="sub-header"> Education </h3>
                     <span>
                         Cumulative GPA: 3.91 
@@ -28,37 +29,37 @@ export function Education(){
                                 <strong> Applied Physics (BS) </strong>
                             </span>
                             <li>
-                                <GiHelicopter/>  Intro to Engineering
+                                <FcEngineering/>  Intro to Engineering
                             </li>
                             <li>
-                                <GiFallDown/>  General Mechanics
+                                <GiFallDown className='fall'/>  General Mechanics
                             </li>
                             <li>
-                                <SiElectron/>  General Electromagnetism (EM)
+                                <SiElectron className='elec spin'/>  General Electromagnetism (EM)
                             </li>
                             <li>
-                                <GiTimeSynchronization/> Modern Physics (Relativity)
+                                <GiTimeSynchronization className='time'/> Modern Physics (Relativity)
                             </li>
                             <li>
-                                <BsWater/> Waves & Fluids
+                                <BsWater className='wave'/> Waves & Fluids
                             </li>
                             <li>
-                                <MdEngineering/> Engineering Statics
+                                <MdEngineering className='eng'/> Engineering Statics
                             </li>
                             <li>
-                                <GiMagnet/> EM theory & EM Optics
+                                <GiMagnet className='mag'/> EM theory & EM Optics
                             </li>
                             <li>
-                                <GiEmptyMetalBucketHandle/> Material Science
+                                <GiEmptyMetalBucketHandle className='mat'/> Material Science
                             </li>
                             <li>
-                                &#8466; Differential Equations & Laplace Transforms
+                                <span className='dq'> &#8466;</span> Diff. Equations & Laplace Transforms
                             </li>
                             <li>
-                                <TbWaveSawTool/> Fourier Analysis & BVP
+                                <TbWaveSawTool className='four'/> Fourier Analysis & BVP
                             </li>
                             <li>
-                                <FaReact/> Quantum Mechanics
+                                <FaReact className='quant spin'/> Quantum Mechanics
                             </li>
                         </ul>
 
@@ -68,19 +69,21 @@ export function Education(){
                                 <strong> Math Minor </strong>
                             </span>
                             <li>
-                                <AiOutlineFundProjectionScreen/> Statistics
+                                <AiOutlineFundProjectionScreen className='stat'/> Statistics
                             </li>
                             <li>
-                                <FaWaveSquare/> Discrete Math
+                                <FaWaveSquare className='disc'/> Discrete Math
                             </li>
                             <li>
-                                <AiOutlineFunction/>  Integration Calculus
+                                <AiOutlineFunction className='calc'/>  Integration Calculus
                             </li>
                             <li>
-                                &#8747; Multivariable Calculus
+                               <span className='mult1'>&#8747;</span> 
+                               <span className='mult2'>&#8747;</span>
+                               Multivariable Calculus
                             </li>
                             <li>
-                                <SiMatrix/> Linear Algebra
+                                <SiMatrix className='line'/> Linear Algebra
                             </li>
                         </ul>
 
@@ -89,25 +92,25 @@ export function Education(){
                                 <strong> Computer Science (BA)</strong>
                             </span>
                             <li>
-                                <FaJava/>  Intro to Programming
+                                <FaJava className='java'/>  Intro to Programming
                             </li>
                             <li>
-                                <FcTreeStructure/> Data Structures
+                                <FcTreeStructure className='ds'/> Data Structures
                             </li>
                             <li>
-                                <GiCheckboxTree/> Algorithms Design/Analysis
+                                <GiCheckboxTree className='alg'/> Algorithms Design/Analysis
                             </li>
                             <li>
-                                <SiPostgresql/> Databases
+                                <SiPostgresql className='db' /> Databases
                             </li>
                             <li>
-                                <BsGrid1X2/> Web Design
+                                <BsGrid1X2 className='web'/> Web Design
                             </li>
                             <li>
-                                <SiMaterialdesignicons/> Objects & Design
+                                <SiMaterialdesignicons className='od'/> Objects & Design
                             </li>
                             <li>
-                                <GiVintageRobot/> Robotic Agents
+                                <GiVintageRobot className='ra'/> Robotic Agents
                             </li>
                         </ul>
                     </div>
@@ -116,117 +119,120 @@ export function Education(){
                     <div className="skills-container">
                         <ul className="skills-gained" id="phys-class">
                             <span>
-                                <strong> Skills Gained </strong>
+                                <strong> Skills Learned </strong>
                             </span>
                             <li>
-                                3D CAD Modeling
+                                <SiAutodesk className='auto'/> 3D CAD Modeling & Printing
                             </li>
                             <li>
-                                Matlab
+                                <TbMath className='matlab'/> Matlab
                             </li>
                             <li>
-                                Experimental Design
+                                <AiFillExperiment className='xd'/> Experimental Design
                             </li>
                             <li>
-                                Data Collection
+                                <BsClipboardData className='dc'/> Data Collection
                             </li>
                             <li>
-                                Uncertainty Analysis
+                                <GiUncertainty className='ua'/> Uncertainty Analysis
                             </li>
                             <li>
-                                MathSage
+                                <SiReacttable className='ms spin'/> MathSage
                             </li>
                             <li>
-                                Physical Interpretation
+                                <GiWorld className='pi spin'/> Physical Interpretation
                             </li>
                             <li>
-                                Advanced Math
+                               <SiWolframmathematica className='am'/>  Advanced Math
                             </li>
                             <li>
-                                Lab Apparatus 
+                                <GiLabCoat className='la'/> Lab Apparatus 
                             </li>
                             <li>
-                                Michelson Interferometer 
+                                <GiLaserBurst className='mi'/> Michelson Interferometer 
                             </li>
                             <li>
-                                Soldering 
+                                <GiSolderingIron className='ra'/> Soldering 
                             </li>
                             <li>
-                                C/C++
+                                <TbLetterC /> C/C++
                             </li>
                             <li>
-                                Arduino
+                               <SiArduino className='arduino'/> Arduino
                             </li>
                             <li>
-                                Embedded Systems
+                               <GiCircuitry className='elec'/> Electronic modules
                             </li>
                         </ul>
 
 
                         <ul className="skills-gained" id="math-class">
                             <span>
-                                <strong> Math Minor </strong>
+                                <strong> Skills Learned </strong>
                             </span>
                             <li>
-                                R
+                                <SiRstudio className='r'/> R
                             </li>
                             <li>
-                                Data Collection & Analysis
+                                <FcDataSheet/> Data Collection & Analysis
                             </li>
                             <li>
-                                Identifying Patterns
+                                <MdPattern className='ip'/> Identifying Patterns
                             </li>
                             <li>
-                                Critical Thinking
+                                <BsPatchQuestionFill className='ct'/> Critical Thinking
                             </li>
                             <li>
-                                Math Applications
+                                <GiThink className='ma'/> Math Applications
                             </li>
                             <li>
-                                Latex
+                                <SiLatex className='lat'/> Latex
                             </li>
                             <li>
-                                Problem Solve
+                                <MdSyncProblem className='ps'/> Problem Solve
                             </li>
                         </ul>
 
                         <ul className="skills-gained" id="cs-class">
                             <span>
-                                <strong> Computer Science (BA)</strong>
+                                <strong> Skills Learned </strong>
                             </span>
                             <li>
-                                <FaJava/>  Java
+                                <FaJava className='java'/>  Java
                             </li>
                             <li>
-                                JavaScript, 3JS
+                                <SiJavascript className='js'/> JavaScript, 3JS
                             </li>
                             <li>
-                                TypeScript
+                                <SiTypescript className='ts'/> TypeScript
                             </li>
                             <li>
-                                Python
+                                <FaPython className='py'/> Python
                             </li>
                             <li>
-                                HTML/CSS
+                                <AiFillHtml5 className='html'/> HTML/CSS
                             </li>
                             <li>
-                                Docker
+                                <FaDocker className='doc'/> Docker
                             </li>
                             <li>
-                               React
+                               <FaReact className='re spin'/> React
                             </li>
                             <li>
-                               Flask
+                               <SiFlask className='flask'/> Flask
                             </li>
                             <li>
-                               Github
+                               <BsGithub/> Github
                             </li>
                             <li>
-                               Object Oriented Design (OOP)
+                               <GrObjectGroup className='oop'/> Object Oriented Design (OOP)
                             </li>
                             <li>
-                               Agile Development
-                            </li>                            
+                               <GiSprint className='ad'/> Agile Development
+                            </li> 
+                            <li>
+                                <MdDesignServices className='dp'/> Design Patterns
+                            </li>                           
                         </ul>
                     </div>
                 </section>
