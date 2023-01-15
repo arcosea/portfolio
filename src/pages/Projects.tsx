@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import React, { useEffect, useState, useRef } from 'react';
 import "../styling/Projects.css";
 import { SpaceCanvas } from './SpaceCanvas';
-import { Gi3DStairs} from "react-icons/gi";
+import { Gi3DStairs, GiEntryDoor} from "react-icons/gi";
 import { AiOutlineCaretRight } from "react-icons/ai";
 import { TbLego} from "react-icons/tb";
 import {RiStackFill} from "react-icons/ri";
@@ -55,6 +55,34 @@ export function Projects(){
             })
         });
 
+        const observer4 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    let softItem = document.querySelector("#soft-item");
+                    let engItem = document.querySelector("#eng-item");
+                    let physItem = document.querySelector("#phys-item");
+                    if(entry.target.classList.contains("soft")){
+                        softItem?.classList.add("nav-active");
+                    } else {
+                        softItem?.classList.remove("nav-active");
+                    }
+
+                    if(entry.target.classList.contains("eng")){
+                        engItem?.classList.add("nav-active");
+                    } else {
+                        engItem?.classList.remove("nav-active");
+                    }
+
+                    if(entry.target.classList.contains("phys")){
+                        physItem?.classList.add("nav-active");
+                    } else {
+                        physItem?.classList.remove("nav-active");
+                    }
+
+                }
+            })
+        });
+
         // Display each element that was originally hidden
         const revealElements = document.querySelectorAll(".proj-s-container");
         revealElements.forEach( (elem) =>{
@@ -73,14 +101,44 @@ export function Projects(){
             observer3.observe(elem);
         });
 
+        // Check for current project
+        const currElem = document.querySelectorAll(".proj-container");
+        currElem.forEach( (elem) =>{
+            observer4.observe(elem);
+        });
+
+        function active(entry: any){
+            let softItem = document.querySelector("#soft-item");
+            let engItem = document.querySelector("#eng-item");
+            let physItem = document.querySelector("#phys-item");
+            if(entry.target.classList.contains("soft")){
+                softItem?.classList.add("nav-active");
+            } else {
+                softItem?.classList.remove("nav-active");
+            }
+
+            if(entry.target.classList.contains("eng")){
+                engItem?.classList.add("nav-active");
+            } else {
+                engItem?.classList.remove("nav-active");
+            }
+
+            if(entry.target.classList.contains("phys")){
+                physItem?.classList.add("nav-active");
+            } else {
+                physItem?.classList.remove("nav-active");
+            }
+
+
+        }
 
     }, []);
 
     // Opening & closing text for each section
     let sweOpen = "[ Software Projects ] ";
     let sweClose = "[ Software Projects ]";
-    let eOpen = "[ Engineering Projects ]";
-    let eClose = "[ Engineering Projects ]";
+    let eOpen = "[ Embedded System Projects ]";
+    let eClose = "[ Embedded System Projects ]";
     let pOpen = "[ Physics Projects ]";
     let pClose = "[ Physics Projects ]";
 
@@ -92,16 +150,51 @@ export function Projects(){
     // page title
     let title = "[ Projects ]";
 
+ 
+    // Code for scrolling 
+    const scrollToSWE = () => {
+        let elementId = '#swe-type';
+        const section = document.querySelector(elementId);
+        section!.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
+    const scrollToE = () => {
+        let elementId = '#e-type' ;
+        const section = document.querySelector(elementId);
+        section!.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
+    const scrollToP = () => {
+        let elementId = '#p-type';
+        const section = document.querySelector(elementId);
+        section!.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
+    
     // HTML project
     return (
       <div className='projects' >
         <SpaceCanvas/>
         <h1 id="proj-site-header"> {title} </h1>
-
-        <h2 className="proj-type-header" id="swe-type"> {sweOpen} </h2>
-
+        <nav className='navbar'>
+            <ul className='list'>
+                <li className='nav-item' id="soft-item">
+                    <span onClick={scrollToSWE}>
+                        Software 
+                    </span>
+                </li>
+                <li className='nav-item' id="eng-item">
+                    <span onClick={scrollToE}>
+                        Embedded Systems
+                    </span>
+                </li>
+                <li className='nav-item' id="phys-item">
+                    <span onClick={scrollToP}>
+                        Physics
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <h2 className="proj-type-header soft" id="swe-type" > {sweOpen} </h2>
         {/** Stair master */}
-        <div className="proj-s-container" id="odd-s">
+        <div className="proj-container proj-s-container soft" id="odd-s">
             <span className='proj-title'> <Gi3DStairs/> StairMaster</span>
             <p className='proj-desc'> A responsive website for <em id="naimor-inc"> NaiMor, Inc </em> that allows customers to style stairs for purchase based on design shape, material, color, size and other features. </p>
             <span className='proj-note'>
@@ -113,7 +206,7 @@ export function Projects(){
         </div>
 
         {/** Portfolio */}
-        <div className="proj-s-container" id="odd-s">
+        <div className="proj-s-container soft" id="odd-s">
             <span className='proj-title'> <MdWeb/> Portfolio</span>
             <p className='proj-desc'> A responsive website for that showcases my work experience, education, projects & hobbies. </p>
             <span className='proj-note'>
@@ -125,7 +218,7 @@ export function Projects(){
         </div>
 
         {/** Star Wars  */}
-        <div className="proj-s-container" id="even-s">
+        <div className="proj-container proj-s-container soft" id="even-s">
             <span className='proj-title' id="swProj"> <FaJedi id="swIcon"/> Star Wars Image Generator </span>
             <p className='proj-desc'>
                 Collaborated with a group to create a Website that allows users search a Star Wars Postgres database from 5 unique categories & generates an image
@@ -141,7 +234,7 @@ export function Projects(){
         </div>
 
         {/** Lego Finder */}
-        <div className="proj-s-container" id="odd-s">
+        <div className="proj-container proj-s-container soft" id="odd-s">
             <span className='proj-title' id='legoProj'> <TbLego/> LegoFinder</span>
             <p className='proj-desc'> An Object Detection web application using a custom 1000+ image dataset that allows users to detect between 5 of the top 20 most common 
                     Lego pieces in any image taken with 70% accuracy or higher. </p>
@@ -154,7 +247,7 @@ export function Projects(){
         </div>
 
         {/** Star Battle */}
-        <div className="proj-s-container" id="last-proj">
+        <div className="proj-container proj-s-container soft" id="last-proj">
             <span className='proj-title' id="sbProj"> <BsStars id="sbIcon" /> Star Battle Puzzle</span>
             <p className='proj-desc'> Collaborated with a group to design & implement a friendly Graphic User Interface for a sudoku-like puzzle that users can play. </p>
             <span className='proj-note'>
@@ -166,12 +259,12 @@ export function Projects(){
         </div>
 
         {/* End swe projects & start engineering projects */}
-        <h2 className="proj-type-header" id="swe-type">  {sweClose} </h2>
+        <h2 className="proj-type-header soft" id="swe-type">  {sweClose} </h2>
         <div className="proj-gap"></div>
-        <h2 className="proj-type-header" id="e-type">  {eOpen} </h2>
+        <h2 className="proj-type-header eng" id="e-type">  {eOpen} </h2>
 
         {/* LaserDrive  */}
-        <div className="proj-container stash" id="ld-proj">
+        <div className="proj-container eng stash" id="ld-proj">
             <span className='proj-title' id="ldProj"> <FaCarSide id="ldIcon" /> LaserDrive </span>
             <p className='proj-desc'> Collaborating with a group to build an Autonomous F1Tenth RC Car. </p>
             <span className='proj-note'>
@@ -183,7 +276,7 @@ export function Projects(){
         </div>
 
         {/** SmartCar */}
-        <div className="proj-container stash" id="sc-proj">
+        <div className="proj-container eng stash" id="sc-proj">
             <span className='proj-title' id="scProj"> <SiProbot id="scIcon"/> SmartCar </span>
             <p className='proj-desc'> Infrared remote (IR) controlled car with obstacle avoidance, motion detection, follower and line tracking
             modes, aside from simple driving commands. Also attached an OLED screen that displays temperature, humidity and time. </p>
@@ -196,7 +289,7 @@ export function Projects(){
         </div>
 
         {/** Arduino Controller  */}
-        <div className="proj-container stash" id="last-proj">
+        <div className="proj-container eng stash" id="last-proj">
             <span className='proj-title' id="cProj"> <BsController id="cIcon"/> RF Controller </span>
             <p className='proj-desc'> Built a custom RF transmitter & receiver control DC motors, servo sensor and an LED using joysticks & potentiometer. 
                                         Also decoded an IR controller & repurposed it to change colors of an LED strip.
@@ -210,12 +303,12 @@ export function Projects(){
         </div>
 
         {/** End Engineering Section & Start Physics sections*/}
-        <h2 className="proj-type-header" id="e-type">  {eClose} </h2>
+        <h2 className="proj-type-header eng" id="e-type">  {eClose} </h2>
         <div className="proj-gap"></div>
-        <h2 className="proj-type-header" id="p-type">  {pOpen} </h2>
+        <h2 className="proj-type-header phys" id="p-type">  {pOpen} </h2>
 
         {/** Lift Propulsion  */}
-        <div className="proj-container blur" id="lc-proj">
+        <div className="proj-container phys blur" id="lc-proj">
             <span className='proj-title' id="lcProj"> <GiSpinningBlades id="lcIcon"/> Lift Propeller Coefficient </span>
             <p className='proj-desc'> An experimental study & analysis on the lift generated from rotating a 2-bladed propeller.
             </p>
@@ -228,7 +321,7 @@ export function Projects(){
         </div>
 
         {/** Michelson Interferometer */}
-        <div className="proj-container blur" id="mi-proj">
+        <div className="proj-container phys blur" id="mi-proj">
             <span className='proj-title' id="miProj"> <GiSoundWaves id="miIcon"/> Michelson interferometer Experiment. </span>
             <p className='proj-desc'> Observed changes in destructive interference patterns created by
                     interferometer and determined the wavelength of an HeNe laser to be
@@ -244,7 +337,7 @@ export function Projects(){
         </div>
 
         {/** Nuclear Scattering */}
-        <div className="proj-container blur" id="last-proj">
+        <div className="proj-container phys blur" id="last-proj">
             <span className='proj-title' id="ncProj"> <GiCannonBall id="ncIcon"/> Nuclear Scattering Simulation. </span>
             <p className='proj-desc'> Performed an analogous experiment where ball bearings were fired at a cylindrical target &
                     scattering angles were observed. Determined its radius to be within 4.3% of

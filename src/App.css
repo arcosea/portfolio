@@ -73,7 +73,7 @@ body{
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 1 rem;
+  gap: 1rem;
 }
 
 .nav a{
