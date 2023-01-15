@@ -16,9 +16,12 @@ export function Education(){
         <div className="education">
                 <section className="section">
                     <h3 className="sub-header"> Education </h3>
-                    <h4>
-                        Cumulative GPA: 3.91
-                    </h4>
+                    <span>
+                        Cumulative GPA: 3.91 
+                    </span>
+                    <span>
+                        Pacific Lutheran University
+                    </span>
                     <div className="course-container">
                         <ul className="courses-taken" id="phys-class">
                             <span>
@@ -134,13 +137,28 @@ export function Education(){
                                 MathSage
                             </li>
                             <li>
-                                Physical Interpretation from Math
+                                Physical Interpretation
                             </li>
                             <li>
-                                Understanding of Physical World
+                                Advanced Math
                             </li>
                             <li>
-                                Math Calculation
+                                Lab Apparatus 
+                            </li>
+                            <li>
+                                Michelson Interferometer 
+                            </li>
+                            <li>
+                                Soldering 
+                            </li>
+                            <li>
+                                C/C++
+                            </li>
+                            <li>
+                                Arduino
+                            </li>
+                            <li>
+                                Embedded Systems
                             </li>
                         </ul>
 
@@ -150,19 +168,25 @@ export function Education(){
                                 <strong> Math Minor </strong>
                             </span>
                             <li>
-                                <AiOutlineFundProjectionScreen/> Statistics
+                                R
                             </li>
                             <li>
-                                <FaWaveSquare/> Discrete Math
+                                Data Collection & Analysis
                             </li>
                             <li>
-                                <AiOutlineFunction/>  Integration Calculus
+                                Identifying Patterns
                             </li>
                             <li>
-                                &#8747; Multivariable Calculus
+                                Critical Thinking
                             </li>
                             <li>
-                                <SiMatrix/> Linear Algebra
+                                Math Applications
+                            </li>
+                            <li>
+                                Latex
+                            </li>
+                            <li>
+                                Problem Solve
                             </li>
                         </ul>
 
@@ -171,26 +195,38 @@ export function Education(){
                                 <strong> Computer Science (BA)</strong>
                             </span>
                             <li>
-                                <FaJava/>  Intro to Programming
+                                <FaJava/>  Java
                             </li>
                             <li>
-                                <FcTreeStructure/> Data Structures
+                                JavaScript, 3JS
                             </li>
                             <li>
-                                <GiCheckboxTree/> Algorithms Design/Analysis
+                                TypeScript
                             </li>
                             <li>
-                                <SiPostgresql/> Databases
+                                Python
                             </li>
                             <li>
-                                <BsGrid1X2/> Web Design
+                                HTML/CSS
                             </li>
                             <li>
-                                <SiMaterialdesignicons/> Objects & Design
+                                Docker
                             </li>
                             <li>
-                                <GiVintageRobot/> Robotic Agents
+                               React
                             </li>
+                            <li>
+                               Flask
+                            </li>
+                            <li>
+                               Github
+                            </li>
+                            <li>
+                               Object Oriented Design (OOP)
+                            </li>
+                            <li>
+                               Agile Development
+                            </li>                            
                         </ul>
                     </div>
                 </section>
