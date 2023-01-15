@@ -5,10 +5,23 @@
     flex-direction: column;
     position: relative;
     background-color: beige;
+    color: black;
+    z-index: 5;
 }
 
+/** lists */
+.course-container, .skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    justify-content: center;
+    margin-left: 2%;
+    padding: 0;
+}
 
-
+.courses-taken, .skills-gained{
+    list-style:none;
+}
 
 
 /*** 3JS Canvas */
@@ -16,6 +29,5 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
-    z-index: 0;
+    opacity: 0.2;
 }

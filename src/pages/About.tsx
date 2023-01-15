@@ -1,9 +1,14 @@
 import "../styling/About.css";
 import {Link} from "react-router-dom";
 import React, { useEffect, useState, useRef } from 'react';
-import { GiMountainClimbing, GiRunningShoe, GiSoccerBall } from "react-icons/gi";
-import { FaChess, FaHiking, FaRunning, FaVolleyballBall } from "react-icons/fa";
-import { MdSportsTennis } from "react-icons/md";
+import { GiArtificialIntelligence, GiCheckboxTree, GiEmptyMetalBucketHandle, GiFallDown, GiMagnet, GiMountainClimbing, GiRunningShoe, GiSoccerBall, GiSolarSystem, GiThreeFriends, GiTimeSynchronization, GiVintageRobot } from "react-icons/gi";
+import { FaChess, FaHiking, FaJava, FaObjectUngroup, FaReact, FaRobot, FaRocket, FaRunning, FaVolleyballBall, FaWaveSquare } from "react-icons/fa";
+import { MdEngineering, MdSportsTennis, MdTransform } from "react-icons/md";
+import { BsGrid1X2, BsWater } from "react-icons/bs";
+import { FcEngineering, FcTreeStructure } from "react-icons/fc";
+import { TbWaveSawTool } from "react-icons/tb";
+import { SiBattledotnet, SiMaterialdesignicons, SiMatrix, SiPostgresql } from "react-icons/si";
+import { AiOutlineFunction, AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 export function About(){
     /**********         Running Slide Show              *************/
@@ -110,11 +115,9 @@ export function About(){
             {/** BIO  */}
             <div id="person">
                 <p id = "intro">
-                    Hey Everyone! My Name is <strong>Erick Arcos</strong>, a student-athlete at <em>Pacific Lutheran University</em>. 
-                    I am studying <strong>Applied Physics (BS)</strong> and <strong>Computer Science (BA)</strong> with a Minor in Mathematics. 
-                    I will be graduating in <strong> May of 2023. </strong> Some of my career interests include: Robotics, Space exploration, Astronomy, 
-                    Aerospace Engineering, Embedded Systems, Artificial Intelligence, Machine learning, Software Development and so much more! 
-                    All of these are subjects fascinating and I am someone that can adapt well to new learning environments.
+                    Hey Everyone! My Name is <strong>Erick Arcos</strong>, a <em> student-athlete </em> at <strong>Pacific Lutheran University</strong>. 
+                    I am studying <strong>Applied Physics (BS)</strong> and <strong>Computer Science (BA)</strong> with a <strong> Minor in Mathematics. </strong> 
+                    I will be <strong> graduating in  May of 2023. </strong> I love to learn new skills & challenge myself to grow!
                 </p>
                 <img src="/profile.png" id="profile" alt="profile picture of Erick Arcos"></img>
             </div>
@@ -122,7 +125,7 @@ export function About(){
             {/** Family Background */}
             <div>
                 <section className="section">
-                    <h3 className="sub-header"> Family & Background </h3>
+                    <h3 className="sub-header"><GiThreeFriends/> Family & Background  </h3>
                     <p>
                         Family & Friends and the time I spend with them is something I value dearly. I have three younger brothers. I am the first in my family to have graduated High School and attended University! 
                     </p>
@@ -133,26 +136,35 @@ export function About(){
             <div id="activities">
                 <section className="section">
                     <h3 className="sub-header"> Sports & Activities </h3>
-                    <span className="sub-title"> 
-                        <GiSoccerBall/> Soccer
-                    </span>
-                    <p>
-                        Whether it was through street soccer or for a team, I grew up always enjoying the sport. However, midway through high-school, I eventually switched to running.
-                    </p>
-                    <span className="sub-title"> 
-                        <FaRunning/> Track
-                    </span>
-                    <p>
-                        I first ran track in 8th grade, stopped for two years & then continued again my last 2 years of High School & have continued since. Here are some of my memorable personal bests:
-                        A 4:16 min 1500m at PLU and a 15:43 5k at PLU.
-                    </p>
-                    <span className="sub-title"> 
-                        <GiRunningShoe/> Cross Country
-                    </span>
-                    <p>
-                        I really enjoy the team dynamic that a XC team has offer. Also find running different courses more fun that pure laps on a track. Some of my best times from cross country include: A 26:17 min 8k and a 1:18:05 Half marathon leading 
-                        into one of my XC seasons. 
-                    </p>
+                    <ul className="fav-act">
+                        <li>
+                            <span className="sub-title" > 
+                                <GiSoccerBall id="ball"/> Soccer
+                            </span>
+                            <p>
+                                I grew up playing soccer from when I was 8 till midway through High School.
+                            </p>
+                        </li>
+                        <li>
+                            <span className="sub-title"> 
+                                <FaRunning id="forward"/> Track
+                            </span>
+                            <p>
+                                My personal bests are 4:16 min in the 1500m and a 15:43 5k
+                            </p>
+                        </li>
+                        <li>
+                            <span className="sub-title"> 
+                                <GiRunningShoe id="upward"/> Cross Country
+                            </span>
+                            <p>
+                                Personal bests are 26:17 min in the 8k and 1:18:05 in the Half Marathon
+                            </p>
+                        </li>
+                    </ul>
+        
+
+
                     <div className="slideshow" >
                         <button className="slider" id="previous-run" onClick={previousRunSlide}> 	&larr; </button>
                         <img className="slide" id="run-slides" alt="default" src={imageLink}/>
@@ -162,10 +174,28 @@ export function About(){
                     <span className="sub-title">
                         Other Activities
                     </span>
-                    <p>
-                        I also enjoy playing: <FaVolleyballBall/> volleyball, <MdSportsTennis/> badminton, <FaHiking/> hiking, <GiMountainClimbing/> Rock Climbing and
-                        strategy games such as  <FaChess/> Chess.
-                    </p>
+                    <ul className="other-act">
+                        <li>
+                            <span className="sub-title" >
+                                <FaVolleyballBall /> volleyball
+                            </span>
+                        </li>
+                        <li>
+                            <span className="sub-title" >
+                                <MdSportsTennis/> badminton
+                            </span>
+                        </li>
+                        <li>
+                            <span className="sub-title" >
+                                <GiMountainClimbing/> Rock Climbing
+                            </span>
+                        </li>
+                        <li>
+                            <span className="sub-title" >
+                                <FaChess/> Chess
+                            </span>
+                        </li>
+                    </ul>
                 </section>
             </div>
             
@@ -182,6 +212,121 @@ export function About(){
                             <img className="slide" alt="default" src={showLink}/>
                             <button className="slider" id="next" onClick={nextShowSlide}> &rarr; </button>
                         </div>   
+                </section>
+            </div>
+
+            <div >
+                <section className="section">
+                    <h3 className="sub-header"> Interests </h3>
+                    <ul>
+                        <li>
+                           <FaRocket/>  Space Exploration
+                        </li>
+                        <li>
+                            <GiSolarSystem/> Astrophysics
+                        </li>
+                        <li>
+                            <FaRobot/> Robotics
+                        </li>
+                        <li>
+                            <GiArtificialIntelligence/> Artifical Intelligence
+                        </li>
+                        <li>
+                            <GiTimeSynchronization/> General Relativity
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div >
+                <section className="section">
+                    <h3 className="sub-header"> Education </h3>
+                    <h4>
+                        Cumulative Gpa: 3.91
+                    </h4>
+                    <div className="course-container">
+                        <ul className="courses-taken" id="phys-class">
+                            <span>
+                                <strong> Applied Physics (BS) </strong>
+                            </span>
+                            <li>
+                            <GiFallDown/>  General Mechanics & Electromagnetism (EM)
+                            </li>
+                            <li>
+                                <GiTimeSynchronization/> Modern Physics (Relativity)
+                            </li>
+                            <li>
+                                <BsWater/> Waves & Fluids
+                            </li>
+                            <li>
+                                <MdEngineering/> Engineering Statics
+                            </li>
+                            <li>
+                                <GiMagnet/> EM theory & EM Optics
+                            </li>
+                            <li>
+                                <GiEmptyMetalBucketHandle/> Material Science
+                            </li>
+                            <li>
+                                &#8466; Differential Equations & Laplace Transforms
+                            </li>
+                            <li>
+                                <TbWaveSawTool/> Fourier Analysis & BVP
+                            </li>
+                            <li>
+                                <FaReact/> Quantum Mechanics
+                            </li>
+                        </ul>
+
+
+                        <ul className="courses-taken" id="math-class">
+                            <span>
+                                <strong> Math Minor </strong>
+                            </span>
+                            <li>
+                                <AiOutlineFundProjectionScreen/> Statistics
+                            </li>
+                            <li>
+                                <FaWaveSquare/> Discrete Math
+                            </li>
+                            <li>
+                                <AiOutlineFunction/>  Integration Calculus
+                            </li>
+                            <li>
+                                &#8747; Multivariable Calculus
+                            </li>
+                            <li>
+                                <SiMatrix/> Linear Algebra
+                            </li>
+                        </ul>
+
+                        <ul className="courses-taken" id="cs-class">
+                            <span>
+                                <strong> Computer Science (BA)</strong>
+                            </span>
+                            <li>
+                                <FaJava/>  Intro to Programming
+                            </li>
+                            <li>
+                                <FcTreeStructure/> Data Structures
+                            </li>
+                            <li>
+                                <GiCheckboxTree/> Algorithms Design/Analysis
+                            </li>
+                            <li>
+                                <SiPostgresql/> Databases
+                            </li>
+                            <li>
+                                <BsGrid1X2/> Web Design
+                            </li>
+                            <li>
+                                <SiMaterialdesignicons/> Objects & Design
+                            </li>
+                            <li>
+                                <GiVintageRobot/> Robotic Agents
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
             

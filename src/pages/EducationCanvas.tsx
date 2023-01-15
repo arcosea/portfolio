@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import * as THREE from "three";
+import { MeshStandardMaterial } from 'three';
 import {OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 
