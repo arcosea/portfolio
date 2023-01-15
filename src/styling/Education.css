@@ -3,30 +3,12 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: beige;
     position: relative;
-    text-align: center;
+    background-color: beige;
 }
 
 
 
-
-
-/** Icons */
-.spinIcon{
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-        color: rgb(104, 184, 104);
-    }
-    to{
-        transform: rotate(360deg);
-        color: rgb(84, 84, 220);
-    }
-}
 
 
 /*** 3JS Canvas */
@@ -35,4 +17,5 @@
     top: 0;
     left: 0;
     opacity: 0.5;
+    z-index: 0;
 }

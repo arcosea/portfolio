@@ -15,8 +15,6 @@
     z-index: 10;
     letter-spacing: 0.1rem;
     font-size: 3rem;
-    animation: space-out 0.5s linear backwards;
-    
 }
 
 #home-header:hover{

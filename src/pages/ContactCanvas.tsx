@@ -40,9 +40,9 @@ export function ContactCanvas(){
         }
         // Rendering loop
         function animate() {
-            torus.rotateX(0.01);
-            torus.rotateY(0.01);
-            torus.rotateZ(0.01);
+            torus.rotateX(0.001);
+            torus.rotateY(0.001);
+            torus.rotateZ(0.001);
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         }

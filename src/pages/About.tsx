@@ -150,8 +150,7 @@ export function About(){
                         <GiRunningShoe/> Cross Country
                     </span>
                     <p>
-                        Ever since doing Cross Country in High School, I have enjoyed it because of the team dynamic that a XC team has. At PLU I have gotten the opportunity to meet some of my best friends.
-                        Aside from that, I find the sport much more enjoyable than running laps in a track. Some of my best times from cross country include: A 26:17 min 8k and a 1:18:05 Half marathon leading 
+                        I really enjoy the team dynamic that a XC team has offer. Also find running different courses more fun that pure laps on a track. Some of my best times from cross country include: A 26:17 min 8k and a 1:18:05 Half marathon leading 
                         into one of my XC seasons. 
                     </p>
                     <div className="slideshow" >
@@ -164,7 +163,8 @@ export function About(){
                         Other Activities
                     </span>
                     <p>
-                        Aside from running and soccer, other activies I really enjoy include <FaVolleyballBall/> volleyball, <MdSportsTennis/> badminton, <FaHiking/> hiking and most recently: <GiMountainClimbing/> Rock Climbing. I also enjoy playing strategy type of games such as  <FaChess/> Chess.
+                        I also enjoy playing: <FaVolleyballBall/> volleyball, <MdSportsTennis/> badminton, <FaHiking/> hiking, <GiMountainClimbing/> Rock Climbing and
+                        strategy games such as  <FaChess/> Chess.
                     </p>
                 </section>
             </div>

@@ -35,14 +35,14 @@ export function EducationCanvas(){
             
         
             // Add Shape
-            const geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+            const geometry = new THREE.IcosahedronGeometry(100, 1);
             const material = new THREE.MeshBasicMaterial( { color: 'rgb(0, 0, 0)', wireframe:true});
             torusKnot = new THREE.Mesh( geometry, material );
             scene.add( torusKnot );
 
             // Create orbital controls
-            controls = new OrbitControls(camera, renderer.domElement);
-            document.body.onscroll = moveCamera;
+            // controls = new OrbitControls(camera, renderer.domElement);
+            // document.body.onscroll = moveCamera;
             
             // Animate
             animate();
@@ -61,12 +61,12 @@ export function EducationCanvas(){
 
         // Rendering loop
         function animate() {
-            torusKnot.rotateX(0.01);
+            torusKnot.rotateX(0.001);
             torusKnot.rotateY(0.01);
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
 
-            controls.update();
+            // controls.update();
         }
 
         init();
