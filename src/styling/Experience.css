@@ -2,7 +2,11 @@
 .container{
     width: 100%;
     text-align: center;
-    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
 }
 
 .section-header{
@@ -25,13 +29,6 @@
     text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
 }
 
-/* #work-section-timeline{
-    border-bottom: 2px solid black;
-    padding: 1rem 0 1rem 0;
-    position: relative;
-    max-width: 100%;
-    margin: 1rem auto;
-} */
 
 #ed-section{
     border-bottom: 2px solid black;
@@ -283,7 +280,7 @@
 
 
 /**************** Education Content *****************/ 
-.degree-info{
+/* .degree-info{
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -297,7 +294,7 @@
 .courses{
     display: grid;
     letter-spacing: 0.1em;
-}
+} */
 
 
 /*** Animations */
@@ -367,4 +364,15 @@
     background-color: rgb(254, 254, 135);
     color:red;
     border-radius: 10%;
+}
+
+
+/*** 3JS Canvas */
+#spaceCanvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 0;
+    min-height: 100%;
 }

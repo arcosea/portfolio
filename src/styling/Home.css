@@ -1,19 +1,36 @@
 
 /* Header & container */
-/* h1{
-    color:black;
-    display: inline;
-} */
-
 .home{
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-color: black;
     position: relative;
     text-align: center;
+    padding-top: 25%;
 }
 
+#home-header{
+    color:aquamarine;
+    z-index: 10;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+}
+
+#home-header:hover{
+    animation: space-out 1s linear forwards;
+}
+
+
+@keyframes space-out{
+    0%{
+
+    }
+    100%{
+        letter-spacing: 0.5rem;
+        text-shadow: 0 0 0.3rem hsl(0, 0%, 100%), 0 0 0.6rem hsl(0, 0%, 80%);
+    }
+}
 
 
 /* 3js Canvas */

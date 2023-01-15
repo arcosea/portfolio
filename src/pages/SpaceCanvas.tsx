@@ -32,7 +32,7 @@ export function SpaceCanvas(){
       // Create geoemtry for stars & vertices for
       starGeo = new THREE.BufferGeometry();
       let starPoints = []
-      let numStars = 5000;
+      let numStars = 1500;
 
       // Create random vertices for stars
       for (let i = 0; i < numStars; i++) {

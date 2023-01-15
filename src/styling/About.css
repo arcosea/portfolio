@@ -43,6 +43,7 @@
     margin: 3rem;
     line-height: 2rem;
     float: bottom;
+    font-size: 1.3rem;
 }
 
 
@@ -64,6 +65,50 @@
    margin-left: 45%;
 }
 
+/* Favorite activies */
+.fav-act{
+    padding: 1rem 0rem 5rem 5%;
+    margin: 0;
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    transition: transform 1s ease;
+}
+.other-act{
+    padding: 1rem 0rem 5rem 10%;
+    margin: 0;
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.fav-act li:hover{
+    transform: translateY(-0.5rem);
+}
+
+.other-act li:hover{
+    transform: translateY(-0.5rem);
+}
+/*** notes message */
+[data-msg]{
+    position: relative;
+}
+
+/* , [data-msg]:hover::before */
+[data-msg]:focus::before, [data-msg]:hover::before{
+    content: attr(data-msg);
+    position: absolute;
+    width: 400%;
+    min-width: 100%;
+    background-color: transparent;
+    left: 50%;
+    top: -1rem;
+    transform: translate(-50%, 100%);
+    color: bisque;
+    font-size:medium;
+}
 
 /* Slide show */
 .slideshow{
@@ -115,6 +160,71 @@
     border: 2px solid black;
 }
 
+/** Interests */
+.interests{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem; 
+    justify-content: center;
+    margin-left: 12.5%;
+    padding: 0;
+
+}
+
+.interests ul{
+    list-style:none;
+}
+.interests ul li{
+    padding:1rem;
+}
+
+/* Icons & animations*/
+#ball{
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#forward{
+    animation: moveRight 1s ease-in infinite;
+}
+@keyframes moveRight{
+    0%{
+        opacity:0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+     }
+}
+
+#upward{
+    animation: moveUp 0.5s ease-in infinite;
+}
+@keyframes moveUp{
+    0%{
+        opacity:0;
+        transform: translateY(25%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+     }
+}
+
+/* Interest section*/
 
 
 
+/* Courses taken*/
+.courses-taken{
+    list-style:none;
+}

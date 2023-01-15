@@ -1,13 +1,14 @@
+import { FaHome } from "react-icons/fa";
 import {Link} from "react-router-dom"
 import { isPropertySignature } from "typescript";
 
 export default function Navbar(){
     return (
         <nav className="nav">
-            <Link to="/" className="site-title"> Welcome</Link>
+            <Link to="/" className="site-title"> <FaHome/> Home </Link>
             <ul>
-                <li> 
-                    <Link to="/" className="site-title"> Home</Link>
+                <li>
+                    <Link to="/about" className="site-title"> About Me</Link>
                 </li>
                 <li>
                     <Link to="/experience" className="site-title"> Experience</Link>

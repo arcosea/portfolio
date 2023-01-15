@@ -4,7 +4,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: beige;
     position: relative;
 }
 
@@ -49,7 +48,7 @@
 /** Container for each project*/
 .proj-s-container, .proj-container{
     z-index: 5;
-    width: 70%;
+    width: 60%;
     margin-left: 15%;
     min-height: 15vh;
     margin-bottom: 10rem;
@@ -379,6 +378,38 @@ span.tooltip:after {
     top: 11px;
     left: -24px;
 }
+
+/*** Navigation Bar */
+.navbar{
+    color: beige;
+    display: flex;
+    position: sticky;
+    top: 20%;
+    z-index: 100;
+    width: 25%;
+    margin-left: 80%;
+    display: flex;
+    position: sticky;
+    border-left: 2px solid white;
+}
+
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.nav-item{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-active{
+    color: rgb(120, 20, 162);
+}
+
+#eng
+
 /*** 3JS Canvas */
 #spaceCanvas{
     position: absolute;
