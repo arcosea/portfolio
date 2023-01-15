@@ -8,6 +8,9 @@ export default function Navbar(){
             <Link to="/" className="site-title"> <FaHome/> Home </Link>
             <ul>
                 <li>
+                    <Link to="/about" className="site-title"> About Me</Link>
+                </li>
+                <li>
                     <Link to="/experience" className="site-title"> Experience</Link>
                 </li>
                 <li>

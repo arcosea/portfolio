@@ -113,7 +113,7 @@ export function About(){
                 <p id = "intro">
                     Hey Everyone! My Name is <strong>Erick Arcos</strong>, a <em> student-athlete </em> at <strong>Pacific Lutheran University</strong>. 
                     I am studying <strong>Applied Physics (BS)</strong> and <strong>Computer Science (BA)</strong> with a <strong> Minor in Mathematics. </strong> 
-                    I will be <strong> graduating in  May of 2023. </strong> I love to learn new skills & challenge myself to grow!
+                    I will be <strong> graduating in  May of 2023. </strong>
                 </p>
                 <img src="/profile.png" id="profile" alt="profile picture of Erick Arcos"></img>
             </div>

@@ -384,7 +384,7 @@ span.tooltip:after {
     color: beige;
     display: flex;
     position: sticky;
-    top: 50%;
+    top: 20%;
     z-index: 100;
     width: 25%;
     margin-left: 80%;

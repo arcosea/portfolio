@@ -19,33 +19,28 @@ export default function Footer(){
                    <FaEnvelope className="icon"/> arcosea0@gmail.com
                 </li>
 
-                <li>
+                {/* <li>
                     <FaPhoneAlt className="icon"/> 253 282 6040
-                </li>
+                </li> */}
             </ul>
             <ul className="middle-footer">
                 <li>
                     <Link to="/contact" className="site-title link"> <MdPermContactCalendar/> Contact Me </Link>   
                 </li>
                 <li>
-                    <a target="_blank" className="view-website link" href="https://www.linkedin.com/in/erick-arcos2023/"> <FaLinkedin className="icon"/> LinkedIn </a>            
+                    <Link to="/education" className="site-title link"> <TbFileCertificate/> Education </Link>  
                 </li>
-                <li>
-                    <a target="_blank" className="view-website link" href="https://github.com/arcosea"> <FaGithub className="icon"/> GitHub</a>  
-                </li>
+    
 
             </ul>
 
             <ul className="right-footer">
                 <li>
-                    <Link to="/about" className="site-title link"> <BsPersonBadge/> About Me </Link>   
+                    <a target="_blank" className="view-website link" href="https://www.linkedin.com/in/erick-arcos2023/"> <FaLinkedin className="icon"/> LinkedIn </a>            
                 </li>
-
                 <li>
-                    <Link to="/education" className="site-title link"> <TbFileCertificate/> Education </Link>  
+                    <a target="_blank" className="view-website link" href="https://github.com/arcosea"> <FaGithub className="icon"/> GitHub</a>  
                 </li>
-
-
             </ul>
         </nav>
     )
