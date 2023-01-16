@@ -6,11 +6,11 @@ import { AiOutlineFundProjectionScreen, AiOutlineFunction, AiFillExperiment, AiF
 import { BsWater, BsGrid1X2, BsClipboardData, BsPatchQuestionFill, BsGithub } from 'react-icons/bs';
 import { FaReact, FaWaveSquare, FaJava, FaDocker, FaPython, FaFlagUsa, FaTools, FaNode } from 'react-icons/fa';
 import { FcDataSheet, FcEngineering, FcTreeStructure, FcVoicePresentation } from 'react-icons/fc';
-import { GiFallDown, GiTimeSynchronization, GiMagnet, GiEmptyMetalBucketHandle, GiCheckboxTree, GiVintageRobot, GiHelicopter, GiUncertainty, GiWorld, GiCircuitry, GiLabCoat, GiLaserBurst, GiSolderingIron, GiThink, GiSprint, GiMexico } from 'react-icons/gi';
+import { GiFallDown, GiTimeSynchronization, GiMagnet, GiEmptyMetalBucketHandle, GiCheckboxTree, GiVintageRobot, GiHelicopter, GiUncertainty, GiWorld, GiCircuitry, GiLabCoat, GiLaserBurst, GiSolderingIron, GiThink, GiSprint, GiMexico, GiGraduateCap } from 'react-icons/gi';
 import { MdDesignServices, MdEngineering, MdPattern, MdSyncProblem } from 'react-icons/md';
 import { SiMatrix, SiPostgresql, SiMaterialdesignicons, SiElectron, SiAutodesk, SiReacttable, SiArduino, SiLatex, SiRstudio, SiWolframmathematica, SiJavascript, SiFlask, SiTypescript } from 'react-icons/si';
 import { TbLetterC, TbMath, TbWaveSawTool } from 'react-icons/tb';
-import { GrObjectGroup } from 'react-icons/gr';
+import { GrCertificate, GrObjectGroup } from 'react-icons/gr';
 
 export function Education(){
     return (
@@ -18,10 +18,10 @@ export function Education(){
                 <section className="ed-section">
                     <h2 className="sub-header"> Education </h2>
                     <h3>
-                        Pacific Lutheran University (2023)
+                        <GiGraduateCap/> Pacific Lutheran University (2023)
                     </h3>
                     <h4>
-                        Cumulative GPA: 3.91 
+                        <GrCertificate/> Cumulative GPA: 3.91 
                     </h4>
                     <h4>
                         Classes Taken: 
