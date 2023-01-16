@@ -2,11 +2,11 @@
 import { useEffect, useState, useRef } from 'react';
 import { EducationCanvas } from "./EducationCanvas";
 import "../styling/Education.css";
-import { AiOutlineFundProjectionScreen, AiOutlineFunction, AiFillExperiment, AiFillHtml5 } from 'react-icons/ai';
+import { AiOutlineFundProjectionScreen, AiOutlineFunction, AiFillExperiment, AiFillHtml5, AiOutlineCloudServer } from 'react-icons/ai';
 import { BsWater, BsGrid1X2, BsClipboardData, BsPatchQuestionFill, BsGithub } from 'react-icons/bs';
-import { FaReact, FaWaveSquare, FaJava, FaDocker, FaPython } from 'react-icons/fa';
-import { FcDataSheet, FcEngineering, FcTreeStructure } from 'react-icons/fc';
-import { GiFallDown, GiTimeSynchronization, GiMagnet, GiEmptyMetalBucketHandle, GiCheckboxTree, GiVintageRobot, GiHelicopter, GiUncertainty, GiWorld, GiCircuitry, GiLabCoat, GiLaserBurst, GiSolderingIron, GiThink, GiSprint } from 'react-icons/gi';
+import { FaReact, FaWaveSquare, FaJava, FaDocker, FaPython, FaFlagUsa, FaTools, FaNode } from 'react-icons/fa';
+import { FcDataSheet, FcEngineering, FcTreeStructure, FcVoicePresentation } from 'react-icons/fc';
+import { GiFallDown, GiTimeSynchronization, GiMagnet, GiEmptyMetalBucketHandle, GiCheckboxTree, GiVintageRobot, GiHelicopter, GiUncertainty, GiWorld, GiCircuitry, GiLabCoat, GiLaserBurst, GiSolderingIron, GiThink, GiSprint, GiMexico } from 'react-icons/gi';
 import { MdDesignServices, MdEngineering, MdPattern, MdSyncProblem } from 'react-icons/md';
 import { SiMatrix, SiPostgresql, SiMaterialdesignicons, SiElectron, SiAutodesk, SiReacttable, SiArduino, SiLatex, SiRstudio, SiWolframmathematica, SiJavascript, SiFlask, SiTypescript } from 'react-icons/si';
 import { TbLetterC, TbMath, TbWaveSawTool } from 'react-icons/tb';
@@ -23,7 +23,9 @@ export function Education(){
                     <h4>
                         Cumulative GPA: 3.91 
                     </h4>
-                    
+                    <h4>
+                        Classes Taken: 
+                    </h4>
                     <div className="course-container">
                         <ul className="courses-taken" id="phys-class">
                             <span>
@@ -117,87 +119,21 @@ export function Education(){
                     </div>
 
                     {/** Skills */}
+                    <h4>
+                        Skills & Experience: 
+                    </h4>
                     <div className="skills-container">
-                        <ul className="skills-gained" id="phys-class">
+                        <ul className="skills-gained">
                             <span>
-                                <strong> Skills Learned </strong>
+                                <strong> Languages Learned</strong>
                             </span>
                             <li>
-                                <SiAutodesk className='auto'/> 3D CAD Modeling & Printing
+                                <GiMexico className="mex"/> Spanish
                             </li>
                             <li>
-                                <TbMath className='matlab'/> Matlab
+                                <FaFlagUsa className="usa"/> English
                             </li>
-                            <li>
-                                <AiFillExperiment className='xd'/> Experimental Design
-                            </li>
-                            <li>
-                                <BsClipboardData className='dc'/> Data Collection
-                            </li>
-                            <li>
-                                <GiUncertainty className='ua'/> Uncertainty Analysis
-                            </li>
-                            <li>
-                                <SiReacttable className='ms spin'/> MathSage
-                            </li>
-                            <li>
-                                <GiWorld className='pi spin'/> Physical Interpretation
-                            </li>
-                            <li>
-                               <SiWolframmathematica className='am'/>  Advanced Math
-                            </li>
-                            <li>
-                                <GiLabCoat className='la'/> Lab Apparatus 
-                            </li>
-                            <li>
-                                <GiLaserBurst className='mi'/> Michelson Interferometer 
-                            </li>
-                            <li>
-                                <GiSolderingIron className='ra'/> Soldering 
-                            </li>
-                            <li>
-                                <TbLetterC /> C/C++
-                            </li>
-                            <li>
-                               <SiArduino className='arduino'/> Arduino
-                            </li>
-                            <li>
-                               <GiCircuitry className='elec'/> Electronic modules
-                            </li>
-                        </ul>
 
-
-                        <ul className="skills-gained" id="math-class">
-                            <span>
-                                <strong> Skills Learned </strong>
-                            </span>
-                            <li>
-                                <SiRstudio className='r'/> R
-                            </li>
-                            <li>
-                                <FcDataSheet/> Data Collection & Analysis
-                            </li>
-                            <li>
-                                <MdPattern className='ip'/> Identifying Patterns
-                            </li>
-                            <li>
-                                <BsPatchQuestionFill className='ct'/> Critical Thinking
-                            </li>
-                            <li>
-                                <GiThink className='ma'/> Math Applications
-                            </li>
-                            <li>
-                                <SiLatex className='lat'/> Latex
-                            </li>
-                            <li>
-                                <MdSyncProblem className='ps'/> Problem Solve
-                            </li>
-                        </ul>
-
-                        <ul className="skills-gained" id="cs-class">
-                            <span>
-                                <strong> Skills Learned </strong>
-                            </span>
                             <li>
                                 <FaJava className='java'/>  Java
                             </li>
@@ -214,17 +150,71 @@ export function Education(){
                                 <AiFillHtml5 className='html'/> HTML/CSS
                             </li>
                             <li>
-                                <FaDocker className='doc'/> Docker
+                                <SiRstudio className='r'/> R
+                            </li>
+                            <li>
+                                <TbMath className='matlab'/> Matlab
+                            </li>
+                            <li>
+                                <SiLatex className='lat'/> Latex
+                            </li>
+                        </ul>
+
+
+                        <ul className="skills-gained">
+                            <span>
+                                <strong> Technologies & Frameworks</strong>
+                            </span>
+                            <li>
+                               <BsGithub/> Github & Git
+                            </li>
+                            <li>
+                                <FaNode/> NodeJS
                             </li>
                             <li>
                                <FaReact className='re spin'/> React
                             </li>
                             <li>
+                               <SiArduino className='arduino'/> Arduino
+                            </li>
+                            <li>
                                <SiFlask className='flask'/> Flask
                             </li>
                             <li>
-                               <BsGithub/> Github
+                                <FaDocker className='doc'/> Docker
                             </li>
+                            <li>
+                                <SiAutodesk className='auto'/> Autodesk 3D CAD & Printing
+                            </li>
+                            <li>
+                               <GiCircuitry className='elec'/> PSpice
+                            </li>
+                            <li>
+                                <AiOutlineCloudServer/> Google Cloud Platform
+                            </li>
+                            <li>
+                                <SiReacttable className='ms spin'/> MathSage
+                            </li>
+                            <li>
+                                <GiLabCoat className='la'/> Lab Apparatus 
+                            </li>
+                            <li>
+                                <GiSolderingIron className='ra'/> Soldering 
+                            </li>
+                            <li>
+                                <FaTools/> Hand Tools
+                            </li>
+                            <li>
+                                <GiLaserBurst className='mi'/> Michelson Interferometer 
+                            </li>
+                            
+           
+                        </ul>
+
+                        <ul className="skills-gained">
+                            <span>
+                                <strong> Soft Skills </strong>
+                            </span>
                             <li>
                                <GrObjectGroup className='oop'/> Object Oriented Design (OOP)
                             </li>
@@ -233,7 +223,29 @@ export function Education(){
                             </li> 
                             <li>
                                 <MdDesignServices className='dp'/> Design Patterns
-                            </li>                           
+                            </li>  
+                            <li>
+                                <AiFillExperiment className='xd'/> Experimental Design
+                            </li>
+                            <li>
+                                <BsClipboardData className='dc'/> Data Collection & Analysis
+                            </li>
+                            <li>
+                                <GiUncertainty className='ua'/> Uncertainty Analysis
+                            </li>
+                            <li>
+                                <GiWorld className='pi spin'/> Physical Interpretation
+                            </li>
+                            <li>
+                                <BsPatchQuestionFill className='ct'/> Critical Thinking
+                            </li>
+                            <li>
+                                <MdSyncProblem className='ps'/> Problem Solving
+                            </li>
+                            <li>
+                                <FcVoicePresentation/> Presentation
+                            </li>
+                                                      
                         </ul>
                     </div>
                 </section>
