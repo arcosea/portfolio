@@ -14,14 +14,12 @@
     position: absolute;
     z-index: 5;
     display:inline-block;
-    margin-left: 30%;
-    
+    margin-left: 30%; 
 }
 
 
 /** Typing animation */
 .home-intro{
-    /* display: inline-block; */
     color: white;
     font-family: monospace;
     font-size: 1.5rem;

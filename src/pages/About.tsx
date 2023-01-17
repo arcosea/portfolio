@@ -123,7 +123,7 @@ export function About(){
                 <section className="section">
                     <h3 className="sub-header"><GiThreeFriends/> Family & Background  </h3>
                     <p>
-                        Family & Friends and the time I spend with them is something I value dearly. I have three younger brothers. I am the first in my family to have graduated High School and attended University! 
+                        I value spending time with Friends & Family. I have three younger brothers. I am the first in my family to have graduated High School and attended University! 
                     </p>
                 </section>
             </div>
