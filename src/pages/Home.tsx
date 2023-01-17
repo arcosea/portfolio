@@ -8,7 +8,12 @@ import { WelcomeCanvas } from "./WelcomeCanvas";
 export function Home(){
     return (
         <div className="home">
-            <h1 id="home-header"> Welcome! </h1>
+            <div className="home-container">
+                <p className="home-intro" id="text-1">
+                    Welcome! My name is Erick.
+                </p>
+                
+            </div>
             <WelcomeCanvas/>
         </div>
     );
