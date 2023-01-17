@@ -61,7 +61,7 @@
 }
 
 .elec, .quant{
-    color: blue;
+    color: red;
 }
 
 .spin{
@@ -230,6 +230,7 @@
 .ps{
     color: orange;
 }
+
 /* cs skills icons */
 .py{
     color: rgb(181, 160, 24);
@@ -252,6 +253,13 @@
 
 .ad{
     animation: wave 2s linear infinite;
+}
+
+.mex{
+    color: green;
+}
+.usa{
+    color: red;
 }
 
 

@@ -7,9 +7,49 @@
     background-color: black;
     position: relative;
     text-align: center;
-    padding-top: 25%;
+    padding-top: 50vh;
 }
 
+.home-container{
+    position: absolute;
+    z-index: 5;
+    display:inline-block;
+    margin-left: 30%; 
+}
+
+
+/** Typing animation */
+.home-intro{
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    border-right: 5px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 3s steps(25),
+        cursor .4s step-end infinite alternate;
+}
+
+/* Cursor blinking*/
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+#text-1{
+}
+
+/* Spread out animation */
 #home-header{
     color:aquamarine;
     z-index: 10;
@@ -38,7 +78,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 
