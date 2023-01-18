@@ -18,10 +18,6 @@ export default function Footer(){
                 <li>
                    <FaEnvelope className="icon"/> arcosea0@gmail.com
                 </li>
-
-                {/* <li>
-                    <FaPhoneAlt className="icon"/> 253 282 6040
-                </li> */}
             </ul>
             <ul className="middle-footer">
                 <li>
