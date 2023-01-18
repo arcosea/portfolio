@@ -12,6 +12,11 @@ import { SpaceCanvas } from "./SpaceCanvas";
 
 
 export function Experience(){
+    // Auto scrolls to the top after rendering
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     /*
     *  Constantly create animation
     */

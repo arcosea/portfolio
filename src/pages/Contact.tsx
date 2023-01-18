@@ -12,6 +12,11 @@ const TEMPLATE_ID = 'template_x9asmo8';
 const USER_ID = 'N-Co5OaAcmUr9I2u-';
 
 export function Contact(){
+    // Auto scrolls to the top after rendering
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     // Function to send emails
     const sendEmail = (e: any) => {
         e.preventDefault();
@@ -67,4 +72,8 @@ export function Contact(){
 
         </div>
     );
+}
+
+function useEffect(arg0: () => void, arg1: never[]) {
+    throw new Error("Function not implemented.");
 }

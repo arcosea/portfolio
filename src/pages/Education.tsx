@@ -13,6 +13,11 @@ import { TbLetterC, TbMath, TbWaveSawTool } from 'react-icons/tb';
 import { GrCertificate, GrObjectGroup } from 'react-icons/gr';
 
 export function Education(){
+    // Auto scrolls to the top after rendering
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     return (
         <div className="education">
                 <section className="ed-section">

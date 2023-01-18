@@ -6,6 +6,11 @@ import { GiSoundWaves } from "react-icons/gi";
 import { BsGithub } from "react-icons/bs";
 
 export function SmartCarProject(){
+    // Auto scrolls to the top after rendering
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     // video 
     let video = "../videos/smartcar.mov";
 
@@ -83,4 +88,8 @@ export function SmartCarProject(){
             <div className="proj-gap"></div>
         </div>
     );
+}
+
+function useEffect(arg0: () => void, arg1: never[]) {
+    throw new Error("Function not implemented.");
 }

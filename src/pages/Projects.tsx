@@ -20,6 +20,12 @@ import { MdWeb } from 'react-icons/md';
  * Class that displays all projects
  */
 export function Projects(){
+        
+        // Auto scrolls to the top after rendering
+        useEffect(() => {
+            window.scrollTo(0, 0)
+        }, []); 
+
         /*
         *  Constantly create animation
         */

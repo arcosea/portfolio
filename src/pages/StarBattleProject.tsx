@@ -4,6 +4,11 @@ import {BsStars, BsController, BsGithub} from "react-icons/bs";
 import { FaJava } from "react-icons/fa";
 import { RiStackFill } from "react-icons/ri";
 export function StarBattleProject(){
+    // Auto scrolls to the top after rendering
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     // video 
     let video = "../videos/starbattle.mov";
 
@@ -30,4 +35,8 @@ export function StarBattleProject(){
             <div className="proj-gap"></div>
         </div>
     );
+}
+
+function useEffect(arg0: () => void, arg1: never[]) {
+    throw new Error("Function not implemented.");
 }

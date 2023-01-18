@@ -4,6 +4,11 @@ import {BsGithub} from "react-icons/bs";
 import { RiStackFill } from "react-icons/ri";
 
 export function StarWarsProject(){
+    // Auto scrolls to the top after rendering
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     // video 
     let video = "../videos/starwar.mov";
 
@@ -30,4 +35,8 @@ export function StarWarsProject(){
         
         </div>
     );
+}
+
+function useEffect(arg0: () => void, arg1: never[]) {
+    throw new Error("Function not implemented.");
 }
